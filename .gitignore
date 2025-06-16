@@ -38,3 +38,5 @@ go.work.sum
 # Project file
 ./server/filetest
 ./client/filetest
+./server/filetest/*
+./client/filetest/*

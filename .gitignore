@@ -34,3 +34,7 @@ go.work.sum
 # Proto/gRPC generated files
 ./client/generated
 ./server/generated
+
+# Project file
+./server/filetest
+./client/filetest

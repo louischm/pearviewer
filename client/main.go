@@ -13,5 +13,5 @@ func main() {
 	log.SetFileErrName("./log/main.err")
 	log.SetMaxSize(1e+9)
 
-	grpc.UploadDir("test", "./filetest/")
+	grpc.RenameFile("test.txt", "test1.csv", "./filetest/")
 }

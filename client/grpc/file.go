@@ -8,6 +8,31 @@ import (
 	pb "pearviewer/client/generated/file"
 )
 
+func RenameFile(oldName, newName, pathName string) {
+	client, conn := createFileClient()
+	request := createRenameFileReq(oldName, newName, pathName)
+	log.Info("Rename File request created:" + request.String())
+	renameFileReq(*client, request)
+	closeClient(conn)
+}
+
+func createRenameFileReq(oldName, newName, pathName string) *pb.RenameFileReq {
+	request := &pb.RenameFileReq{
+		OldName:  oldName,
+		NewName:  newName,
+		PathName: pathName,
+	}
+	return request
+}
+
+func renameFileReq(client pb.FileServiceClient, request *pb.RenameFileReq) {
+	response, err := client.RenameFile(context.Background(), request)
+	if err != nil {
+		log.Error("Rename File Request error: " + err.Error())
+	}
+	log.Info("Rename File Response: " + response.String())
+}
+
 func uploadFile(fileName string, pathName string) {
 	client, conn := createFileClient()
 	request := createUploadFileReq(fileName, pathName)
@@ -45,7 +70,7 @@ func createUploadFileReq(fileName string, pathName string) []*pb.UploadFileReq {
 			File:      file,
 			StartByte: startByte,
 			EndByte:   endByte,
-			Pathname:  pathName,
+			PathName:  pathName,
 		}
 		uploads = append(uploads, &upload)
 		startByte += 1000

@@ -1,0 +1,146 @@
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/12 15:49:52.923918 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/12 15:49:52.924023 Parsing json conf
+[main:main] | INFO : main.go:18: 2025/06/12 15:49:52.924063 Conf loaded
+[main:createClient] | FATAL : client.go:17: 2025/06/12 15:49:52.924087 Fatal error connecting to servergrpc: no transport security set (use grpc.WithTransportCredentials(insecure.NewCredentials()) explicitly or set credentials)
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/12 15:51:19.028767 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/12 15:51:19.028848 Parsing json conf
+[main:main] | INFO : main.go:18: 2025/06/12 15:51:19.028885 Conf loaded
+[main:createClient] | INFO : client.go:28: 2025/06/12 15:51:19.028966 Starting client
+[main:getFileChunk] | ERROR : client.go:82: 2025/06/12 15:51:19.028985 Failed to open fileopen ./filetest/text.txt: no such file or directory
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/12 15:51:48.186983 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/12 15:51:48.187092 Parsing json conf
+[main:main] | INFO : main.go:18: 2025/06/12 15:51:48.187136 Conf loaded
+[main:createClient] | INFO : client.go:28: 2025/06/12 15:51:48.187234 Starting client
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/12 15:52:58.988617 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/12 15:52:58.988679 Parsing json conf
+[main:main] | INFO : main.go:18: 2025/06/12 15:52:58.988719 Conf loaded
+[main:createClient] | INFO : client.go:28: 2025/06/12 15:52:58.988788 Starting client
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/12 15:54:00.043810 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/12 15:54:00.043938 Parsing json conf
+[main:main] | INFO : main.go:18: 2025/06/12 15:54:00.044004 Conf loaded
+[main:createClient] | INFO : client.go:28: 2025/06/12 15:54:00.044122 Starting client
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/12 15:56:17.918081 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/12 15:56:17.918176 Parsing json conf
+[main:main] | INFO : main.go:18: 2025/06/12 15:56:17.918226 Conf loaded
+[main:createClient] | INFO : client.go:28: 2025/06/12 15:56:17.918320 Starting client
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/12 15:57:10.383887 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/12 15:57:10.383973 Parsing json conf
+[main:main] | INFO : main.go:18: 2025/06/12 15:57:10.384040 Conf loaded
+[main:createClient] | INFO : client.go:28: 2025/06/12 15:57:10.384178 Starting client
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/12 15:59:05.584926 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/12 15:59:05.585070 Parsing json conf
+[main:main] | INFO : main.go:18: 2025/06/12 15:59:05.585122 Conf loaded
+[main:createClient] | INFO : client.go:28: 2025/06/12 15:59:05.585201 Starting client
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/12 16:00:16.371765 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/12 16:00:16.371871 Parsing json conf
+[main:main] | INFO : main.go:18: 2025/06/12 16:00:16.371940 Conf loaded
+[main:createClient] | INFO : client.go:28: 2025/06/12 16:00:16.372043 Starting client
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/12 16:00:58.476669 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/12 16:00:58.476760 Parsing json conf
+[main:main] | INFO : main.go:18: 2025/06/12 16:00:58.476817 Conf loaded
+[main:createClient] | INFO : client.go:28: 2025/06/12 16:00:58.476923 Starting client
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/12 16:02:03.457299 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/12 16:02:03.457391 Parsing json conf
+[main:main] | INFO : main.go:18: 2025/06/12 16:02:03.457452 Conf loaded
+[main:createClient] | INFO : client.go:28: 2025/06/12 16:02:03.457554 Starting client
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/12 16:02:21.134351 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/12 16:02:21.134481 Parsing json conf
+[main:main] | INFO : main.go:18: 2025/06/12 16:02:21.134548 Conf loaded
+[main:createClient] | INFO : client.go:28: 2025/06/12 16:02:21.134662 Starting client
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/12 16:02:54.513784 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/12 16:02:54.513889 Parsing json conf
+[main:main] | INFO : main.go:18: 2025/06/12 16:02:54.513933 Conf loaded
+[main:createClient] | INFO : client.go:28: 2025/06/12 16:02:54.514026 Starting client
+[main:getFileChunk] | ERROR : client.go:99: 2025/06/12 16:03:04.446954 Failed to read fileEOF
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/12 16:03:23.802177 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/12 16:03:23.802242 Parsing json conf
+[main:main] | INFO : main.go:18: 2025/06/12 16:03:23.802303 Conf loaded
+[main:createClient] | INFO : client.go:28: 2025/06/12 16:03:23.802401 Starting client
+[main:getFileChunk] | ERROR : client.go:99: 2025/06/12 16:03:53.261188 Failed to read fileEOF
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/12 16:03:56.626732 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/12 16:03:56.626787 Parsing json conf
+[main:main] | INFO : main.go:18: 2025/06/12 16:03:56.626844 Conf loaded
+[main:createClient] | INFO : client.go:28: 2025/06/12 16:03:56.626945 Starting client
+[main:getUploads] | INFO : client.go:55: 2025/06/12 16:04:09.074903 File read.
+[main:createClient] | INFO : client.go:31: 2025/06/12 16:04:21.533724 File Data fetched
+[main:sendUploads] | INFO : client.go:73: 2025/06/12 16:04:21.533778 Start streaming
+[main:sendUploads] | FATAL : client.go:81: 2025/06/12 16:04:21.545512 Failed to send streamingEOF
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/12 16:04:47.392133 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/12 16:04:47.392219 Parsing json conf
+[main:main] | INFO : main.go:18: 2025/06/12 16:04:47.392254 Conf loaded
+[main:createClient] | INFO : client.go:28: 2025/06/12 16:04:47.392332 Starting client
+[main:getUploads] | INFO : client.go:55: 2025/06/12 16:04:47.655888 File read.
+[main:createClient] | INFO : client.go:31: 2025/06/12 16:04:47.655968 File Data fetched
+[main:sendUploads] | INFO : client.go:73: 2025/06/12 16:04:47.655981 Start streaming
+[main:sendUploads] | FATAL : client.go:81: 2025/06/12 16:04:47.665522 Failed to send streamingEOF
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/12 16:05:51.564332 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/12 16:05:51.564400 Parsing json conf
+[main:main] | INFO : main.go:18: 2025/06/12 16:05:51.564467 Conf loaded
+[main:createClient] | INFO : client.go:28: 2025/06/12 16:05:51.564594 Starting client
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/12 16:07:21.186888 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/12 16:07:21.186987 Parsing json conf
+[main:main] | INFO : main.go:18: 2025/06/12 16:07:21.187033 Conf loaded
+[main:createClient] | INFO : client.go:29: 2025/06/12 16:07:21.187122 Starting client
+[main:getUploads] | INFO : client.go:56: 2025/06/12 16:07:27.031098 File read.
+[main:createClient] | INFO : client.go:32: 2025/06/12 16:07:29.894018 File Data fetched
+[main:sendUploads] | INFO : client.go:74: 2025/06/12 16:07:29.894105 Start streaming
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/12 16:07:39.140231 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/12 16:07:39.140342 Parsing json conf
+[main:main] | INFO : main.go:18: 2025/06/12 16:07:39.140384 Conf loaded
+[main:createClient] | INFO : client.go:29: 2025/06/12 16:07:39.140468 Starting client
+[main:getUploads] | INFO : client.go:56: 2025/06/12 16:07:39.391392 File read.
+[main:createClient] | INFO : client.go:32: 2025/06/12 16:07:39.391469 File Data fetched
+[main:sendUploads] | INFO : client.go:74: 2025/06/12 16:07:39.391490 Start streaming
+[main:sendUploads] | FATAL : client.go:82: 2025/06/12 16:07:39.401087 Failed to send streamingEOF
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/12 16:08:04.586293 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/12 16:08:04.586336 Parsing json conf
+[main:main] | INFO : main.go:18: 2025/06/12 16:08:04.586367 Conf loaded
+[main:createClient] | INFO : client.go:29: 2025/06/12 16:08:04.586444 Starting client
+[main:getUploads] | INFO : client.go:56: 2025/06/12 16:08:04.842370 File read.
+[main:createClient] | INFO : client.go:32: 2025/06/12 16:08:04.842474 File Data fetched
+[main:sendUploads] | INFO : client.go:74: 2025/06/12 16:08:04.842502 Start streaming
+[main:sendUploads] | FATAL : client.go:82: 2025/06/12 16:08:04.852557 Failed to send streamingEOF
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/12 16:11:47.563172 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/12 16:11:47.563213 Parsing json conf
+[main:main] | INFO : main.go:18: 2025/06/12 16:11:47.563243 Conf loaded
+[main:createClient] | INFO : client.go:29: 2025/06/12 16:11:47.563307 Starting client
+[main:getUploads] | INFO : client.go:56: 2025/06/12 16:11:47.827995 File read.
+[main:createClient] | INFO : client.go:32: 2025/06/12 16:11:47.828035 File Data fetched
+[main:sendUploads] | INFO : client.go:74: 2025/06/12 16:11:47.828054 Start streaming
+[main:sendUploads] | INFO : client.go:89: 2025/06/12 16:11:47.841463 Upload finishedStream EOF
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/13 16:13:05.613732 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/13 16:13:05.619714 Parsing json conf
+[pearviewer/client/grpc:getConn] | INFO : client.go:16: 2025/06/13 16:13:05.619762 Conf loaded
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:37: 2025/06/13 16:13:05.619835 Starting Dir client
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:11: 2025/06/13 16:13:05.619936 Upload Dir Request construct: dir:{name:"test"} pathname:"./filetest/"
+[pearviewer/client/grpc:uploadDirReq] | ERROR : dir.go:30: 2025/06/13 16:13:05.627024 Upload Dir Request error: rpc error: code = Unimplemented desc = unknown service DirService
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/13 16:14:00.914701 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/13 16:14:00.914755 Parsing json conf
+[pearviewer/client/grpc:getConn] | INFO : client.go:16: 2025/06/13 16:14:00.914797 Conf loaded
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:37: 2025/06/13 16:14:00.914893 Starting Dir client
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:11: 2025/06/13 16:14:00.915011 Upload Dir Request construct: dir:{name:"test"} pathname:"./filetest/"
+[pearviewer/client/grpc:uploadDirReq] | ERROR : dir.go:30: 2025/06/13 16:14:00.921542 Upload Dir Request error: rpc error: code = Unimplemented desc = unknown service DirService
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/13 16:22:30.978484 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/13 16:22:30.978583 Parsing json conf
+[pearviewer/client/grpc:getConn] | INFO : client.go:17: 2025/06/13 16:22:30.978618 Conf loaded
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:38: 2025/06/13 16:22:30.978696 Starting Dir client
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:11: 2025/06/13 16:22:30.978791 Upload Dir Request construct: dir:{name:"test"}  pathname:"./filetest/"
+[pearviewer/client/grpc:uploadDirReq] | INFO : dir.go:32: 2025/06/13 16:22:30.986233 Upload Dir Response: message:"Directory Created"
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/13 16:23:34.571325 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/13 16:23:34.571368 Parsing json conf
+[pearviewer/client/grpc:getConn] | INFO : client.go:17: 2025/06/13 16:23:34.571398 Conf loaded
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:38: 2025/06/13 16:23:34.571470 Starting Dir client
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:11: 2025/06/13 16:23:34.571569 Upload Dir Request construct: dir:{name:"test"}  pathname:"./filetest/"
+[pearviewer/client/grpc:uploadDirReq] | INFO : dir.go:32: 2025/06/13 16:23:34.577830 Upload Dir Response: message:"Directory Created"
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/13 16:23:51.467777 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/13 16:23:51.467816 Parsing json conf
+[pearviewer/client/grpc:getConn] | INFO : client.go:17: 2025/06/13 16:23:51.467847 Conf loaded
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:38: 2025/06/13 16:23:51.467914 Starting Dir client
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:11: 2025/06/13 16:23:51.468009 Upload Dir Request construct: dir:{name:"test"}  pathname:"./filetest/"
+[pearviewer/client/grpc:uploadDirReq] | INFO : dir.go:32: 2025/06/13 16:23:51.473340 Upload Dir Response: message:"Directory Created: ./filetest/test"
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/13 16:24:29.539817 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/13 16:24:29.539862 Parsing json conf
+[pearviewer/client/grpc:getConn] | INFO : client.go:17: 2025/06/13 16:24:29.539898 Conf loaded
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:38: 2025/06/13 16:24:29.539994 Starting Dir client
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:11: 2025/06/13 16:24:29.540134 Upload Dir Request construct: dir:{name:"test"}  pathname:"./filetest/"
+[pearviewer/client/grpc:uploadDirReq] | INFO : dir.go:32: 2025/06/13 16:24:29.547994 Upload Dir Response: message:"Directory Created: ./filetest/test"

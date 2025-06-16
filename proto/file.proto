@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+option go_package = "generated/file";
+
+service FileService {
+  // Client request
+  rpc UploadFile(stream UploadFileReq) returns(UploadFileRes) {}
+  /*rpc RenameFile(Rename) returns(RenameResponse) {}
+  rpc DeleteFile(Delete) returns(DeleteResponse) {}
+  rpc MoveFile(Move) returns(MoveResponse) {}*/
+
+  // Server request
+//  rpc DownloadFile(FileResponse) returns(File) {}
+}
+
+message UploadFileReq {
+  File file = 1;
+  int64 startByte = 2;
+  int64 endByte = 3;
+  string pathname = 4;
+}
+
+message UploadFileRes {
+  int32 returnCode = 1;
+  int64 lastByte = 2;
+  string message = 3;
+}
+
+message File {
+   string name = 1;
+   bytes data = 2;
+}

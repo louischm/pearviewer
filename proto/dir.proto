@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option go_package = "generated/dir";
+
+service DirService {
+  rpc UploadDir(UploadDirReq) returns (UploadDirRes) {}
+}
+
+message UploadDirReq {
+   Dir  dir = 1;
+   string pathname = 2;
+}
+
+message UploadDirRes {
+   int32 returnCode = 1;
+   string message = 2;
+}
+
+message Dir {
+   string name = 1;
+}

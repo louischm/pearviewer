@@ -1,0 +1,4 @@
+[main:createEmptyFile] | ERROR : server.go:76: 2025/06/12 16:04:21.541907 open ./data/./filetest/test.txt: no such file or directory
+[main:createEmptyFile] | ERROR : server.go:76: 2025/06/12 16:04:47.662225 open ./data/./filetest/test.txt: no such file or directory
+[main:(*server).UploadFile] | ERROR : server.go:60: 2025/06/12 16:07:39.397917 open test.txt./data/: no such file or directory
+[main:(*server).UploadFile] | ERROR : server.go:63: 2025/06/12 16:08:04.849465 write ./data/test.txt: bad file descriptor

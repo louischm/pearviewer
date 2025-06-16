@@ -1,0 +1,12 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="GoDfaErrorMayBeNotNil" enabled="true" level="WARNING" enabled_by_default="true">
+      <methods>
+        <method importPath="pearviewer/client/generated" receiver="FileServiceClient" name="UploadFile" />
+        <method importPath="google.golang.org/grpc" receiver="ClientStreamingClient" name="CloseAndRecv" />
+        <method importPath="pearviewer/client/generated" receiver="DirServiceClient" name="UploadDir" />
+      </methods>
+    </inspection_tool>
+  </profile>
+</component>

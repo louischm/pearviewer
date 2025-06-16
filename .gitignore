@@ -42,3 +42,7 @@ go.work.sum
 ./client/filetest
 ./server/filetest/*
 ./client/filetest/*
+./server/log
+./client/log
+./server/log/*
+./client/log/*

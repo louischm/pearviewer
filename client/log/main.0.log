@@ -1,0 +1,48 @@
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/16 16:35:48.150846 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/16 16:35:48.150929 Parsing json conf
+[pearviewer/client/grpc:getConn] | INFO : client.go:17: 2025/06/16 16:35:48.150959 Conf loaded
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:31: 2025/06/16 16:35:48.151026 Starting File client
+[pearviewer/client/grpc:RenameFile] | INFO : file.go:14: 2025/06/16 16:35:48.151134 Rename File request created:oldName:"test.txt"  newName:"test1.csv"  pathName:"./filetest/"
+[pearviewer/client/grpc:renameFileReq] | INFO : file.go:33: 2025/06/16 16:35:48.158596 Rename File Response: returnCode:1  message:"File does not exist: ./filetest/test.txt"
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/16 16:36:06.155409 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/16 16:36:06.155454 Parsing json conf
+[pearviewer/client/grpc:getConn] | INFO : client.go:17: 2025/06/16 16:36:06.155490 Conf loaded
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:31: 2025/06/16 16:36:06.155575 Starting File client
+[pearviewer/client/grpc:RenameFile] | INFO : file.go:14: 2025/06/16 16:36:06.155689 Rename File request created:oldName:"test.txt"  newName:"test1.csv"  pathName:"./filetest/"
+[pearviewer/client/grpc:renameFileReq] | INFO : file.go:33: 2025/06/16 16:36:06.161986 Rename File Response: returnCode:1  message:"File does not exist: ./filetest/test.txt"
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/16 16:36:35.620576 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/16 16:36:35.620624 Parsing json conf
+[pearviewer/client/grpc:getConn] | INFO : client.go:17: 2025/06/16 16:36:35.620664 Conf loaded
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:31: 2025/06/16 16:36:35.620756 Starting File client
+[pearviewer/client/grpc:RenameFile] | INFO : file.go:14: 2025/06/16 16:36:35.620895 Rename File request created:oldName:"test.txt"  newName:"test1.csv"  pathName:"./filetest/"
+[pearviewer/client/grpc:renameFileReq] | INFO : file.go:33: 2025/06/16 16:36:35.627516 Rename File Response: message:"Renamed ./filetest/test.txt to ./filetest/test1.csv"
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/17 15:04:38.239189 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/17 15:04:38.245217 Parsing json conf
+[pearviewer/client/grpc:getConn] | INFO : client.go:17: 2025/06/17 15:04:38.245279 Conf loaded
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:38: 2025/06/17 15:04:38.245374 Starting Dir client
+[pearviewer/client/grpc:RenameDir] | INFO : dir.go:19: 2025/06/17 15:04:38.245489 Rename Dir Request construct: oldName:"test"  newName:"test1"  pathName:"./server/filetest/"
+[pearviewer/client/grpc:renameDirReq] | INFO : dir.go:57: 2025/06/17 15:04:38.253783 Rename Dir Response: returnCode:1  message:"Directory Already Exists"
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/17 15:05:42.430553 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/17 15:05:42.430616 Parsing json conf
+[pearviewer/client/grpc:getConn] | INFO : client.go:17: 2025/06/17 15:05:42.430667 Conf loaded
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:38: 2025/06/17 15:05:42.430762 Starting Dir client
+[pearviewer/client/grpc:RenameDir] | INFO : dir.go:19: 2025/06/17 15:05:42.430883 Rename Dir Request construct: oldName:"test"  newName:"test1"  pathName:"./server/filetest/"
+[pearviewer/client/grpc:renameDirReq] | INFO : dir.go:57: 2025/06/17 15:05:42.437642 Rename Dir Response: returnCode:1  message:"Directory: ./server/filetest/test doesn't Exists"
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/17 15:07:28.526126 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/17 15:07:28.526340 Parsing json conf
+[pearviewer/client/grpc:getConn] | INFO : client.go:17: 2025/06/17 15:07:28.526402 Conf loaded
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:38: 2025/06/17 15:07:28.526505 Starting Dir client
+[pearviewer/client/grpc:RenameDir] | INFO : dir.go:19: 2025/06/17 15:07:28.526644 Rename Dir Request construct: oldName:"test"  newName:"test1"  pathName:"./server/filetest/"
+[pearviewer/client/grpc:renameDirReq] | INFO : dir.go:57: 2025/06/17 15:07:28.533076 Rename Dir Response: returnCode:1  message:"Directory: ./server/filetest/test doesn't exists"
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/17 15:07:44.790420 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/17 15:07:44.790521 Parsing json conf
+[pearviewer/client/grpc:getConn] | INFO : client.go:17: 2025/06/17 15:07:44.790558 Conf loaded
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:38: 2025/06/17 15:07:44.790634 Starting Dir client
+[pearviewer/client/grpc:RenameDir] | INFO : dir.go:19: 2025/06/17 15:07:44.790727 Rename Dir Request construct: oldName:"test"  newName:"test1"  pathName:"./server/filetest/"
+[pearviewer/client/grpc:renameDirReq] | INFO : dir.go:57: 2025/06/17 15:08:13.509019 Rename Dir Response: returnCode:1  message:"Directory: ./server/filetest/test doesn't exists"
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/17 15:08:17.881048 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/17 15:08:17.881139 Parsing json conf
+[pearviewer/client/grpc:getConn] | INFO : client.go:17: 2025/06/17 15:08:17.881182 Conf loaded
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:38: 2025/06/17 15:08:17.881259 Starting Dir client
+[pearviewer/client/grpc:RenameDir] | INFO : dir.go:19: 2025/06/17 15:08:17.881377 Rename Dir Request construct: oldName:"test"  newName:"test1"  pathName:"./filetest/"
+[pearviewer/client/grpc:renameDirReq] | INFO : dir.go:57: 2025/06/17 15:08:17.887396 Rename Dir Response: message:"Directory Renamed: ./filetest/test to ./filetest/test1"

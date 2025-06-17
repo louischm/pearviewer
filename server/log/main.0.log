@@ -1,0 +1,32 @@
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/16 16:35:38.780194 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/16 16:35:38.780245 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/16 16:35:38.780284 Conf loaded
+[pearviewer/server/grpc:(*fileServer).RenameFile] | INFO : file.go:59: 2025/06/16 16:35:48.158257 Received RenameFileReq: oldName:"test.txt" newName:"test1.csv" pathName:"./filetest/"
+[pearviewer/server/grpc:(*fileServer).RenameFile] | INFO : file.go:59: 2025/06/16 16:36:06.161735 Received RenameFileReq: oldName:"test.txt" newName:"test1.csv" pathName:"./filetest/"
+[pearviewer/server/grpc:(*fileServer).RenameFile] | INFO : file.go:59: 2025/06/16 16:36:35.627162 Received RenameFileReq: oldName:"test.txt" newName:"test1.csv" pathName:"./filetest/"
+[pearviewer/server/grpc:(*fileServer).RenameFile] | INFO : file.go:71: 2025/06/16 16:36:35.627258 Renamed ./filetest/test.txt to ./filetest/test1.csv
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/17 15:04:33.992744 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/17 15:04:33.992980 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/17 15:04:33.993014 Conf loaded
+[pearviewer/server/grpc:(*dirServer).RenameDir] | INFO : dir.go:38: 2025/06/17 15:04:38.253372 Received RenameDirReq: oldName:"test"  newName:"test1"  pathName:"./server/filetest/"
+[pearviewer/server/grpc:(*dirServer).RenameDir] | INFO : dir.go:54: 2025/06/17 15:04:38.253460 Directory Already Exists
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/17 15:05:40.986792 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/17 15:05:40.986866 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/17 15:05:40.986922 Conf loaded
+[pearviewer/server/grpc:(*dirServer).RenameDir] | INFO : dir.go:38: 2025/06/17 15:05:42.437292 Received RenameDirReq: oldName:"test"  newName:"test1"  pathName:"./server/filetest/"
+[pearviewer/server/grpc:(*dirServer).RenameDir] | INFO : dir.go:54: 2025/06/17 15:05:42.437370 Directory: ./server/filetest/test doesn't Exists
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/17 15:07:27.529567 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/17 15:07:27.529680 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/17 15:07:27.529729 Conf loaded
+[pearviewer/server/grpc:(*dirServer).RenameDir] | INFO : dir.go:38: 2025/06/17 15:07:28.532702 Received RenameDirReq: oldName:"test"  newName:"test1"  pathName:"./server/filetest/"
+[pearviewer/server/grpc:(*dirServer).RenameDir] | INFO : dir.go:54: 2025/06/17 15:07:28.532779 Directory: ./server/filetest/test doesn't exists
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/17 15:07:42.526087 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/17 15:07:42.526225 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/17 15:07:42.526313 Conf loaded
+[pearviewer/server/grpc:(*dirServer).RenameDir] | INFO : dir.go:38: 2025/06/17 15:07:44.797194 Received RenameDirReq: oldName:"test"  newName:"test1"  pathName:"./server/filetest/"
+[pearviewer/server/grpc:(*dirServer).RenameDir] | INFO : dir.go:54: 2025/06/17 15:08:13.508341 Directory: ./server/filetest/test doesn't exists
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/17 15:08:15.632990 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/17 15:08:15.633106 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/17 15:08:15.633148 Conf loaded
+[pearviewer/server/grpc:(*dirServer).RenameDir] | INFO : dir.go:38: 2025/06/17 15:08:17.887126 Received RenameDirReq: oldName:"test"  newName:"test1"  pathName:"./filetest/"
+[pearviewer/server/grpc:(*dirServer).RenameDir] | INFO : dir.go:49: 2025/06/17 15:08:17.887191 Directory Renamed: ./filetest/test to ./filetest/test1

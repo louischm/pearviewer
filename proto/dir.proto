@@ -3,19 +3,34 @@ syntax = "proto3";
 option go_package = "generated/dir";
 
 service DirService {
-  rpc UploadDir(UploadDirReq) returns (UploadDirRes) {}
+   rpc UploadDir(UploadDirReq) returns (UploadDirRes) {}
+   rpc RenameDir(RenameDirReq) returns (RenameDirRes) {}
 }
 
+// Upload Dir Message
 message UploadDirReq {
-   Dir  dir = 1;
-   string pathname = 2;
+   Dir      dir = 1;
+   string   pathname = 2;
 }
 
 message UploadDirRes {
+   int32    returnCode = 1;
+   string   message = 2;
+}
+
+// Rename Dir Message
+message RenameDirReq {
+   string oldName = 1;
+   string newName = 2;
+   string pathName = 3;
+}
+
+message RenameDirRes {
    int32 returnCode = 1;
    string message = 2;
 }
 
+// Generics Message
 message Dir {
    string name = 1;
 }

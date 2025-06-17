@@ -1,6 +1,7 @@
 package grpc
 
 import (
+	"context"
 	"io"
 	"os"
 	. "pearviewer/server/generated/file"
@@ -29,11 +30,11 @@ func (s *fileServer) UploadFile(stream FileService_UploadFileServer) error {
 		}
 
 		// Create file if necessary
-		if !isFileInDir(upload.File.GetName(), upload.GetPathname()) {
-			createEmptyFile(upload.File.GetName(), upload.GetPathname())
+		if !isFileInDir(upload.File.GetName(), upload.GetPathName()) {
+			createEmptyFile(upload.File.GetName(), upload.GetPathName())
 		}
 
-		filename := upload.GetPathname() + upload.File.GetName()
+		filename := upload.GetPathName() + upload.File.GetName()
 
 		// Write file
 		file, errOpen := os.OpenFile(filename, os.O_WRONLY, 0666)
@@ -49,6 +50,37 @@ func (s *fileServer) UploadFile(stream FileService_UploadFileServer) error {
 		}
 
 	}
+}
+
+func (s *fileServer) RenameFile(ctx context.Context, request *RenameFileReq) (*RenameFileRes, error) {
+	var returnCode int32
+	var message string
+
+	log.Info("Received RenameFileReq: " + request.String())
+	oldName := request.GetPathName() + request.GetOldName()
+	newName := request.GetPathName() + request.GetNewName()
+
+	if isFileInDir(request.GetOldName(), request.GetPathName()) {
+		err := os.Rename(oldName, newName)
+		if err != nil {
+			returnCode = 500
+			message = err.Error()
+			log.Error(message)
+		}
+		message = "File Renamed " + oldName + " to " + newName
+		log.Info(message)
+		returnCode = 0
+	} else {
+		returnCode = 1
+		message = "File does not exist: " + oldName
+		log.Info(message)
+	}
+
+	response := &RenameFileRes{
+		ReturnCode: returnCode,
+		Message:    message,
+	}
+	return response, nil
 }
 
 func createEmptyFile(fileName, dirName string) {

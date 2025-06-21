@@ -1,8 +1,11 @@
-rm -rf ./server/generated
-rm -rf ./client/generated
-mkdir ./client/generated
-mkdir ./server/generated
-protoc --go_out=./server/ --go-grpc_out=./server/ -I./proto ./proto/file.proto
-protoc --go_out=./client/ --go-grpc_out=./client/ -I./proto ./proto/file.proto
-protoc --go_out=./server/ --go-grpc_out=./server/ -I./proto ./proto/dir.proto
-protoc --go_out=./client/ --go-grpc_out=./client/ -I./proto ./proto/dir.proto
+rm -rf ./generated
+mkdir ./generated
+cd ./generated
+go mod init generated
+cd ..
+
+protoc --go_out=./ --go-grpc_out=./ -I./proto ./proto/file.proto
+protoc --go_out=./ --go-grpc_out=./ -I./proto ./proto/dir.proto
+
+cd ./generated
+go mod tidy

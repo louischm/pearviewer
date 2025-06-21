@@ -1,0 +1,8 @@
+[pearviewer/server/grpc:isFileInDir] | ERROR : file.go:124: 2025/06/17 15:18:32.753358 open ./filetest/hihi: no such file or directory
+[pearviewer/server/grpc:errorMoveFileRes] | ERROR : file.go:193: 2025/06/17 15:55:36.142488 File does not exist: ./filetest/test.txt
+[pearviewer/server/grpc:errorMoveFileRes] | ERROR : file.go:193: 2025/06/17 15:55:51.000497 File does not exist: ./filetest/test.txt
+[pearviewer/server/grpc:errorMoveFileRes] | ERROR : file.go:193: 2025/06/17 16:00:30.337771 File does not exist: ./filetest/test.txt
+[pearviewer/server/grpc:errorMoveFileRes] | ERROR : file.go:193: 2025/06/17 16:02:20.438233 File does not exist: ./filetest/test.txt
+[pearviewer/server/grpc:errorMoveFileRes] | ERROR : file.go:193: 2025/06/17 16:02:57.579178 File does not exist: ./filetest/test.txt
+[pearviewer/server/grpc:errorMoveFileRes] | ERROR : file.go:193: 2025/06/17 16:05:03.349578 File does not exist: ./filetest/test.txt
+[pearviewer/server/grpc:errorMoveFileRes] | ERROR : file.go:193: 2025/06/17 16:05:47.951950 File does not exist: ./filetest/test.txt

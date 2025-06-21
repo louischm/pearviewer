@@ -4,11 +4,11 @@ option go_package = "generated/file";
 
 service FileService {
   // Client request
-  rpc UploadFile(stream UploadFileReq) returns(UploadFileRes) {}
+  rpc UploadFile(stream UploadFileReq) returns(stream UploadFileRes) {}
   rpc RenameFile(RenameFileReq) returns(RenameFileRes) {}
-  /*rpc DeleteFile(Delete) returns(DeleteResponse) {}
-  rpc MoveFile(Move) returns(MoveResponse) {}
-*/
+  rpc DeleteFile(DeleteFileReq) returns(DeleteFileRes) {}
+  rpc MoveFile(MoveFileReq) returns(MoveFileRes) {}
+
   // Server request
 //  rpc DownloadFile(FileResponse) returns(File) {}
 }
@@ -39,8 +39,32 @@ message RenameFileRes {
   string  message = 2;
 }
 
-// Generic object
-message File {
-   string name = 1;
-   bytes  data = 2;
+// DeleteFile Message
+message DeleteFileReq {
+  string  fileName = 1;
+  string  pathName = 2;
 }
+
+message DeleteFileRes {
+  int32 returnCode = 1;
+  string message = 2;
+}
+
+// MoveFile Message
+message MoveFileReq {
+  string fileName = 1;
+  string oldPathName = 2;
+  string newPathName = 3;
+}
+
+message MoveFileRes {
+  int32 returnCode = 1;
+  string message = 2;
+}
+
+// Generic Message
+message File {
+  string name = 1;
+  bytes  data = 2;
+}
+

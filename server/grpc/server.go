@@ -4,9 +4,9 @@ import (
 	"github.com/louischm/logger"
 	"google.golang.org/grpc"
 	"net"
+	pdir "pearviewer/generated/dir"
+	pfile "pearviewer/generated/file"
 	"pearviewer/server/conf"
-	pdir "pearviewer/server/generated/dir"
-	pfile "pearviewer/server/generated/file"
 )
 
 var log = logger.NewLog()

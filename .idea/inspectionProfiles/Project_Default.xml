@@ -2,10 +2,35 @@
   <profile version="1.0">
     <option name="myName" value="Project Default" />
     <inspection_tool class="GoDfaErrorMayBeNotNil" enabled="true" level="WARNING" enabled_by_default="true">
+      <functions>
+        <function importPath="pearviewer/server/service" name="RenameFile" />
+      </functions>
       <methods>
         <method importPath="pearviewer/client/generated" receiver="FileServiceClient" name="UploadFile" />
         <method importPath="google.golang.org/grpc" receiver="ClientStreamingClient" name="CloseAndRecv" />
         <method importPath="pearviewer/client/generated" receiver="DirServiceClient" name="UploadDir" />
+        <method importPath="pearviewer/server/generated/file" receiver="FileService_UploadFileServer" name="Recv" />
+        <method importPath="pearviewer/client/generated/file" receiver="FileServiceClient" name="RenameFile" />
+        <method importPath="pearviewer/client/generated/file" receiver="FileServiceClient" name="MoveFile" />
+        <method importPath="pearviewer/client/generated/file" receiver="FileServiceClient" name="DeleteFile" />
+        <method importPath="pearviewer/client/generated/dir" receiver="DirServiceClient" name="UploadDir" />
+        <method importPath="pearviewer/client/generated/dir" receiver="DirServiceClient" name="RenameDir" />
+        <method importPath="pearviewer/client/generated/dir" receiver="DirServiceClient" name="DeleteDir" />
+      </methods>
+    </inspection_tool>
+    <inspection_tool class="GoUnhandledErrorResult" enabled="true" level="WARNING" enabled_by_default="true">
+      <methods>
+        <method importPath="hash" receiver="Hash" name="Write" />
+        <method importPath="strings" receiver="*Builder" name="WriteByte" />
+        <method importPath="bytes" receiver="*Buffer" name="WriteRune" />
+        <method importPath="strings" receiver="*Builder" name="WriteString" />
+        <method importPath="math/rand" receiver="*Rand" name="Read" />
+        <method importPath="strings" receiver="*Builder" name="Write" />
+        <method importPath="bytes" receiver="*Buffer" name="WriteByte" />
+        <method importPath="bytes" receiver="*Buffer" name="Write" />
+        <method importPath="strings" receiver="*Builder" name="WriteRune" />
+        <method importPath="bytes" receiver="*Buffer" name="WriteString" />
+        <method importPath="os" receiver="*File" name="Close" />
       </methods>
     </inspection_tool>
   </profile>

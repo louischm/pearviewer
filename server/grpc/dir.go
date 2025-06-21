@@ -3,7 +3,8 @@ package grpc
 import (
 	"context"
 	"os"
-	pb "pearviewer/server/generated/dir"
+	pb "pearviewer/generated/dir"
+	"pearviewer/server/utils"
 )
 
 func (s *dirServer) UploadDir(ctx context.Context, request *pb.UploadDirReq) (*pb.UploadDirRes, error) {
@@ -11,8 +12,8 @@ func (s *dirServer) UploadDir(ctx context.Context, request *pb.UploadDirReq) (*p
 	var message string
 
 	log.Info("Received UploadDirReq: " + request.String())
-	name := request.GetPathname() + request.Dir.GetName()
-	if !isDirExist(name) {
+	name := request.GetPathname() + request.GetDir().GetName()
+	if !utils.IsDirExist(name) {
 		if err := os.Mkdir(name, os.ModePerm); err != nil {
 			returnCode = 500
 			message = err.Error()
@@ -38,7 +39,7 @@ func (s *dirServer) RenameDir(ctx context.Context, request *pb.RenameDirReq) (*p
 	log.Info("Received RenameDirReq: " + request.String())
 	oldName := request.GetPathName() + request.GetOldName()
 	newName := request.GetPathName() + request.GetNewName()
-	if isDirExist(oldName) {
+	if utils.IsDirExist(oldName) {
 		err := os.Rename(oldName, newName)
 		if err != nil {
 			returnCode = 500
@@ -61,9 +62,31 @@ func (s *dirServer) RenameDir(ctx context.Context, request *pb.RenameDirReq) (*p
 	return response, nil
 }
 
-func isDirExist(name string) bool {
-	if _, err := os.Stat(name); os.IsNotExist(err) {
-		return false
+func (s *dirServer) DeleteDir(ctx context.Context, request *pb.DeleteDirReq) (*pb.DeleteDirRes, error) {
+	var returnCode int32
+	var message string
+
+	log.Info("Received DeleteDirReq: " + request.String())
+	name := request.GetPathName() + request.GetDirName()
+	if utils.IsDirExist(name) {
+		err := os.Remove(name)
+		if err != nil {
+			returnCode = 500
+			message = "Dir: " + name + " not deleted: " + err.Error()
+			log.Error(message)
+		}
+		returnCode = 0
+		message = "Directory Deleted: " + name
+		log.Info(message)
+	} else {
+		returnCode = 1
+		message = "Directory Not Found: " + name
+		log.Info(message)
 	}
-	return true
+
+	response := &pb.DeleteDirRes{
+		ReturnCode: returnCode,
+		Message:    message,
+	}
+	return response, nil
 }

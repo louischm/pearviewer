@@ -5,8 +5,8 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 	. "pearviewer/client/conf"
-	pdir "pearviewer/client/generated/dir"
-	pfile "pearviewer/client/generated/file"
+	pdir "pearviewer/generated/dir"
+	pfile "pearviewer/generated/file"
 )
 
 var log = logger.NewLog()

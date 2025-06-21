@@ -5,9 +5,10 @@ option go_package = "generated/dir";
 service DirService {
    rpc UploadDir(UploadDirReq) returns (UploadDirRes) {}
    rpc RenameDir(RenameDirReq) returns (RenameDirRes) {}
+   rpc DeleteDir(DeleteDirReq) returns (DeleteDirRes) {}
 }
 
-// Upload Dir Message
+// UploadDir Message
 message UploadDirReq {
    Dir      dir = 1;
    string   pathname = 2;
@@ -18,7 +19,7 @@ message UploadDirRes {
    string   message = 2;
 }
 
-// Rename Dir Message
+// RenameDir Message
 message RenameDirReq {
    string oldName = 1;
    string newName = 2;
@@ -30,7 +31,18 @@ message RenameDirRes {
    string message = 2;
 }
 
-// Generics Message
+// DeleteDir Message
+message DeleteDirReq {
+   string dirName = 1;
+   string pathName = 2;
+}
+
+message DeleteDirRes {
+   int32 returnCode = 1;
+   string message = 2;
+}
+
+// Generic Message
 message Dir {
    string name = 1;
 }

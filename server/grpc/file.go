@@ -3,103 +3,66 @@ package grpc
 import (
 	"context"
 	"io"
-	"os"
-	. "pearviewer/server/generated/file"
+	pb "pearviewer/generated/file"
+	"pearviewer/server/service"
+	"pearviewer/server/types"
 )
 
-func (s *fileServer) UploadFile(stream FileService_UploadFileServer) error {
-	var returnCode int32
-	var lastByte int64
-	var message string
-
+func (s *fileServer) UploadFile(stream pb.FileService_UploadFileServer) error {
+	log.Info("New Upload File Streaming started.")
 	for {
-		upload, err := stream.Recv()
+		res, err := service.UploadFileChunk(stream)
+
+		// End Of Stream
 		if err == io.EOF {
-			log.Info("Stream EOF")
-			message = "Stream EOF"
-			lastByte = upload.GetEndByte()
-			return stream.SendAndClose(&UploadFileRes{
-				ReturnCode: returnCode,
-				LastByte:   lastByte,
-				Message:    message,
-			})
+			return nil
 		}
 
+		// Server Error type
+		if err != nil && res.GetReturnCode() == types.ServerError {
+			return err
+		}
+
+		// Failure Error type
 		if err != nil {
-			log.Error(err.Error())
+			if errSend := stream.Send(res); errSend != nil {
+				return errSend
+			}
 		}
 
-		// Create file if necessary
-		if !isFileInDir(upload.File.GetName(), upload.GetPathName()) {
-			createEmptyFile(upload.File.GetName(), upload.GetPathName())
+		// Success
+		if errSend := stream.Send(res); errSend != nil {
+			return errSend
 		}
-
-		filename := upload.GetPathName() + upload.File.GetName()
-
-		// Write file
-		file, errOpen := os.OpenFile(filename, os.O_WRONLY, 0666)
-		if errOpen != nil {
-			log.Error(errOpen.Error())
-		}
-		if _, errWrite := file.Write(upload.GetFile().GetData()); errWrite != nil {
-			log.Error(errWrite.Error())
-		}
-		errClose := file.Close()
-		if errClose != nil {
-			log.Error(errClose.Error())
-		}
-
 	}
 }
 
-func (s *fileServer) RenameFile(ctx context.Context, request *RenameFileReq) (*RenameFileRes, error) {
-	var returnCode int32
-	var message string
-
+func (s *fileServer) RenameFile(ctx context.Context, request *pb.RenameFileReq) (*pb.RenameFileRes, error) {
 	log.Info("Received RenameFileReq: " + request.String())
-	oldName := request.GetPathName() + request.GetOldName()
-	newName := request.GetPathName() + request.GetNewName()
+	res, err := service.RenameFile(request)
 
-	if isFileInDir(request.GetOldName(), request.GetPathName()) {
-		err := os.Rename(oldName, newName)
-		if err != nil {
-			returnCode = 500
-			message = err.Error()
-			log.Error(message)
-		}
-		message = "File Renamed " + oldName + " to " + newName
-		log.Info(message)
-		returnCode = 0
-	} else {
-		returnCode = 1
-		message = "File does not exist: " + oldName
-		log.Info(message)
+	if err != nil && res.GetReturnCode() == types.ServerError {
+		return nil, err
 	}
-
-	response := &RenameFileRes{
-		ReturnCode: returnCode,
-		Message:    message,
-	}
-	return response, nil
+	return res, nil
 }
 
-func createEmptyFile(fileName, dirName string) {
-	_, err := os.OpenFile(dirName+fileName, os.O_RDONLY|os.O_CREATE, 0666)
-	if err != nil {
-		log.Error(err.Error())
+func (s *fileServer) DeleteFile(ctx context.Context, request *pb.DeleteFileReq) (*pb.DeleteFileRes, error) {
+	log.Info("Received DeleteFileReq: " + request.String())
+	res, err := service.DeleteFile(request)
+
+	if err != nil && res.GetReturnCode() == types.ServerError {
+		return nil, err
 	}
+	return res, nil
 }
 
-func isFileInDir(fileName, dirName string) bool {
-	entries, err := os.ReadDir(dirName)
-	if err != nil {
-		log.Error(err.Error())
-	}
+func (s *fileServer) MoveFile(ctx context.Context, request *pb.MoveFileReq) (*pb.MoveFileRes, error) {
+	log.Info("Received MoveFileReq: " + request.String())
+	res, err := service.MoveFile(request)
 
-	for _, entry := range entries {
-		if entry.Name() == fileName {
-			return true
-		}
+	if err != nil && res.GetReturnCode() == types.ServerError {
+		return nil, err
 	}
-	return false
+	return res, nil
 }

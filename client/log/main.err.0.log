@@ -1,0 +1,11 @@
+[pearviewer/client/grpc:deleteFileReq] | ERROR : file.go:30: 2025/06/17 15:18:32.756474 Delete File Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:moveFileReq] | ERROR : file.go:30: 2025/06/17 15:55:36.145797 Move File request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:moveFileReq] | ERROR : file.go:30: 2025/06/17 15:55:51.003877 Move File request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:moveFileReq] | ERROR : file.go:30: 2025/06/17 16:00:30.340965 Move File request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:moveFileReq] | ERROR : file.go:30: 2025/06/17 16:02:20.441594 Move File request error: <nil>
+[pearviewer/client/grpc:moveFileReq] | ERROR : file.go:30: 2025/06/17 16:04:35.496550 Move File request error: <nil>
+[pearviewer/client/grpc:moveFileReq] | ERROR : file.go:30: 2025/06/17 16:05:03.353079 Move File request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:moveFileReq] | ERROR : file.go:30: 2025/06/17 16:05:47.955378 Move File request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:moveFileReq] | ERROR : file.go:30: 2025/06/17 16:07:22.279146 Move File request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:moveFileReq] | ERROR : file.go:30: 2025/06/17 16:08:26.632795 Move File request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:uploadFileReq] | FATAL : file.go:136: 2025/06/20 14:16:29.932597 Failed to start streamingrpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8080: connect: connection refused"

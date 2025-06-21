@@ -30,3 +30,570 @@
 [main:main] | INFO : main.go:19: 2025/06/17 15:08:15.633148 Conf loaded
 [pearviewer/server/grpc:(*dirServer).RenameDir] | INFO : dir.go:38: 2025/06/17 15:08:17.887126 Received RenameDirReq: oldName:"test"  newName:"test1"  pathName:"./filetest/"
 [pearviewer/server/grpc:(*dirServer).RenameDir] | INFO : dir.go:49: 2025/06/17 15:08:17.887191 Directory Renamed: ./filetest/test to ./filetest/test1
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/17 15:18:26.605890 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/17 15:18:26.605963 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/17 15:18:26.605995 Conf loaded
+[pearviewer/server/grpc:(*fileServer).DeleteFile] | INFO : file.go:90: 2025/06/17 15:18:32.753266 Received DeleteFileReq: fileName:"test1.csv"  pathName:"./filetest/hihi"
+[pearviewer/server/grpc:isFileInDir] | ERROR : file.go:124: 2025/06/17 15:18:32.753348 open ./filetest/hihi: no such file or directory
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/17 15:19:50.216461 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/17 15:19:50.216572 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/17 15:19:50.216624 Conf loaded
+[pearviewer/server/grpc:(*fileServer).DeleteFile] | INFO : file.go:90: 2025/06/17 15:19:51.900608 Received DeleteFileReq: fileName:"test1.csv"  pathName:"./filetest/hihi"
+[pearviewer/server/grpc:(*fileServer).DeleteFile] | INFO : file.go:104: 2025/06/17 15:19:51.900650 File does not exist: ./filetest/hihitest1.csv
+[pearviewer/server/grpc:(*fileServer).DeleteFile] | INFO : file.go:90: 2025/06/17 15:20:02.520686 Received DeleteFileReq: fileName:"test1.csv"  pathName:"./filetest/hihi/"
+[pearviewer/server/grpc:(*fileServer).DeleteFile] | INFO : file.go:104: 2025/06/17 15:20:02.520774 File does not exist: ./filetest/hihi/test1.csv
+[pearviewer/server/grpc:(*fileServer).DeleteFile] | INFO : file.go:90: 2025/06/17 15:20:08.405245 Received DeleteFileReq: fileName:"test1.csv"  pathName:"./filetest/"
+[pearviewer/server/grpc:(*fileServer).DeleteFile] | INFO : file.go:100: 2025/06/17 15:20:08.405381 File Deleted: ./filetest/test1.csv
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/17 15:28:52.053200 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/17 15:28:52.053309 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/17 15:28:52.053346 Conf loaded
+[pearviewer/server/grpc:(*dirServer).DeleteDir] | INFO : dir.go:68: 2025/06/17 15:28:54.269725 Received DeleteDirReq: dirName:"test" pathName:"./filetest/"
+[pearviewer/server/grpc:(*dirServer).DeleteDir] | INFO : dir.go:83: 2025/06/17 15:28:54.269769 Directory Not Found: ./filetest/test
+[pearviewer/server/grpc:(*dirServer).DeleteDir] | INFO : dir.go:68: 2025/06/17 15:29:08.654917 Received DeleteDirReq: dirName:"test1" pathName:"./filetest/"
+[pearviewer/server/grpc:(*dirServer).DeleteDir] | INFO : dir.go:79: 2025/06/17 15:29:08.655033 Directory Deleted: ./filetest/test1
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/17 15:51:54.220096 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/17 15:51:54.220201 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/17 15:51:54.220239 Conf loaded
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/17 15:55:30.981096 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/17 15:55:30.981181 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/17 15:55:30.981209 Conf loaded
+[pearviewer/server/grpc:(*fileServer).MoveFile] | INFO : file.go:119: 2025/06/17 15:55:36.142394 Received MoveFileReq: fileName:"test.txt" oldPathName:"./filetest/" newPathName:"./newFiletest/"
+[pearviewer/server/grpc:errorMoveFileRes] | ERROR : file.go:193: 2025/06/17 15:55:36.142472 File does not exist: ./filetest/test.txt
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/17 15:55:48.173051 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/17 15:55:48.173091 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/17 15:55:48.173118 Conf loaded
+[pearviewer/server/grpc:(*fileServer).MoveFile] | INFO : file.go:119: 2025/06/17 15:55:51.000422 Received MoveFileReq: fileName:"test.txt" oldPathName:"./filetest/" newPathName:"./newFiletest/"
+[pearviewer/server/grpc:errorMoveFileRes] | ERROR : file.go:193: 2025/06/17 15:55:51.000482 File does not exist: ./filetest/test.txt
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/17 16:00:20.903762 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/17 16:00:20.903829 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/17 16:00:20.903876 Conf loaded
+[pearviewer/server/grpc:(*fileServer).MoveFile] | INFO : file.go:119: 2025/06/17 16:00:30.337661 Received MoveFileReq: fileName:"test.txt" oldPathName:"./filetest/" newPathName:"./newFiletest/"
+[pearviewer/server/grpc:errorMoveFileRes] | ERROR : file.go:193: 2025/06/17 16:00:30.337757 File does not exist: ./filetest/test.txt
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/17 16:02:17.970204 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/17 16:02:17.970269 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/17 16:02:17.970323 Conf loaded
+[pearviewer/server/grpc:(*fileServer).MoveFile] | INFO : file.go:119: 2025/06/17 16:02:20.438166 Received MoveFileReq: fileName:"test.txt" oldPathName:"./filetest/" newPathName:"./newFiletest/"
+[pearviewer/server/grpc:errorMoveFileRes] | ERROR : file.go:193: 2025/06/17 16:02:20.438222 File does not exist: ./filetest/test.txt
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/17 16:02:50.183043 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/17 16:02:50.183149 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/17 16:02:50.183249 Conf loaded
+[pearviewer/server/grpc:(*fileServer).MoveFile] | INFO : file.go:119: 2025/06/17 16:02:57.579038 Received MoveFileReq: fileName:"test.txt" oldPathName:"./filetest/" newPathName:"./newFiletest/"
+[pearviewer/server/grpc:errorMoveFileRes] | ERROR : file.go:193: 2025/06/17 16:02:57.579165 File does not exist: ./filetest/test.txt
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/17 16:05:01.045897 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/17 16:05:01.045962 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/17 16:05:01.046012 Conf loaded
+[pearviewer/server/grpc:(*fileServer).MoveFile] | INFO : file.go:119: 2025/06/17 16:05:03.349424 Received MoveFileReq: fileName:"test.txt" oldPathName:"./filetest/" newPathName:"./newFiletest/"
+[pearviewer/server/grpc:errorMoveFileRes] | ERROR : file.go:193: 2025/06/17 16:05:03.349562 File does not exist: ./filetest/test.txt
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/17 16:05:31.964744 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/17 16:05:31.964796 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/17 16:05:31.964837 Conf loaded
+[pearviewer/server/grpc:(*fileServer).MoveFile] | INFO : file.go:119: 2025/06/17 16:05:47.951872 Received MoveFileReq: fileName:"test.txt" oldPathName:"./filetest/" newPathName:"./newFiletest/"
+[pearviewer/server/grpc:errorMoveFileRes] | ERROR : file.go:193: 2025/06/17 16:05:47.951931 File does not exist: ./filetest/test.txt
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/17 16:06:44.507291 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/17 16:06:44.507381 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/17 16:06:44.507429 Conf loaded
+[pearviewer/server/grpc:(*fileServer).MoveFile] | INFO : file.go:119: 2025/06/17 16:06:45.938916 Received MoveFileReq: fileName:"test.txt" oldPathName:"./filetest/" newPathName:"./newFiletest/"
+[pearviewer/server/grpc:errorMoveFileRes] | INFO : file.go:193: 2025/06/17 16:06:45.938991 File does not exist: ./filetest/test.txt
+[pearviewer/server/grpc:(*fileServer).MoveFile] | INFO : file.go:119: 2025/06/17 16:07:22.275692 Received MoveFileReq: fileName:"test.txt" oldPathName:"./filetest/" newPathName:"./newFiletest/"
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/17 16:08:11.916451 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/17 16:08:11.916533 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/17 16:08:11.916596 Conf loaded
+[pearviewer/server/grpc:(*fileServer).MoveFile] | INFO : file.go:119: 2025/06/17 16:08:13.562893 Received MoveFileReq: fileName:"test.txt" oldPathName:"./filetest/" newPathName:"./newFiletest/"
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/17 16:08:58.993778 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/17 16:08:58.993821 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/17 16:08:58.993863 Conf loaded
+[pearviewer/server/grpc:(*fileServer).MoveFile] | INFO : file.go:119: 2025/06/17 16:09:00.340224 Received MoveFileReq: fileName:"test.txt" oldPathName:"./filetest/" newPathName:"./newFiletest/"
+[pearviewer/server/grpc:errorMoveFileRes] | INFO : file.go:193: 2025/06/17 16:09:00.340302 Error while creating file: ./newFiletest/test.txt | Error: open ./newFiletest/test.txt: no such file or directory
+[pearviewer/server/grpc:(*fileServer).MoveFile] | INFO : file.go:119: 2025/06/17 16:09:28.864988 Received MoveFileReq: fileName:"test.txt" oldPathName:"./filetest/" newPathName:"./newFiletest/"
+[pearviewer/server/grpc:(*fileServer).MoveFile] | INFO : file.go:159: 2025/06/17 16:09:28.865150 File Moved: ./filetest/test.txt to ./newFiletest/test.txt
+[pearviewer/server/grpc:(*fileServer).MoveFile] | INFO : file.go:119: 2025/06/17 16:10:00.623415 Received MoveFileReq: fileName:"test.txt" oldPathName:"./filetest/" newPathName:"./newFiletest/"
+[pearviewer/server/grpc:(*fileServer).MoveFile] | INFO : file.go:159: 2025/06/17 16:10:00.623576 File Moved: ./filetest/test.txt to ./newFiletest/test.txt
+[pearviewer/server/grpc:(*fileServer).MoveFile] | INFO : file.go:119: 2025/06/17 16:10:16.746295 Received MoveFileReq: fileName:"test.txt" oldPathName:"./filetest/" newPathName:"./newFiletest/"
+[pearviewer/server/grpc:(*fileServer).MoveFile] | INFO : file.go:159: 2025/06/17 16:10:16.746492 File Moved: ./filetest/test.txt to ./newFiletest/test.txt
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/20 12:17:46.204475 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/20 12:17:46.204796 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/20 12:17:46.204844 Conf loaded
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:13: 2025/06/20 12:17:53.914284 New Upload File Streaming started.
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.918054 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.918330 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.918635 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.920772 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.921626 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.921792 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.921945 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.922102 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.923264 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.923911 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.924110 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.924265 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.924422 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.924551 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.924734 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.924903 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.925071 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.925218 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.925377 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.925492 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.925612 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.926051 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.926195 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.926315 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.926827 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.926985 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.927132 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.928206 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.928317 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.928432 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.928541 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.928677 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.928778 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.928877 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.928972 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.929094 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.929167 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.929228 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.929293 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.929355 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.929422 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.929486 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.929564 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.929638 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.929700 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.929782 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.929857 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.929941 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.930018 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.930094 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.930162 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.930235 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.930307 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.930383 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.930446 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.930501 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.930555 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.930627 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.930700 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.930952 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.931206 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.931285 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.931352 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.931416 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.931490 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.931550 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.931614 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.931670 UploadFileChunk success
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:63: 2025/06/20 12:17:53.931693 Upload File Stream EOF
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/20 13:42:54.127958 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/20 13:42:54.128019 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/20 13:42:54.128066 Conf loaded
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:14: 2025/06/20 13:43:10.286756 New Upload File Streaming started.
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.288868 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.289148 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.292534 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.292706 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.292860 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.293042 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.293231 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.294020 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.294181 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.294309 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.294463 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.294589 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.294917 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.295064 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.295195 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.295354 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.295533 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.295757 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.295942 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.296074 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.296189 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.296321 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.296435 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.296920 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.297261 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.297794 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.298062 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.298198 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.298296 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.298408 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.298506 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.298638 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.298752 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.298842 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.298936 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.299032 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.299097 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.299177 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.299236 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.299283 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.299336 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.299404 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.299466 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.299527 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.299587 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.299652 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.299713 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.299779 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.299835 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.299897 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.299986 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.300041 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.300109 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.300184 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.300248 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.300334 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.300388 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.300662 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.300881 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.300947 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.301010 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.301078 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.301139 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.301196 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.301270 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.301322 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.301381 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:64: 2025/06/20 13:43:10.301425 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/20 13:48:49.348157 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/20 13:48:49.348292 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/20 13:48:49.348342 Conf loaded
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:14: 2025/06/20 13:48:56.430468 New Upload File Streaming started.
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 13:49:14.558395 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 13:49:14.560217 Upload File Stream Read Error: rpc error: code = Canceled desc = context canceled
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/20 13:53:21.012199 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/20 13:53:21.012248 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/20 13:53:21.012291 Conf loaded
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/20 13:53:28.753959 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/20 13:53:28.754052 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/20 13:53:28.754104 Conf loaded
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:14: 2025/06/20 13:54:04.361206 New Upload File Streaming started.
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 13:54:04.434021 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 13:56:01.676379 Upload File Stream Read Error: rpc error: code = Canceled desc = context canceled
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/20 13:57:09.590440 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/20 13:57:09.590502 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/20 13:57:09.590546 Conf loaded
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/20 14:05:24.085391 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/20 14:05:24.085439 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/20 14:05:24.085475 Conf loaded
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/20 14:07:19.835065 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/20 14:07:19.835110 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/20 14:07:19.835145 Conf loaded
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:14: 2025/06/20 14:07:46.269334 New Upload File Streaming started.
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:07:46.269641 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.607510 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.607918 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.608212 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.608477 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.608753 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.609071 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.609315 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.609619 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.609918 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.610164 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.610398 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.610640 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.610936 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.611187 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.611424 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.611689 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.612074 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.612326 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.612601 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.613820 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.614730 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.615021 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.615313 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.615576 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.615869 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.616147 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.616406 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.616641 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.617281 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.617552 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.618157 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.618514 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.618795 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.619136 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.619384 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.619749 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.620210 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.620398 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.620612 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.620816 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.621140 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.621377 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.621621 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.621756 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.621894 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.622047 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.622178 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.622308 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.622440 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.622569 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.622709 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.622920 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:37.623059 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/20 14:08:39.729503 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/20 14:08:39.729542 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/20 14:08:39.729569 Conf loaded
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:14: 2025/06/20 14:08:49.269869 New Upload File Streaming started.
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.270162 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.270279 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.270347 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.270413 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.270482 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.270548 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.270622 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.270680 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.270759 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.270825 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.270887 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.270949 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.271016 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.271091 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.271165 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.271253 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.271335 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.271407 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.271468 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.271520 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.271585 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.271689 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.271771 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.271853 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.272121 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.272193 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.272247 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.272298 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.272361 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.272411 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.272462 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.272520 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.272587 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.272645 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.272697 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.272786 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.272850 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.272953 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.273007 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.273061 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.273117 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.273170 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.273234 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.273289 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.273366 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.273417 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.273468 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.273526 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.273588 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.273658 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.273706 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.273761 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.273816 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.273865 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.273933 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.273982 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.274047 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.274087 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.274126 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.274170 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.274212 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.274255 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.274294 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.274337 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.274381 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.274427 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.274472 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:08:49.274515 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:20: 2025/06/20 14:08:49.274546 File upload EOF
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/20 14:11:48.336634 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/20 14:11:48.336681 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/20 14:11:48.336707 Conf loaded
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:14: 2025/06/20 14:11:50.290734 New Upload File Streaming started.
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:11:50.290987 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/20 14:13:53.662080 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/20 14:13:53.662136 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/20 14:13:53.662176 Conf loaded
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:14: 2025/06/20 14:13:55.728292 New Upload File Streaming started.
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:13:55.728999 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:20: 2025/06/20 14:13:55.729141 File upload EOF
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/20 14:15:53.903906 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/20 14:15:53.903958 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/20 14:15:53.904007 Conf loaded
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:14: 2025/06/20 14:15:56.551918 New Upload File Streaming started.
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.552245 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.552347 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.552403 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.552464 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.552527 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.552580 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.552644 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.552696 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.552773 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.552832 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.552883 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.552938 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.552993 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.553057 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.553113 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.553181 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.553240 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.553291 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.553344 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.553392 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.553446 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.553518 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.553584 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.553648 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.553713 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.553774 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.553832 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.553890 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.553947 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.554001 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.554046 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.554102 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.554162 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.554207 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.554249 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.554288 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.554353 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.554407 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.554462 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.554521 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.554576 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.554624 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.554670 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.554718 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.554772 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.554826 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.554867 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.554913 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.554981 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.555042 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.555090 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.555153 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.555212 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.555278 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.555330 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.555390 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.555452 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.555490 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.555536 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.555595 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.555651 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.555690 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.555740 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.555792 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.555847 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.555898 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.555952 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:15:56.556006 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:20: 2025/06/20 14:15:56.556033 File upload EOF
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/20 14:16:34.185128 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/20 14:16:34.185196 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/20 14:16:34.185254 Conf loaded
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:14: 2025/06/20 14:16:38.402349 New Upload File Streaming started.
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:16:38.870035 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:16:47.286515 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:16:53.469605 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:16:53.469744 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:16:53.469865 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:16:53.469982 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:16:53.470115 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:16:53.470225 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:16:53.470336 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:16:53.470488 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:16:53.470592 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:16:53.470696 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:16:53.470791 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:16:53.472085 Upload File Stream Read Error: rpc error: code = Canceled desc = context canceled
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/20 14:18:21.758740 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/20 14:18:21.758807 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/20 14:18:21.758868 Conf loaded
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:14: 2025/06/20 14:18:26.907739 New Upload File Streaming started.
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.974103 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.974466 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.974631 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.974782 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.974941 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.975093 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.975234 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.975368 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.975556 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.975719 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.975856 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.975977 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.976115 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.976241 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.976373 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.976507 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.976638 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.976767 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.976889 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.977011 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.977620 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.977802 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.978183 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.978328 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.978477 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.978628 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.978756 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.978886 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.979030 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.979164 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.979283 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.979422 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.979581 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.979713 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.979839 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.979972 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.980139 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.980281 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.980432 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.980561 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.980697 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.980849 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.980966 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.981093 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.981215 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.981342 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.981458 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.981579 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.981715 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.981858 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.981963 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.982102 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.982226 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.982351 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.982452 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.982587 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.982699 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.982849 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.982959 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.983088 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.983207 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.983323 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.983427 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.983543 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.983666 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.983810 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.983927 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:createUploadFileRes] | INFO : file.go:65: 2025/06/20 14:18:32.984202 WriteFileChunk success: ./filetest/test.txt
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:20: 2025/06/20 14:18:32.984254 File upload EOF
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/20 14:48:02.257294 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/20 14:48:02.257358 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/20 14:48:02.257388 Conf loaded
+[pearviewer/server/grpc:(*fileServer).RenameFile] | INFO : file.go:43: 2025/06/20 14:48:07.510324 Received RenameFileReq: oldName:"test.txt"  newName:"test.csv"  pathName:"./filetest/"
+[pearviewer/server/response:CreateRenameFileRes] | INFO : resFile.go:31: 2025/06/20 14:48:07.510406 File Renamed ./filetest/test.txt to ./filetest/test.csv
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/20 14:52:51.079151 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/20 14:52:51.079249 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/20 14:52:51.079289 Conf loaded
+[pearviewer/server/grpc:(*fileServer).DeleteFile] | INFO : file.go:53: 2025/06/20 14:52:53.206552 Received DeleteFileReq: fileName:"test.csv" pathName:"./filetest/"
+[pearviewer/server/response:CreateDeleteFileRes] | INFO : resFile.go:45: 2025/06/20 14:52:53.206695 File Deleted: ./filetest/test.csv
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/20 15:04:17.012902 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/20 15:04:17.012969 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/20 15:04:17.013019 Conf loaded
+[pearviewer/server/grpc:(*fileServer).MoveFile] | INFO : file.go:61: 2025/06/20 15:04:18.910447 Received MoveFileReq: fileName:"test.csv"  oldPathName:"./filetest/"  newPathName:"./newFiletest/"
+[pearviewer/server/response:CreateMoveFileRes] | INFO : resFile.go:60: 2025/06/20 15:04:18.910654 File Moved: ./newFiletest/test.csv

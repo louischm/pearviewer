@@ -16,5 +16,8 @@ func main() {
 	//	grpc.UploadFile("./filetest/test.txt", "./filetest/")
 	//	grpc.RenameFile("test.txt", "test.csv", "./filetest/")
 	// grpc.DeleteFile("test.csv", "./filetest/")
-	grpc.MoveFile("test.csv", "./filetest/", "./newFiletest/")
+	//grpc.MoveFile("test.csv", "./filetest/", "./newFiletest/")
+	//grpc.CreateDir("newDir", "./filetest/")
+	//grpc.UploadDir("test", "./filetest/", "./newFileTest/")
+	grpc.MoveDir("test", "./newFileTest/", "./filetest/")
 }

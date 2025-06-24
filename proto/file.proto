@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "generated/file";
+option go_package = "generated/";
 
 service FileService {
   // Client request

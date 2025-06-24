@@ -5,7 +5,7 @@ import (
 	"github.com/louischm/logger"
 	"os"
 	"path/filepath"
-	pb "pearviewer/generated/file"
+	pb "pearviewer/generated"
 )
 
 var log = logger.NewLog()
@@ -17,19 +17,29 @@ func CreateUploadFileReq(fileName string, pathName string) []*pb.UploadFileReq {
 
 	fi, err := os.Open(fileName)
 	if err != nil {
-		log.Error("Failed to open file" + err.Error())
+		log.Error("Failed to open file: " + err.Error())
 	}
 
 	defer func() {
-		if errClose := fi.Close(); errClose != nil {
-			log.Error("Failed to close file" + errClose.Error())
+		if err = fi.Close(); err != nil {
+			log.Error("Failed to close file: " + err.Error())
 		}
 	}()
 
 	for {
 		file, errFileChunk := getFileChunk(fi, startByte, startByte+1000)
 
-		if errFileChunk != nil {
+		if errFileChunk != nil && file != nil {
+			log.Info("Empty file.")
+			upload := pb.UploadFileReq{
+				File:      file,
+				StartByte: startByte,
+				EndByte:   startByte,
+				PathName:  pathName,
+			}
+			uploads = append(uploads, &upload)
+			break
+		} else if errFileChunk != nil {
 			log.Info("File read.")
 			break
 		}
@@ -89,10 +99,19 @@ func getFileChunk(fi *os.File, startByte, endByte int64) (*pb.File, error) {
 		startByte++
 	}
 
-	if len(data) == 0 {
+	if len(data) == 0 && startByte == 0 {
 		errData := errors.New("File is empty")
+		fname := filepath.Base(fi.Name())
+		file := &pb.File{
+			Name: fname,
+			Data: data,
+		}
+		return file, errData
+	} else if len(data) == 0 {
+		errData := errors.New("File is read")
 		return nil, errData
 	}
+
 	fname := filepath.Base(fi.Name())
 	file := pb.File{
 		Name: fname,

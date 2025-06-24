@@ -1,22 +1,25 @@
 syntax = "proto3";
 
-option go_package = "generated/dir";
+option go_package = "generated/";
+
+import "file.proto";
 
 service DirService {
-   rpc UploadDir(UploadDirReq) returns (UploadDirRes) {}
+   rpc CreateDir(CreateDirReq) returns (CreateDirRes) {}
    rpc RenameDir(RenameDirReq) returns (RenameDirRes) {}
    rpc DeleteDir(DeleteDirReq) returns (DeleteDirRes) {}
+   rpc MoveDir(MoveDirReq) returns (MoveDirRes) {}
 }
 
-// UploadDir Message
-message UploadDirReq {
-   Dir      dir = 1;
-   string   pathname = 2;
+// CreateDir Message
+message CreateDirReq {
+   string dirName = 1;
+   string pathName = 2;
 }
 
-message UploadDirRes {
-   int32    returnCode = 1;
-   string   message = 2;
+message CreateDirRes {
+   int32 returnCode = 1;
+   string message = 2;
 }
 
 // RenameDir Message
@@ -42,7 +45,20 @@ message DeleteDirRes {
    string message = 2;
 }
 
+//MoveDir Message
+message MoveDirReq {
+   string dirName = 1;
+   string oldPathName = 2;
+   string newPathName = 3;
+}
+
+message MoveDirRes {
+   int32 returnCode = 1;
+   string message = 2;
+}
+
 // Generic Message
 message Dir {
    string name = 1;
+   repeated File file = 3;
 }

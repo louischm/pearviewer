@@ -4,8 +4,8 @@ import (
 	"github.com/louischm/logger"
 	"google.golang.org/grpc"
 	"net"
-	pdir "pearviewer/generated/dir"
-	pfile "pearviewer/generated/file"
+	pdir "pearviewer/generated"
+	pfile "pearviewer/generated"
 	"pearviewer/server/conf"
 )
 

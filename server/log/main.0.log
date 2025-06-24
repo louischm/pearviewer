@@ -597,3 +597,486 @@
 [main:main] | INFO : main.go:19: 2025/06/20 15:04:17.013019 Conf loaded
 [pearviewer/server/grpc:(*fileServer).MoveFile] | INFO : file.go:61: 2025/06/20 15:04:18.910447 Received MoveFileReq: fileName:"test.csv"  oldPathName:"./filetest/"  newPathName:"./newFiletest/"
 [pearviewer/server/response:CreateMoveFileRes] | INFO : resFile.go:60: 2025/06/20 15:04:18.910654 File Moved: ./newFiletest/test.csv
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/21 12:13:14.053450 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/21 12:13:14.059428 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/21 12:13:14.059490 Conf loaded
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/21 12:13:17.530417 Received CreateDirReq: dirName:"newDir"  pathName:"./filetest/"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/21 12:13:17.530563 Directory Created: ./filetest/newDir
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 11:09:41.142029 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 11:09:41.142414 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 11:09:41.142451 Conf loaded
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 11:09:51.525521 Received CreateDirReq: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 11:09:51.525680 Directory Created: ./newFileTest/test
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 11:36:26.147939 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 11:36:26.148008 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 11:36:26.148059 Conf loaded
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 11:38:25.695920 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 11:38:25.695967 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 11:38:25.695994 Conf loaded
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 11:39:11.386138 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 11:39:11.386182 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 11:39:11.386210 Conf loaded
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 11:43:50.357572 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 11:43:50.357640 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 11:43:50.357673 Conf loaded
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 11:44:14.957024 Received CreateDirReq: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 11:45:47.287514 Received CreateDirReq: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 11:47:43.931863 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 11:47:43.931954 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 11:47:43.931989 Conf loaded
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 11:47:47.347758 Received CreateDirReq: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 11:48:02.516529 Received CreateDirReq: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 11:49:23.340909 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 11:49:23.340954 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 11:49:23.340988 Conf loaded
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 11:54:48.158572 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 11:54:48.158616 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 11:54:48.158649 Conf loaded
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 11:54:50.311577 Received CreateDirReq: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 11:58:25.077836 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 11:58:25.077919 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 11:58:25.077970 Conf loaded
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 11:59:10.561575 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 11:59:10.561635 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 11:59:10.561684 Conf loaded
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 12:00:03.822490 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 12:00:03.822560 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 12:00:03.822613 Conf loaded
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:00:05.776723 Received CreateDirReq: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 12:00:05.781097 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:22: 2025/06/24 12:00:05.781186 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:00:05.785360 Received CreateDirReq: dirName:"test1"  pathName:"./newFileTest/test"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 12:00:05.785442 Directory Created: ./newFileTest/testtest1
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 12:00:05.789499 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:22: 2025/06/24 12:00:05.789545 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:00:05.793681 Received CreateDirReq: dirName:"test3"  pathName:"./newFileTest/test/test1"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 12:00:05.793802 Directory Created: ./newFileTest/test/test1test3
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 12:00:05.798166 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:22: 2025/06/24 12:00:05.798281 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:00:05.802743 Received CreateDirReq: dirName:"test4"  pathName:"./newFileTest/test/test1"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 12:00:05.802853 Directory Created: ./newFileTest/test/test1test4
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:00:05.806921 Received CreateDirReq: dirName:"test5"  pathName:"./newFileTest/test/test1"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 12:00:05.807055 Directory Created: ./newFileTest/test/test1test5
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:00:05.811154 Received CreateDirReq: dirName:"test2"  pathName:"./newFileTest/test"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 12:00:05.811257 Directory Created: ./newFileTest/testtest2
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:00:05.815337 Received CreateDirReq: dirName:"test6"  pathName:"./newFileTest/test/test2"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 12:00:05.815440 Directory Created: ./newFileTest/test/test2test6
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:00:05.820680 Received CreateDirReq: dirName:"test7"  pathName:"./newFileTest/test/test2"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 12:00:05.820809 Directory Created: ./newFileTest/test/test2test7
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 12:00:05.825598 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:22: 2025/06/24 12:00:05.825639 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:01:10.510073 Received CreateDirReq: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 12:01:10.510156 Directory Created: ./newFileTest/test
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 12:01:10.514915 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:22: 2025/06/24 12:01:10.514953 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:01:10.519409 Received CreateDirReq: dirName:"test1"  pathName:"./newFileTest/test"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 12:01:10.519500 Directory Created: ./newFileTest/testtest1
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 12:01:10.524060 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:22: 2025/06/24 12:01:10.524110 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:01:10.528122 Received CreateDirReq: dirName:"test3"  pathName:"./newFileTest/test/test1"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 12:01:10.528207 Directory Created: ./newFileTest/test/test1test3
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 12:01:10.532310 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:22: 2025/06/24 12:01:10.532369 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:01:10.536614 Received CreateDirReq: dirName:"test4"  pathName:"./newFileTest/test/test1"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 12:01:10.536707 Directory Created: ./newFileTest/test/test1test4
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:01:10.540749 Received CreateDirReq: dirName:"test5"  pathName:"./newFileTest/test/test1"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 12:01:10.540832 Directory Created: ./newFileTest/test/test1test5
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:01:10.544808 Received CreateDirReq: dirName:"test2"  pathName:"./newFileTest/test"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 12:01:10.544901 Directory Created: ./newFileTest/testtest2
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:01:10.549270 Received CreateDirReq: dirName:"test6"  pathName:"./newFileTest/test/test2"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 12:01:10.549359 Directory Created: ./newFileTest/test/test2test6
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:01:10.553322 Received CreateDirReq: dirName:"test7"  pathName:"./newFileTest/test/test2"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 12:01:10.553397 Directory Created: ./newFileTest/test/test2test7
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 12:01:10.557375 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:22: 2025/06/24 12:01:10.557425 File upload EOF
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 12:02:01.958265 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 12:02:01.958324 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 12:02:01.958366 Conf loaded
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 12:05:41.745839 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 12:05:41.745933 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 12:05:41.745970 Conf loaded
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:05:44.233164 Received CreateDirReq: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 12:05:44.233262 Directory Created: ./newFileTest/test
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 12:05:44.237607 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:22: 2025/06/24 12:05:44.237660 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:05:44.241663 Received CreateDirReq: dirName:"test1" pathName:"./newFileTest/test"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 12:05:44.241754 Directory Created: ./newFileTest/test/test1
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 12:05:44.245505 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:22: 2025/06/24 12:05:44.245543 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:05:44.249480 Received CreateDirReq: dirName:"test3" pathName:"./newFileTest/test/test1"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 12:05:44.249555 Directory Created: ./newFileTest/test/test1/test3
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 12:05:44.253725 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:22: 2025/06/24 12:05:44.253760 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:05:44.257676 Received CreateDirReq: dirName:"test4" pathName:"./newFileTest/test/test1"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 12:05:44.257777 Directory Created: ./newFileTest/test/test1/test4
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:05:44.261571 Received CreateDirReq: dirName:"test5" pathName:"./newFileTest/test/test1"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 12:05:44.261668 Directory Created: ./newFileTest/test/test1/test5
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:05:44.265582 Received CreateDirReq: dirName:"test2" pathName:"./newFileTest/test"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 12:05:44.265674 Directory Created: ./newFileTest/test/test2
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:05:44.270135 Received CreateDirReq: dirName:"test6" pathName:"./newFileTest/test/test2"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 12:05:44.270238 Directory Created: ./newFileTest/test/test2/test6
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:05:44.274193 Received CreateDirReq: dirName:"test7" pathName:"./newFileTest/test/test2"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 12:05:44.274270 Directory Created: ./newFileTest/test/test2/test7
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 12:05:44.278187 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:22: 2025/06/24 12:05:44.278295 File upload EOF
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 12:08:30.500806 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 12:08:30.500885 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 12:08:30.500916 Conf loaded
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:08:33.633579 Received CreateDirReq: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 12:08:33.638688 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 12:08:33.638735 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 12:08:33.638759 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:08:33.642784 Received CreateDirReq: dirName:"test1" pathName:"./newFileTest/test"
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 12:08:33.647141 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 12:08:33.647171 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 12:08:33.647188 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:08:33.651145 Received CreateDirReq: dirName:"test3" pathName:"./newFileTest/test/test1"
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 12:08:33.654908 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 12:08:33.654956 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 12:08:33.654977 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:08:33.659170 Received CreateDirReq: dirName:"test4" pathName:"./newFileTest/test/test1"
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:08:33.663000 Received CreateDirReq: dirName:"test5" pathName:"./newFileTest/test/test1"
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:08:33.666815 Received CreateDirReq: dirName:"test2" pathName:"./newFileTest/test"
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:08:33.671036 Received CreateDirReq: dirName:"test6" pathName:"./newFileTest/test/test2"
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:08:33.675456 Received CreateDirReq: dirName:"test7" pathName:"./newFileTest/test/test2"
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 12:08:33.679503 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 12:08:33.679543 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 12:08:33.679577 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 12:10:02.186569 Received CreateDirReq: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 14:42:52.902520 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 14:42:52.902588 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 14:42:52.902643 Conf loaded
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:42:55.447889 Received CreateDirReq: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 14:43:00.660503 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 14:43:00.660546 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 14:43:00.660576 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:43:00.671177 Received CreateDirReq: dirName:"test1" pathName:"./newFileTest/test"
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 14:43:00.675796 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 14:43:00.675846 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 14:43:00.675880 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:43:00.680449 Received CreateDirReq: dirName:"test3" pathName:"./newFileTest/test/test1"
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 14:43:00.685172 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 14:43:00.685237 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 14:43:00.685274 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:43:00.689580 Received CreateDirReq: dirName:"test4" pathName:"./newFileTest/test/test1"
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:43:00.694260 Received CreateDirReq: dirName:"test5" pathName:"./newFileTest/test/test1"
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:43:00.698146 Received CreateDirReq: dirName:"test2" pathName:"./newFileTest/test"
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:43:00.702350 Received CreateDirReq: dirName:"test6" pathName:"./newFileTest/test/test2"
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:43:00.706151 Received CreateDirReq: dirName:"test7" pathName:"./newFileTest/test/test2"
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 14:43:00.710100 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 14:43:00.710149 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 14:43:00.710173 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:43:23.468797 Received CreateDirReq: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:43:54.843936 Received CreateDirReq: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 14:45:53.734188 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 14:45:53.734252 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 14:45:53.734304 Conf loaded
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:45:56.572593 Received CreateDirReq: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:47:46.595670 Received CreateDirReq: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:47:54.201810 Received CreateDirReq: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:48:14.480187 Received CreateDirReq: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:55:36.384098 Received CreateDirReq: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 14:55:36.389060 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 14:55:36.389109 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 14:55:36.389129 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:55:36.393352 Received CreateDirReq: dirName:"test1" pathName:"./newFileTest/test"
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 14:55:36.398237 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 14:55:36.398506 Upload file chunk start for: ./newFileTest/test/test1
+[pearviewer/server/response:CreateUploadFileRes] | INFO : resFile.go:16: 2025/06/24 14:55:36.398654 WriteFileChunk success: ./newFileTest/test/test1testfile1.txt
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 14:55:36.398703 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 14:55:36.398722 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:55:36.403016 Received CreateDirReq: dirName:"test3" pathName:"./newFileTest/test/test1"
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 14:55:36.407158 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 14:55:36.407228 Upload file chunk start for: ./newFileTest/test/test1/test3
+[pearviewer/server/response:CreateUploadFileRes] | INFO : resFile.go:16: 2025/06/24 14:55:36.407344 WriteFileChunk success: ./newFileTest/test/test1/test3testfile2.txt
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 14:55:36.407381 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 14:55:36.407404 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:55:36.411556 Received CreateDirReq: dirName:"test4" pathName:"./newFileTest/test/test1"
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:55:36.415590 Received CreateDirReq: dirName:"test5" pathName:"./newFileTest/test/test1"
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:55:36.419426 Received CreateDirReq: dirName:"test2" pathName:"./newFileTest/test"
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:55:36.424131 Received CreateDirReq: dirName:"test6" pathName:"./newFileTest/test/test2"
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:55:36.428126 Received CreateDirReq: dirName:"test7" pathName:"./newFileTest/test/test2"
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 14:55:36.432125 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 14:55:36.432201 Upload file chunk start for: ./newFileTest/test/test2/test7
+[pearviewer/server/response:CreateUploadFileRes] | INFO : resFile.go:16: 2025/06/24 14:55:36.432323 WriteFileChunk success: ./newFileTest/test/test2/test7testfile3.txt
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 14:55:36.432363 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 14:55:36.432395 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:57:36.520183 Received CreateDirReq: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 14:59:07.476513 Received CreateDirReq: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 15:02:57.838113 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 15:02:57.838205 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 15:02:57.838234 Conf loaded
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:03:01.380179 Received CreateDirReq: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:03:01.380314 Directory Created: ./newFileTest/test
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 15:03:01.385669 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 15:03:01.385788 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 15:03:01.385825 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:03:01.390452 Received CreateDirReq: dirName:"test1"  pathName:"./newFileTest/test"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:03:01.390567 Directory Created: ./newFileTest/test/test1
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 15:03:01.395355 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 15:03:01.395585 Upload file chunk start for: ./newFileTest/test/test1
+[pearviewer/server/response:CreateUploadFileRes] | DEBUG : resFile.go:14: 2025/06/24 15:03:01.395680 Failed to open File: ./newFileTest/test/test1testfile1.txt: open ./newFileTest/test/test1testfile1.txt: no such file or directory
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 15:03:01.395747 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 15:03:01.395771 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:03:01.399850 Received CreateDirReq: dirName:"test3"  pathName:"./newFileTest/test/test1"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:03:01.399928 Directory Created: ./newFileTest/test/test1/test3
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 15:03:01.404326 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 15:03:01.404371 Upload file chunk start for: ./newFileTest/test/test1/test3
+[pearviewer/server/response:CreateUploadFileRes] | DEBUG : resFile.go:14: 2025/06/24 15:03:01.404448 Failed to open File: ./newFileTest/test/test1/test3testfile2.txt: open ./newFileTest/test/test1/test3testfile2.txt: no such file or directory
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 15:03:01.404490 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 15:03:01.404509 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:03:01.408694 Received CreateDirReq: dirName:"test4"  pathName:"./newFileTest/test/test1"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:03:01.408778 Directory Created: ./newFileTest/test/test1/test4
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:03:01.412879 Received CreateDirReq: dirName:"test5"  pathName:"./newFileTest/test/test1"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:03:01.412974 Directory Created: ./newFileTest/test/test1/test5
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:03:01.417220 Received CreateDirReq: dirName:"test2"  pathName:"./newFileTest/test"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:03:01.417319 Directory Created: ./newFileTest/test/test2
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:03:01.421283 Received CreateDirReq: dirName:"test6"  pathName:"./newFileTest/test/test2"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:03:01.421368 Directory Created: ./newFileTest/test/test2/test6
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:03:01.425589 Received CreateDirReq: dirName:"test7"  pathName:"./newFileTest/test/test2"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:03:01.425695 Directory Created: ./newFileTest/test/test2/test7
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 15:03:01.429967 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 15:03:01.430012 Upload file chunk start for: ./newFileTest/test/test2/test7
+[pearviewer/server/response:CreateUploadFileRes] | DEBUG : resFile.go:14: 2025/06/24 15:03:01.430113 Failed to open File: ./newFileTest/test/test2/test7testfile3.txt: open ./newFileTest/test/test2/test7testfile3.txt: no such file or directory
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 15:03:01.430153 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 15:03:01.430180 File upload EOF
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 15:04:31.764577 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 15:04:31.764660 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 15:04:31.764689 Conf loaded
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:04:33.738178 Received CreateDirReq: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:04:33.738274 Directory Created: ./newFileTest/test
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 15:04:33.742687 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 15:04:33.742752 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 15:04:33.742780 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:04:33.746848 Received CreateDirReq: dirName:"test1"  pathName:"./newFileTest/test"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:04:33.747000 Directory Created: ./newFileTest/test/test1
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 15:04:33.751170 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 15:04:33.751388 Upload file chunk start for: ./newFileTest/test/test1
+[pearviewer/server/response:CreateUploadFileRes] | INFO : resFile.go:16: 2025/06/24 15:04:33.751523 WriteFileChunk success: ./newFileTest/test/test1/testfile1.txt
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 15:04:33.751598 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 15:04:33.751623 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:04:33.755764 Received CreateDirReq: dirName:"test3"  pathName:"./newFileTest/test/test1"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:04:33.755848 Directory Created: ./newFileTest/test/test1/test3
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 15:04:33.759506 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 15:04:33.759555 Upload file chunk start for: ./newFileTest/test/test1/test3
+[pearviewer/server/response:CreateUploadFileRes] | INFO : resFile.go:16: 2025/06/24 15:04:33.759662 WriteFileChunk success: ./newFileTest/test/test1/test3/testfile2.txt
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 15:04:33.759691 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 15:04:33.759709 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:04:33.763369 Received CreateDirReq: dirName:"test4"  pathName:"./newFileTest/test/test1"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:04:33.763457 Directory Created: ./newFileTest/test/test1/test4
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:04:33.766904 Received CreateDirReq: dirName:"test5"  pathName:"./newFileTest/test/test1"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:04:33.767006 Directory Created: ./newFileTest/test/test1/test5
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:04:33.770434 Received CreateDirReq: dirName:"test2"  pathName:"./newFileTest/test"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:04:33.770528 Directory Created: ./newFileTest/test/test2
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:04:33.774235 Received CreateDirReq: dirName:"test6"  pathName:"./newFileTest/test/test2"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:04:33.774334 Directory Created: ./newFileTest/test/test2/test6
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:04:33.777902 Received CreateDirReq: dirName:"test7"  pathName:"./newFileTest/test/test2"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:04:33.777995 Directory Created: ./newFileTest/test/test2/test7
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 15:04:33.781341 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 15:04:33.781401 Upload file chunk start for: ./newFileTest/test/test2/test7
+[pearviewer/server/response:CreateUploadFileRes] | INFO : resFile.go:16: 2025/06/24 15:04:33.781487 WriteFileChunk success: ./newFileTest/test/test2/test7/testfile3.txt
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 15:04:33.781522 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 15:04:33.781544 File upload EOF
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 15:05:59.280770 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 15:05:59.280811 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 15:05:59.280839 Conf loaded
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:06:01.418568 Received CreateDirReq: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:06:01.418725 Directory Created: ./newFileTest/test
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:07:34.682077 Received CreateDirReq: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 15:09:27.222206 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 15:09:27.222258 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 15:09:27.222296 Conf loaded
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:09:30.173798 Received CreateDirReq: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:09:30.173945 Directory Created: ./newFileTest/test
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 15:09:30.178321 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 15:09:30.178474 Upload file chunk start for: ./newFileTest/test
+[pearviewer/server/response:CreateUploadFileRes] | INFO : resFile.go:16: 2025/06/24 15:09:30.178581 WriteFileChunk success: ./newFileTest/test/testfile.txt
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 15:09:30.178647 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 15:09:30.178673 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:09:30.182340 Received CreateDirReq: dirName:"test1"  pathName:"./newFileTest/test"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:09:30.182425 Directory Created: ./newFileTest/test/test1
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 15:09:30.186303 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 15:09:30.186356 Upload file chunk start for: ./newFileTest/test/test1
+[pearviewer/server/response:CreateUploadFileRes] | INFO : resFile.go:16: 2025/06/24 15:09:30.186450 WriteFileChunk success: ./newFileTest/test/test1/testfile1.txt
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 15:09:30.186482 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 15:09:30.186500 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:09:30.190141 Received CreateDirReq: dirName:"test3"  pathName:"./newFileTest/test/test1"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:09:30.190284 Directory Created: ./newFileTest/test/test1/test3
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 15:09:30.193907 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 15:09:30.193967 Upload file chunk start for: ./newFileTest/test/test1/test3
+[pearviewer/server/response:CreateUploadFileRes] | INFO : resFile.go:16: 2025/06/24 15:09:30.194087 WriteFileChunk success: ./newFileTest/test/test1/test3/testfile2.txt
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 15:09:30.194143 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 15:09:30.194166 File upload EOF
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:09:30.197717 Received CreateDirReq: dirName:"test4"  pathName:"./newFileTest/test/test1"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:09:30.197810 Directory Created: ./newFileTest/test/test1/test4
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:09:30.201396 Received CreateDirReq: dirName:"test5"  pathName:"./newFileTest/test/test1"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:09:30.201472 Directory Created: ./newFileTest/test/test1/test5
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:09:30.204724 Received CreateDirReq: dirName:"test2"  pathName:"./newFileTest/test"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:09:30.204790 Directory Created: ./newFileTest/test/test2
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:09:30.208696 Received CreateDirReq: dirName:"test6"  pathName:"./newFileTest/test/test2"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:09:30.208781 Directory Created: ./newFileTest/test/test2/test6
+[pearviewer/server/grpc:(*dirServer).CreateDir] | INFO : dir.go:11: 2025/06/24 15:09:30.213345 Received CreateDirReq: dirName:"test7"  pathName:"./newFileTest/test/test2"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 15:09:30.213416 Directory Created: ./newFileTest/test/test2/test7
+[pearviewer/server/grpc:(*fileServer).UploadFile] | INFO : file.go:12: 2025/06/24 15:09:30.217286 New Upload File Streaming started.
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 15:09:30.217338 Upload file chunk start for: ./newFileTest/test/test2/test7
+[pearviewer/server/response:CreateUploadFileRes] | INFO : resFile.go:16: 2025/06/24 15:09:30.217436 WriteFileChunk success: ./newFileTest/test/test2/test7/testfile3.txt
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:21: 2025/06/24 15:09:30.217464 Upload file chunk start for: 
+[pearviewer/server/service:UploadFileChunk] | INFO : file.go:23: 2025/06/24 15:09:30.217482 File upload EOF
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 15:58:18.770460 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 15:58:18.770558 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 15:58:18.770593 Conf loaded
+[pearviewer/server/grpc:(*dirServer).MoveDir] | INFO : dir.go:41: 2025/06/24 15:58:42.234640 Received MoveDirReq: dirName:"test"  oldPathName:"./newFileTest/"  newPathName:"./filetest/"
+[pearviewer/server/response:CreateMoveDirRes] | DEBUG : resDir.go:45: 2025/06/24 15:58:42.234678 Directory Not Found: ./newFileTest/./newFileTest/: Directory Not Found: ./newFileTest/./newFileTest/
+[pearviewer/server/response:CreateDeleteDirRes] | DEBUG : resDir.go:32: 2025/06/24 15:58:42.234709 Dir: ./newFileTest/test not deleted: remove ./newFileTest/test: directory not empty
+[pearviewer/server/grpc:(*dirServer).MoveDir] | INFO : dir.go:41: 2025/06/24 16:00:22.343362 Received MoveDirReq: dirName:"test"  oldPathName:"./newFileTest/"  newPathName:"./filetest/"
+[pearviewer/server/response:CreateMoveDirRes] | DEBUG : resDir.go:45: 2025/06/24 16:00:22.343402 Directory Not Found: ./newFileTest/./newFileTest/: Directory Not Found: ./newFileTest/./newFileTest/
+[pearviewer/server/response:CreateDeleteDirRes] | DEBUG : resDir.go:32: 2025/06/24 16:00:22.343434 Dir: ./newFileTest/test not deleted: remove ./newFileTest/test: directory not empty
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 16:00:29.095651 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 16:00:29.095784 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 16:00:29.095833 Conf loaded
+[pearviewer/server/grpc:(*dirServer).MoveDir] | INFO : dir.go:41: 2025/06/24 16:00:30.505867 Received MoveDirReq: dirName:"test"  oldPathName:"./newFileTest/"  newPathName:"./filetest/"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:00:30.506030 Directory Created: ./filetest/test
+[pearviewer/server/response:CreateMoveDirRes] | DEBUG : resDir.go:45: 2025/06/24 16:00:30.506063 Directory Not Found: ./newFileTest/test/test1/test1: Directory Not Found: ./newFileTest/test/test1/test1
+[pearviewer/server/grpc:(*dirServer).MoveDir] | INFO : dir.go:41: 2025/06/24 16:01:47.559423 Received MoveDirReq: dirName:"test"  oldPathName:"./newFileTest/"  newPathName:"./filetest/"
+[pearviewer/server/response:CreateMoveDirRes] | DEBUG : resDir.go:45: 2025/06/24 16:01:47.559508 Directory Not Found: ./newFileTest/test/test1/test1: Directory Not Found: ./newFileTest/test/test1/test1
+[pearviewer/server/grpc:(*dirServer).MoveDir] | INFO : dir.go:41: 2025/06/24 16:02:36.565065 Received MoveDirReq: dirName:"test"  oldPathName:"./newFileTest/"  newPathName:"./filetest/"
+[pearviewer/server/response:CreateMoveDirRes] | DEBUG : resDir.go:45: 2025/06/24 16:02:36.565137 Directory Not Found: ./newFileTest/test/test1/test1: Directory Not Found: ./newFileTest/test/test1/test1
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 16:02:42.843204 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 16:02:42.843279 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 16:02:42.843307 Conf loaded
+[pearviewer/server/grpc:(*dirServer).MoveDir] | INFO : dir.go:41: 2025/06/24 16:02:45.214931 Received MoveDirReq: dirName:"test"  oldPathName:"./newFileTest/"  newPathName:"./filetest/"
+[pearviewer/server/response:CreateMoveDirRes] | DEBUG : resDir.go:45: 2025/06/24 16:02:45.214991 Failed to create directory: ./newFileTest/test: Directory Already Exists: ./filetest/test
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 16:12:36.843735 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 16:12:36.843852 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 16:12:36.843894 Conf loaded
+[pearviewer/server/grpc:(*dirServer).MoveDir] | INFO : dir.go:41: 2025/06/24 16:12:44.658947 Received MoveDirReq: dirName:"test"  oldPathName:"./newFileTest/"  newPathName:"./filetest/"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:12:44.659054 Directory Created: ./filetest/test
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:12:44.659109 Directory Created: ./filetest/test/test1
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:12:44.659161 Directory Created: ./filetest/test/test1/test3
+[pearviewer/server/response:CreateMoveFileRes] | DEBUG : resFile.go:58: 2025/06/24 16:12:44.659190 File does not exist: ./newFileTest/test/test1/testfile2.txt: File does not exist: testfile2.txt
+[pearviewer/server/response:CreateMoveDirRes] | DEBUG : resDir.go:45: 2025/06/24 16:12:44.659204 Failed to move file: testfile2.txt: File does not exist: testfile2.txt
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 16:13:27.567962 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 16:13:27.568070 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 16:13:27.568126 Conf loaded
+[pearviewer/server/grpc:(*dirServer).MoveDir] | INFO : dir.go:41: 2025/06/24 16:13:30.732390 Received MoveDirReq: dirName:"test" oldPathName:"./newFileTest/" newPathName:"./filetest/"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:13:30.732527 Directory Created: ./filetest/test
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:13:30.732599 Directory Created: ./filetest/test/test1
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:13:30.732662 Directory Created: ./filetest/test/test1/test3
+[pearviewer/server/response:CreateMoveFileRes] | DEBUG : resFile.go:58: 2025/06/24 16:13:52.568711 File does not exist: ./newFileTest/test/test1/testfile2.txt: File does not exist: testfile2.txt
+[pearviewer/server/response:CreateMoveDirRes] | DEBUG : resDir.go:45: 2025/06/24 16:13:52.568826 Failed to move file: testfile2.txt: File does not exist: testfile2.txt
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 16:14:07.738927 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 16:14:07.739013 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 16:14:07.739079 Conf loaded
+[pearviewer/server/grpc:(*dirServer).MoveDir] | INFO : dir.go:41: 2025/06/24 16:14:11.822930 Received MoveDirReq: dirName:"test" oldPathName:"./newFileTest/" newPathName:"./filetest/"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:14:11.823085 Directory Created: ./filetest/test
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:14:11.823178 Directory Created: ./filetest/test/test1
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:14:11.823268 Directory Created: ./filetest/test/test1/test3
+[pearviewer/server/response:CreateMoveFileRes] | DEBUG : resFile.go:58: 2025/06/24 16:14:33.608728 File does not exist: ./newFileTest/test/test1/testfile2.txt: File does not exist: testfile2.txt
+[pearviewer/server/response:CreateMoveDirRes] | DEBUG : resDir.go:45: 2025/06/24 16:14:33.608814 Failed to move file: testfile2.txt: File does not exist: testfile2.txt
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 16:14:40.220564 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 16:14:40.220670 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 16:14:40.220729 Conf loaded
+[pearviewer/server/grpc:(*dirServer).MoveDir] | INFO : dir.go:41: 2025/06/24 16:14:44.136516 Received MoveDirReq: dirName:"test" oldPathName:"./newFileTest/" newPathName:"./filetest/"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:14:44.136685 Directory Created: ./filetest/test
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:14:44.136764 Directory Created: ./filetest/test/test1
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:14:44.136835 Directory Created: ./filetest/test/test1/test3
+[pearviewer/server/response:CreateMoveFileRes] | INFO : resFile.go:60: 2025/06/24 16:14:48.475345 File Moved: ./filetest/test/test1/test3/testfile2.txt
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:14:48.475520 Directory Moved: ./filetest/test/test1/test3
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 16:16:11.402651 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 16:16:11.402763 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 16:16:11.402819 Conf loaded
+[pearviewer/server/grpc:(*dirServer).MoveDir] | INFO : dir.go:41: 2025/06/24 16:16:12.704795 Received MoveDirReq: dirName:"test"  oldPathName:"./newFileTest/"  newPathName:"./filetest/"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:16:12.704925 Directory Created: ./filetest/test
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:16:12.704995 Directory Created: ./filetest/test/test1
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:16:12.705056 Directory Created: ./filetest/test/test1/test3
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:16:12.705081 Directory Moved: ./filetest/test/test1/test3
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:16:12.705139 Directory Created: ./filetest/test/test1/test4
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:16:12.705162 Directory Moved: ./filetest/test/test1/test4
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:16:12.705226 Directory Created: ./filetest/test/test1/test5
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:16:12.705255 Directory Moved: ./filetest/test/test1/test5
+[pearviewer/server/response:CreateMoveFileRes] | INFO : resFile.go:60: 2025/06/24 16:16:12.705375 File Moved: ./filetest/test/test1/testfile1.txt
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:16:12.705401 Directory Moved: ./filetest/test/test1
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:16:12.705460 Directory Created: ./filetest/test/test2
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:16:12.705520 Directory Created: ./filetest/test/test2/test6
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:16:12.705543 Directory Moved: ./filetest/test/test2/test6
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:16:12.705608 Directory Created: ./filetest/test/test2/test7
+[pearviewer/server/response:CreateMoveFileRes] | INFO : resFile.go:60: 2025/06/24 16:16:12.705702 File Moved: ./filetest/test/test2/test7/testfile3.txt
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:16:12.705742 Directory Moved: ./filetest/test/test2/test7
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:16:12.705761 Directory Moved: ./filetest/test/test2
+[pearviewer/server/response:CreateMoveFileRes] | INFO : resFile.go:60: 2025/06/24 16:16:12.712160 File Moved: ./filetest/test/testfile.txt
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:16:12.712191 Directory Moved: ./filetest/test
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 16:17:18.590570 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 16:17:18.590664 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 16:17:18.590704 Conf loaded
+[pearviewer/server/grpc:(*dirServer).MoveDir] | INFO : dir.go:41: 2025/06/24 16:17:21.855509 Received MoveDirReq: dirName:"test" oldPathName:"./newFileTest/" newPathName:"./filetest/"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:17:21.855667 Directory Created: ./filetest/test
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:17:21.855730 Directory Created: ./filetest/test/test1
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:17:21.855785 Directory Created: ./filetest/test/test1/test3
+[pearviewer/server/response:CreateMoveFileRes] | INFO : resFile.go:60: 2025/06/24 16:17:21.855896 File Moved: ./filetest/test/test1/test3/testfile2.txt
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:17:21.855915 Directory Moved: ./filetest/test/test1/test3
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:17:21.855974 Directory Created: ./filetest/test/test1/test4
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:17:21.855990 Directory Moved: ./filetest/test/test1/test4
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:17:21.856042 Directory Created: ./filetest/test/test1/test5
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:17:21.856057 Directory Moved: ./filetest/test/test1/test5
+[pearviewer/server/response:CreateMoveFileRes] | INFO : resFile.go:60: 2025/06/24 16:17:21.856148 File Moved: ./filetest/test/test1/testfile1.txt
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:17:21.856167 Directory Moved: ./filetest/test/test1
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:17:21.856220 Directory Created: ./filetest/test/test2
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:17:21.856271 Directory Created: ./filetest/test/test2/test6
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:17:21.856292 Directory Moved: ./filetest/test/test2/test6
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:17:21.856348 Directory Created: ./filetest/test/test2/test7
+[pearviewer/server/response:CreateMoveFileRes] | INFO : resFile.go:60: 2025/06/24 16:17:21.856445 File Moved: ./filetest/test/test2/test7/testfile3.txt
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:17:21.856465 Directory Moved: ./filetest/test/test2/test7
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:17:21.856479 Directory Moved: ./filetest/test/test2
+[pearviewer/server/response:CreateMoveFileRes] | INFO : resFile.go:60: 2025/06/24 16:17:21.856576 File Moved: ./filetest/test/testfile.txt
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:17:21.856604 Directory Moved: ./filetest/test
+[pearviewer/server/response:CreateDeleteDirRes] | DEBUG : resDir.go:32: 2025/06/24 16:17:21.856643 Dir: ./newFileTest/test not deleted: remove ./newFileTest/test: directory not empty
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 16:18:31.384557 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 16:18:31.384650 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 16:18:31.384686 Conf loaded
+[pearviewer/server/grpc:(*dirServer).MoveDir] | INFO : dir.go:41: 2025/06/24 16:18:33.490184 Received MoveDirReq: dirName:"test" oldPathName:"./newFileTest/" newPathName:"./filetest/"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:18:33.490357 Directory Created: ./filetest/test
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:18:33.490433 Directory Created: ./filetest/test/test1
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:18:33.490504 Directory Created: ./filetest/test/test1/test3
+[pearviewer/server/response:CreateMoveFileRes] | INFO : resFile.go:60: 2025/06/24 16:18:33.490722 File Moved: ./filetest/test/test1/test3/testfile2.txt
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:18:33.490745 Directory Moved: ./filetest/test/test1/test3
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:18:33.490828 Directory Created: ./filetest/test/test1/test4
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:18:33.490845 Directory Moved: ./filetest/test/test1/test4
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:18:33.490934 Directory Created: ./filetest/test/test1/test5
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:18:33.490954 Directory Moved: ./filetest/test/test1/test5
+[pearviewer/server/response:CreateMoveFileRes] | INFO : resFile.go:60: 2025/06/24 16:18:33.491095 File Moved: ./filetest/test/test1/testfile1.txt
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:18:33.491117 Directory Moved: ./filetest/test/test1
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:18:33.491196 Directory Created: ./filetest/test/test2
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:18:33.491265 Directory Created: ./filetest/test/test2/test6
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:18:33.491292 Directory Moved: ./filetest/test/test2/test6
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:18:33.491359 Directory Created: ./filetest/test/test2/test7
+[pearviewer/server/response:CreateMoveFileRes] | INFO : resFile.go:60: 2025/06/24 16:18:33.491490 File Moved: ./filetest/test/test2/test7/testfile3.txt
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:18:33.491510 Directory Moved: ./filetest/test/test2/test7
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:18:33.491526 Directory Moved: ./filetest/test/test2
+[pearviewer/server/response:CreateMoveFileRes] | INFO : resFile.go:60: 2025/06/24 16:18:33.491629 File Moved: ./filetest/test/testfile.txt
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:18:33.491682 Directory Moved: ./filetest/test
+[pearviewer/server/response:CreateDeleteDirRes] | DEBUG : resDir.go:32: 2025/06/24 16:18:33.491708 Dir: ./newFileTest/test not deleted: remove ./newFileTest/test: directory not empty
+[pearviewer/server/grpc:(*dirServer).MoveDir] | INFO : dir.go:50: 2025/06/24 16:18:33.491732 DeleteDir failed: remove ./newFileTest/test: directory not empty
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/24 16:21:06.630378 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/24 16:21:06.630461 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/24 16:21:06.630503 Conf loaded
+[pearviewer/server/grpc:(*dirServer).MoveDir] | INFO : dir.go:43: 2025/06/24 16:21:08.308736 Received MoveDirReq: dirName:"test"  oldPathName:"./newFileTest/"  newPathName:"./filetest/"
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:21:08.308889 Directory Created: ./filetest/test
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:21:08.308978 Directory Created: ./filetest/test/test1
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:21:08.309062 Directory Created: ./filetest/test/test1/test3
+[pearviewer/server/response:CreateMoveFileRes] | INFO : resFile.go:60: 2025/06/24 16:21:08.309225 File Moved: ./filetest/test/test1/test3/testfile2.txt
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:21:08.309257 Directory Moved: ./filetest/test/test1/test3
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:21:08.309344 Directory Created: ./filetest/test/test1/test4
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:21:08.309370 Directory Moved: ./filetest/test/test1/test4
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:21:08.309470 Directory Created: ./filetest/test/test1/test5
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:21:08.309493 Directory Moved: ./filetest/test/test1/test5
+[pearviewer/server/response:CreateMoveFileRes] | INFO : resFile.go:60: 2025/06/24 16:21:08.309628 File Moved: ./filetest/test/test1/testfile1.txt
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:21:08.309657 Directory Moved: ./filetest/test/test1
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:21:08.309740 Directory Created: ./filetest/test/test2
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:21:08.309862 Directory Created: ./filetest/test/test2/test6
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:21:08.309892 Directory Moved: ./filetest/test/test2/test6
+[pearviewer/server/response:CreateDirRes] | INFO : resDir.go:11: 2025/06/24 16:21:08.309963 Directory Created: ./filetest/test/test2/test7
+[pearviewer/server/response:CreateMoveFileRes] | INFO : resFile.go:60: 2025/06/24 16:21:08.310093 File Moved: ./filetest/test/test2/test7/testfile3.txt
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:21:08.310119 Directory Moved: ./filetest/test/test2/test7
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:21:08.310139 Directory Moved: ./filetest/test/test2
+[pearviewer/server/response:CreateMoveFileRes] | INFO : resFile.go:60: 2025/06/24 16:21:08.310227 File Moved: ./filetest/test/testfile.txt
+[pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:21:08.310245 Directory Moved: ./filetest/test

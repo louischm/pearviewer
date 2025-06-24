@@ -707,3 +707,794 @@
 [pearviewer/client/grpc:createFileClient] | INFO : client.go:31: 2025/06/20 15:04:18.903277 Starting File client
 [pearviewer/client/grpc:MoveFile] | INFO : file.go:38: 2025/06/20 15:04:18.903365 Move File Request created: fileName:"test.csv"  oldPathName:"./filetest/"  newPathName:"./newFiletest/"
 [pearviewer/client/grpc:moveFileReq] | INFO : file.go:104: 2025/06/20 15:04:18.910956 Move File response: message:"File Moved: ./newFiletest/test.csv"
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/21 12:13:17.517186 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/21 12:13:17.523207 Parsing json conf
+[pearviewer/client/grpc:getConn] | INFO : client.go:16: 2025/06/21 12:13:17.523304 Conf loaded
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:37: 2025/06/21 12:13:17.523392 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:12: 2025/06/21 12:13:17.523491 Upload Dir Request created: dirName:"newDir" pathName:"./filetest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:38: 2025/06/21 12:13:17.530882 Upload Dir Response: message:"Directory Created: ./filetest/newDir"
+[pearviewer/client/tree:CreateTree] | DEBUG : tree.go:20: 2025/06/21 14:37:33.755103 Dir ./filetest/test does not exist
+[pearviewer/client/dto:CreateUploadDirReq] | INFO : dirDto.go:11: 2025/06/21 14:37:33.755203 Dir ./filetest/test does not exist
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:35: 2025/06/21 14:40:45.694448 Dir test1
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:35: 2025/06/21 14:40:45.694540 Dir test2
+[pearviewer/client/dto:CreateUploadDirReq] | INFO : dirDto.go:13: 2025/06/21 14:40:45.694631 test
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:35: 2025/06/21 14:41:07.166614 Dir test1
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:35: 2025/06/21 14:41:07.166698 Dir test2
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:41:07.166715 File testfile.txt
+[pearviewer/client/dto:CreateUploadDirReq] | INFO : dirDto.go:13: 2025/06/21 14:41:07.166733 test
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:35: 2025/06/21 14:46:17.790852 Dir test1
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:35: 2025/06/21 14:46:17.790930 Dir test2
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:42: 2025/06/21 14:46:17.790953 File testfile.txt
+[pearviewer/client/dto:CreateUploadDirReq] | INFO : dirDto.go:13: 2025/06/21 14:46:17.790973 test
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:35: 2025/06/21 14:46:31.901624 Dir test1
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:35: 2025/06/21 14:46:31.901700 Dir test2
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:42: 2025/06/21 14:46:31.901749 File testfile.txt
+[pearviewer/client/dto:CreateUploadDirReq] | INFO : dirDto.go:13: 2025/06/21 14:46:37.987631 test
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:36: 2025/06/21 14:49:01.997140 Dir test1
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:36: 2025/06/21 14:49:01.997194 Dir test2
+[pearviewer/client/tree:AddFile] | INFO : tree.go:51: 2025/06/21 14:49:01.997234 File testfile.txt
+[pearviewer/client/dto:CreateUploadDirReq] | INFO : dirDto.go:13: 2025/06/21 14:49:07.262709 test
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:36: 2025/06/21 14:53:39.690793 Dir test1
+[pearviewer/client/tree:CreateTree] | DEBUG : tree.go:20: 2025/06/21 14:53:39.690858 Dir ./filetest/testtest1 does not exist
+[pearviewer/client/dto:CreateUploadDirReq] | INFO : dirDto.go:11: 2025/06/21 14:53:39.690886 Dir ./filetest/testtest1 does not exist
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:54:38.474033 Dir test1
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:54:38.474139 Dir test3
+[pearviewer/client/tree:AddFile] | INFO : tree.go:57: 2025/06/21 14:54:38.474205 File testfile2.txt
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:54:48.117454 Dir test4
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:54:49.098525 Dir test5
+[pearviewer/client/tree:AddFile] | INFO : tree.go:57: 2025/06/21 14:54:50.318875 File testfile1.txt
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:54:51.605917 Dir test2
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:54:51.606233 Dir test6
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:54:52.693760 Dir test7
+[pearviewer/client/tree:AddFile] | INFO : tree.go:57: 2025/06/21 14:54:52.693914 File testfile3.txt
+[pearviewer/client/tree:AddFile] | INFO : tree.go:57: 2025/06/21 14:54:54.222712 File testfile.txt
+[pearviewer/client/dto:CreateUploadDirReq] | INFO : dirDto.go:13: 2025/06/21 14:56:01.743646 test
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:56:22.066782 Dir test1
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:56:22.066875 Dir test3
+[pearviewer/client/tree:AddFile] | INFO : tree.go:58: 2025/06/21 14:56:22.066916 File testfile2.txt
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:56:22.066936 Dir test4
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:56:22.066969 Dir test5
+[pearviewer/client/tree:AddFile] | INFO : tree.go:58: 2025/06/21 14:56:22.066995 File testfile1.txt
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:56:22.067017 Dir test2
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:56:22.067041 Dir test6
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:56:22.067064 Dir test7
+[pearviewer/client/tree:AddFile] | INFO : tree.go:58: 2025/06/21 14:56:22.067087 File testfile3.txt
+[pearviewer/client/tree:AddFile] | INFO : tree.go:58: 2025/06/21 14:56:22.067100 File testfile.txt
+[pearviewer/client/dto:CreateUploadDirReq] | INFO : dirDto.go:13: 2025/06/21 14:56:22.067113 test
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:56:25.406679 Dir test1
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:56:25.406807 Dir test3
+[pearviewer/client/tree:AddFile] | INFO : tree.go:58: 2025/06/21 14:56:25.406870 File testfile2.txt
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:56:53.020747 Dir test4
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:56:53.021014 Dir test5
+[pearviewer/client/tree:AddFile] | INFO : tree.go:58: 2025/06/21 14:56:53.021146 File testfile1.txt
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:56:53.021239 Dir test2
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:56:53.021368 Dir test6
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:56:53.021486 Dir test7
+[pearviewer/client/tree:AddFile] | INFO : tree.go:58: 2025/06/21 14:56:53.021603 File testfile3.txt
+[pearviewer/client/tree:AddFile] | INFO : tree.go:58: 2025/06/21 14:56:53.021665 File testfile.txt
+[pearviewer/client/dto:CreateUploadDirReq] | INFO : dirDto.go:13: 2025/06/21 14:56:53.021759 test
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:56:54.570347 Dir test1
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:56:54.570415 Dir test3
+[pearviewer/client/tree:AddFile] | INFO : tree.go:58: 2025/06/21 14:56:54.570472 File testfile2.txt
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:56:55.041814 Dir test4
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:56:55.042525 Dir test5
+[pearviewer/client/tree:AddFile] | INFO : tree.go:58: 2025/06/21 14:56:55.043081 File testfile1.txt
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:56:55.043694 Dir test2
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:56:55.043756 Dir test6
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:37: 2025/06/21 14:56:55.044340 Dir test7
+[pearviewer/client/tree:AddFile] | INFO : tree.go:58: 2025/06/21 14:56:55.044400 File testfile3.txt
+[pearviewer/client/tree:AddFile] | INFO : tree.go:58: 2025/06/21 14:56:55.045525 File testfile.txt
+[pearviewer/client/dto:CreateUploadDirReq] | INFO : dirDto.go:13: 2025/06/21 14:57:43.300638 test
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/21 15:03:15.468325 Dir test1
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/21 15:03:15.468437 Dir test3
+[pearviewer/client/tree:AddFile] | INFO : tree.go:47: 2025/06/21 15:03:15.468491 File testfile2.txt
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/21 15:03:15.886812 Dir test4
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/21 15:03:15.887682 Dir test5
+[pearviewer/client/tree:AddFile] | INFO : tree.go:47: 2025/06/21 15:03:15.888376 File testfile1.txt
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/21 15:03:15.889193 Dir test2
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/21 15:03:15.889287 Dir test6
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/21 15:03:15.889953 Dir test7
+[pearviewer/client/tree:AddFile] | INFO : tree.go:47: 2025/06/21 15:03:15.890027 File testfile3.txt
+[pearviewer/client/tree:AddFile] | INFO : tree.go:47: 2025/06/21 15:03:15.891266 File testfile.txt
+[pearviewer/client/dto:CreateUploadDirReq] | INFO : dirDto.go:13: 2025/06/21 15:05:48.197935 test
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/21 15:06:25.294644 Dir test1
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/21 15:06:25.294734 Dir test3
+[pearviewer/client/tree:AddFile] | INFO : tree.go:47: 2025/06/21 15:06:25.294781 File testfile2.txt
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/21 15:06:25.744979 Dir test4
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/21 15:06:25.745805 Dir test5
+[pearviewer/client/tree:AddFile] | INFO : tree.go:47: 2025/06/21 15:06:25.746492 File testfile1.txt
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/21 15:06:25.747134 Dir test2
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/21 15:06:25.747224 Dir test6
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/21 15:06:25.747845 Dir test7
+[pearviewer/client/tree:AddFile] | INFO : tree.go:47: 2025/06/21 15:06:25.747905 File testfile3.txt
+[pearviewer/client/tree:AddFile] | INFO : tree.go:47: 2025/06/21 15:06:25.748949 File testfile.txt
+[pearviewer/client/dto:CreateUploadDirReq] | INFO : dirDto.go:13: 2025/06/21 15:06:27.132507 test
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/21 15:06:35.186603 Dir test1
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/21 15:06:35.186724 Dir test3
+[pearviewer/client/tree:AddFile] | INFO : tree.go:47: 2025/06/21 15:06:35.186771 File testfile2.txt
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/21 15:06:35.630719 Dir test4
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/21 15:06:35.631478 Dir test5
+[pearviewer/client/tree:AddFile] | INFO : tree.go:47: 2025/06/21 15:06:35.632085 File testfile1.txt
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/21 15:06:35.632684 Dir test2
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/21 15:06:35.632741 Dir test6
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/21 15:06:35.633339 Dir test7
+[pearviewer/client/tree:AddFile] | INFO : tree.go:47: 2025/06/21 15:06:35.633399 File testfile3.txt
+[pearviewer/client/tree:AddFile] | INFO : tree.go:47: 2025/06/21 15:06:35.634552 File testfile.txt
+[pearviewer/client/dto:CreateUploadDirReq] | INFO : dirDto.go:13: 2025/06/21 15:07:04.570314 test
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/24 11:09:51.511597 Dir test1
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/24 11:09:51.517689 Dir test3
+[pearviewer/client/tree:AddFile] | INFO : tree.go:47: 2025/06/24 11:09:51.517729 File testfile2.txt
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/24 11:09:51.517750 Dir test4
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/24 11:09:51.517781 Dir test5
+[pearviewer/client/tree:AddFile] | INFO : tree.go:47: 2025/06/24 11:09:51.517812 File testfile1.txt
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/24 11:09:51.517830 Dir test2
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/24 11:09:51.517880 Dir test6
+[pearviewer/client/tree:CreateTree] | INFO : tree.go:32: 2025/06/24 11:09:51.517915 Dir test7
+[pearviewer/client/tree:AddFile] | INFO : tree.go:47: 2025/06/24 11:09:51.517950 File testfile3.txt
+[pearviewer/client/tree:AddFile] | INFO : tree.go:47: 2025/06/24 11:09:51.517968 File testfile.txt
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:12: 2025/06/24 11:09:51.517991 Upload Dir Tree created
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/24 11:09:51.518014 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/24 11:09:51.518185 Parsing json conf
+[pearviewer/client/grpc:getConn] | INFO : client.go:16: 2025/06/24 11:09:51.518241 Conf loaded
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:37: 2025/06/24 11:09:51.518335 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:19: 2025/06/24 11:09:51.518457 Upload Dir Request created: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:45: 2025/06/24 11:09:51.525975 Upload Dir Response: message:"Directory Created: ./newFileTest/test"
+[pearviewer/client/conf:GetConf] | INFO : conf.go:18: 2025/06/24 11:09:51.526199 Reading conf
+[pearviewer/client/conf:GetConf] | INFO : conf.go:26: 2025/06/24 11:09:51.526253 Parsing json conf
+[pearviewer/client/grpc:getConn] | INFO : client.go:16: 2025/06/24 11:09:51.526287 Conf loaded
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:30: 2025/06/24 11:09:51.526364 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | ERROR : fileDto.go:20: 2025/06/24 11:09:51.526388 Failed to open fileopen testfile.txt: no such file or directory
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:12: 2025/06/24 11:44:14.950204 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 11:44:14.950334 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:19: 2025/06/24 11:44:14.950425 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:45: 2025/06/24 11:44:14.957371 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 11:44:14.957588 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | ERROR : fileDto.go:20: 2025/06/24 11:44:14.957632 Failed to open file: open testfile.txt: no such file or directory
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:12: 2025/06/24 11:45:47.279312 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 11:45:47.279599 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:19: 2025/06/24 11:45:47.279803 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:45: 2025/06/24 11:45:47.287862 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 11:45:47.288191 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | ERROR : fileDto.go:20: 2025/06/24 11:47:41.246216 Failed to open file: open testfile.txt: no such file or directory
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 11:47:47.340754 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 11:47:47.340859 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 11:47:47.340978 Upload Dir Request created: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 11:47:47.348120 Upload Dir Response: returnCode:-1  message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 11:47:47.348355 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | ERROR : fileDto.go:20: 2025/06/24 11:47:47.348378 Failed to open file: open filetest/testfile.txt: no such file or directory
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 11:48:02.508883 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 11:48:02.509088 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 11:48:02.509256 Upload Dir Request created: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 11:48:02.516890 Upload Dir Response: returnCode:-1  message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 11:48:02.517173 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | ERROR : fileDto.go:20: 2025/06/24 11:49:10.888998 Failed to open file: open filetest/testfile.txt: no such file or directory
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 11:49:56.374214 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 11:49:56.374550 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 11:49:56.374828 Upload Dir Request created: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 11:54:50.304844 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 11:54:50.304966 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 11:54:50.305059 Upload Dir Request created: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 11:54:50.311896 Upload Dir Response: returnCode:-1  message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 11:54:50.312128 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | ERROR : fileDto.go:20: 2025/06/24 11:54:50.312149 Failed to open file: open ./filetest/testfile.txt: no such file or directory
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 11:57:25.910024 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 11:57:25.910275 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 11:57:25.910520 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 11:57:36.626181 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 11:57:36.626286 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 11:57:36.626381 Upload Dir Request created: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | ERROR : dir.go:44: 2025/06/24 11:57:36.631542 Upload Dir Request error: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8080: connect: connection refused"
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 11:58:22.724091 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 11:58:22.724450 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 11:58:22.724711 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 11:58:58.850251 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 11:58:58.850571 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 11:58:58.850822 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 12:00:02.305102 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:00:02.305445 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:00:02.305828 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 12:00:05.771072 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:00:05.771206 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:00:05.771306 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:00:05.776995 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 12:00:05.777211 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 12:00:05.777253 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 12:00:05.777271 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 12:00:05.777284 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 12:00:05.780891 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 12:00:05.781294 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:00:05.781479 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:00:05.781507 Upload Dir Request created: dirName:"test1" pathName:"./newFileTest/test"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:00:05.785583 Upload Dir Response: message:"Directory Created: ./newFileTest/testtest1"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 12:00:05.785813 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 12:00:05.785856 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 12:00:05.785875 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 12:00:05.785888 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 12:00:05.789368 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 12:00:05.789660 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:00:05.789819 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:00:05.789849 Upload Dir Request created: dirName:"test3" pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:00:05.793946 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test1test3"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 12:00:05.794165 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 12:00:05.794219 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 12:00:05.794243 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 12:00:05.794262 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 12:00:05.798039 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 12:00:05.798496 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:00:05.798805 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:00:05.798849 Upload Dir Request created: dirName:"test4" pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:00:05.802993 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test1test4"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:00:05.803192 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:00:05.803219 Upload Dir Request created: dirName:"test5" pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:00:05.807208 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test1test5"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:00:05.807409 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:00:05.807436 Upload Dir Request created: dirName:"test2" pathName:"./newFileTest/test"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:00:05.811394 Upload Dir Response: message:"Directory Created: ./newFileTest/testtest2"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:00:05.811598 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:00:05.811634 Upload Dir Request created: dirName:"test6" pathName:"./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:00:05.815597 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test2test6"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:00:05.815815 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:00:05.815849 Upload Dir Request created: dirName:"test7" pathName:"./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:00:05.821089 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test2test7"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 12:00:05.821462 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 12:00:05.821552 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 12:00:05.821618 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 12:00:05.821664 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 12:00:05.825476 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 12:00:05.825747 Streaming finished
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 12:01:10.502858 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:01:10.503005 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:01:10.503108 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:01:10.510495 Upload Dir Response: message:"Directory Created: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 12:01:10.510784 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 12:01:10.510835 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 12:01:10.510856 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 12:01:10.510871 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 12:01:10.514687 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 12:01:10.515084 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:01:10.515313 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:01:10.515350 Upload Dir Request created: dirName:"test1" pathName:"./newFileTest/test"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:01:10.519644 Upload Dir Response: message:"Directory Created: ./newFileTest/testtest1"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 12:01:10.519835 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 12:01:10.519872 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 12:01:10.519897 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 12:01:10.519911 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 12:01:10.523913 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 12:01:10.524226 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:01:10.524426 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:01:10.524461 Upload Dir Request created: dirName:"test3" pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:01:10.528355 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test1test3"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 12:01:10.528582 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 12:01:10.528630 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 12:01:10.528655 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 12:01:10.528675 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 12:01:10.532187 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 12:01:10.532563 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:01:10.532821 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:01:10.532861 Upload Dir Request created: dirName:"test4" pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:01:10.536840 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test1test4"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:01:10.537013 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:01:10.537046 Upload Dir Request created: dirName:"test5" pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:01:10.540964 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test1test5"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:01:10.541132 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:01:10.541177 Upload Dir Request created: dirName:"test2" pathName:"./newFileTest/test"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:01:10.545034 Upload Dir Response: message:"Directory Created: ./newFileTest/testtest2"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:01:10.545201 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:01:10.545242 Upload Dir Request created: dirName:"test6" pathName:"./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:01:10.549494 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test2test6"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:01:10.549698 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:01:10.549731 Upload Dir Request created: dirName:"test7" pathName:"./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:01:10.553525 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test2test7"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 12:01:10.553710 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 12:01:10.553750 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 12:01:10.553769 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 12:01:10.553784 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 12:01:10.557217 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 12:01:10.557533 Streaming finished
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 12:05:25.986656 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:05:25.986907 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:05:25.987105 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 12:05:33.659548 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:05:33.659643 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:05:33.659746 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | ERROR : dir.go:44: 2025/06/24 12:05:33.665116 Upload Dir Request error: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8080: connect: connection refused"
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 12:05:44.226347 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:05:44.226500 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:05:44.226610 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:05:44.233604 Upload Dir Response: message:"Directory Created: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 12:05:44.233922 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 12:05:44.233969 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 12:05:44.233994 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 12:05:44.234013 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 12:05:44.237518 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 12:05:44.237801 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:05:44.238035 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:05:44.238067 Upload Dir Request created: dirName:"test1" pathName:"./newFileTest/test"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:05:44.241879 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test1"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 12:05:44.242053 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 12:05:44.242086 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 12:05:44.242109 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 12:05:44.242124 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 12:05:44.245404 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 12:05:44.245636 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:05:44.245842 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:05:44.245869 Upload Dir Request created: dirName:"test3" pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:05:44.249700 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test1/test3"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 12:05:44.249883 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 12:05:44.249929 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 12:05:44.249957 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 12:05:44.249981 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 12:05:44.253512 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 12:05:44.253868 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:05:44.254096 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:05:44.254132 Upload Dir Request created: dirName:"test4" pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:05:44.257932 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test1/test4"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:05:44.258176 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:05:44.258214 Upload Dir Request created: dirName:"test5" pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:05:44.261816 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test1/test5"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:05:44.262017 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:05:44.262052 Upload Dir Request created: dirName:"test2" pathName:"./newFileTest/test"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:05:44.265825 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:05:44.266059 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:05:44.266092 Upload Dir Request created: dirName:"test6" pathName:"./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:05:44.270398 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test2/test6"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:05:44.270598 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:05:44.270639 Upload Dir Request created: dirName:"test7" pathName:"./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:05:44.274396 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test2/test7"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 12:05:44.274584 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 12:05:44.274631 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 12:05:44.274650 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 12:05:44.274668 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 12:05:44.278077 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 12:05:44.278415 Streaming finished
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 12:08:33.625892 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:08:33.626063 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:08:33.626185 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:08:33.633946 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 12:08:33.634231 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 12:08:33.634276 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 12:08:33.634302 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 12:08:33.634322 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 12:08:33.638581 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 12:08:33.638867 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:08:33.639048 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:08:33.639077 Upload Dir Request created: dirName:"test1" pathName:"./newFileTest/test"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:08:33.643002 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test/test1"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 12:08:33.643193 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 12:08:33.643231 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 12:08:33.643251 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 12:08:33.643265 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 12:08:33.646987 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 12:08:33.647330 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:08:33.647527 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:08:33.647558 Upload Dir Request created: dirName:"test3" pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:08:33.651297 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test/test1/test3"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 12:08:33.651524 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 12:08:33.651563 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 12:08:33.651587 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 12:08:33.651602 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 12:08:33.654758 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 12:08:33.655070 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:08:33.655253 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:08:33.655307 Upload Dir Request created: dirName:"test4" pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:08:33.659323 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test/test1/test4"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:08:33.659554 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:08:33.659582 Upload Dir Request created: dirName:"test5" pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:08:33.663137 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test/test1/test5"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:08:33.663300 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:08:33.663335 Upload Dir Request created: dirName:"test2" pathName:"./newFileTest/test"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:08:33.666957 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:08:33.667192 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:08:33.667227 Upload Dir Request created: dirName:"test6" pathName:"./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:08:33.671190 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test/test2/test6"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:08:33.671444 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:08:33.671476 Upload Dir Request created: dirName:"test7" pathName:"./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:08:33.675626 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test/test2/test7"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 12:08:33.675874 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 12:08:33.675916 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 12:08:33.675939 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 12:08:33.675955 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 12:08:33.679400 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 12:08:33.679688 Streaming finished
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 12:10:02.180548 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 12:10:02.180776 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 12:10:02.181028 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 12:10:02.186989 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 12:10:38.255608 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 12:10:38.255736 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 14:41:49.266291 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 14:41:49.266354 Start streaming
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 14:42:55.440454 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:42:55.440570 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:42:55.440675 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:42:55.448221 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 14:43:00.649844 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 14:43:00.649959 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 14:43:00.650009 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 14:43:00.650051 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 14:43:00.660187 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 14:43:00.660767 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:43:00.661058 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:43:00.661120 Upload Dir Request created: dirName:"test1" pathName:"./newFileTest/test"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:43:00.671375 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test/test1"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 14:43:00.671648 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 14:43:00.671712 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 14:43:00.671741 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 14:43:00.671764 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 14:43:00.675665 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 14:43:00.676069 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:43:00.676368 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:43:00.676422 Upload Dir Request created: dirName:"test3" pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:43:00.680649 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test/test1/test3"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 14:43:00.680978 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 14:43:00.681047 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 14:43:00.681104 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 14:43:00.681142 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 14:43:00.685019 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 14:43:00.685449 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:43:00.685729 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:43:00.685800 Upload Dir Request created: dirName:"test4" pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:43:00.689786 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test/test1/test4"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:43:00.690059 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:43:00.690101 Upload Dir Request created: dirName:"test5" pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:43:00.694438 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test/test1/test5"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:43:00.694721 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:43:00.694771 Upload Dir Request created: dirName:"test2" pathName:"./newFileTest/test"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:43:00.698362 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:43:00.698660 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:43:00.698716 Upload Dir Request created: dirName:"test6" pathName:"./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:43:00.702555 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test/test2/test6"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:43:00.702882 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:43:00.702933 Upload Dir Request created: dirName:"test7" pathName:"./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:43:00.706330 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test/test2/test7"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 14:43:00.706614 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 14:43:00.706667 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 14:43:00.706700 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 14:43:00.706726 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 14:43:00.709974 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 14:43:00.710323 Streaming finished
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 14:43:23.458570 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:43:23.458692 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:43:23.458834 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:43:23.469829 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 14:43:23.471035 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 14:43:50.249940 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 14:43:50.250022 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 14:43:50.250062 Start streaming
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 14:43:54.837160 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:43:54.837262 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:43:54.837401 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:43:54.844251 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 14:43:54.844569 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 14:44:47.650510 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 14:44:47.650819 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 14:44:47.650965 Start streaming
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 14:45:47.041157 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:45:47.041325 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:45:47.041442 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | ERROR : dir.go:44: 2025/06/24 14:45:47.047985 Upload Dir Request error: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8080: connect: connection refused"
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 14:45:56.565548 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:45:56.565626 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:45:56.565736 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:45:56.572880 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 14:45:56.573127 Starting File client
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 14:47:46.588460 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:47:46.588586 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:47:46.588725 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:47:46.595972 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 14:47:46.596227 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 14:47:51.333314 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 14:47:51.333491 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 14:47:51.333668 Start streaming
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 14:47:54.194675 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:47:54.194807 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:47:54.194946 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:47:54.202146 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 14:47:54.202409 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 14:48:00.421668 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 14:48:00.421739 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 14:48:00.421779 Start streaming
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 14:48:14.473354 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:48:14.473453 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:48:14.473558 Upload Dir Request created: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:48:14.480444 Upload Dir Response: returnCode:-1  message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 14:48:14.480687 Starting File client
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 14:55:36.376890 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:55:36.377057 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:55:36.377168 Upload Dir Request created: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:55:36.384438 Upload Dir Response: returnCode:-1  message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 14:55:36.384833 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 14:55:36.384882 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 14:55:36.384908 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 14:55:36.384928 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 14:55:36.388955 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 14:55:36.389226 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:55:36.389420 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:55:36.389449 Upload Dir Request created: dirName:"test1"  pathName:"./newFileTest/test"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:55:36.393578 Upload Dir Response: returnCode:-1  message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test/test1"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 14:55:36.393864 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 14:55:36.393970 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 14:55:36.393988 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 14:55:36.394003 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/24 14:55:36.398280 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 14:55:36.398305 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/24 14:55:36.398894 Response received: lastByte:1000  message:"WriteFileChunk success: ./newFileTest/test/test1testfile1.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 14:55:36.398939 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:55:36.399120 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:55:36.399143 Upload Dir Request created: dirName:"test3"  pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:55:36.403192 Upload Dir Response: returnCode:-1  message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test/test1/test3"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 14:55:36.403375 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 14:55:36.403426 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 14:55:36.403444 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 14:55:36.403459 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/24 14:55:36.407016 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 14:55:36.407049 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/24 14:55:36.407508 Response received: lastByte:1000  message:"WriteFileChunk success: ./newFileTest/test/test1/test3testfile2.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 14:55:36.407542 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:55:36.407710 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:55:36.407738 Upload Dir Request created: dirName:"test4"  pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:55:36.411705 Upload Dir Response: returnCode:-1  message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test/test1/test4"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:55:36.411884 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:55:36.411908 Upload Dir Request created: dirName:"test5"  pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:55:36.415771 Upload Dir Response: returnCode:-1  message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test/test1/test5"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:55:36.415962 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:55:36.416010 Upload Dir Request created: dirName:"test2"  pathName:"./newFileTest/test"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:55:36.419558 Upload Dir Response: returnCode:-1  message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:55:36.419771 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:55:36.419805 Upload Dir Request created: dirName:"test6"  pathName:"./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:55:36.424288 Upload Dir Response: returnCode:-1  message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test/test2/test6"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:55:36.424461 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:55:36.424491 Upload Dir Request created: dirName:"test7"  pathName:"./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:55:36.428261 Upload Dir Response: returnCode:-1  message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test/test2/test7"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 14:55:36.428468 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 14:55:36.428557 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 14:55:36.428584 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 14:55:36.428603 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/24 14:55:36.432030 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 14:55:36.432064 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/24 14:55:36.432540 Response received: lastByte:1000  message:"WriteFileChunk success: ./newFileTest/test/test2/test7testfile3.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 14:55:36.432584 Streaming finished
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 14:57:36.513168 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:57:36.513303 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:57:36.513427 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:57:36.520482 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 14:57:36.520745 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 14:57:47.714125 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 14:58:21.407970 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 14:58:21.408099 Start streaming
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 14:59:07.468804 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 14:59:07.469114 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 14:59:07.469352 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 14:59:07.476913 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 15:02:17.993940 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 15:02:17.994235 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 15:02:17.994408 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 15:02:17.994564 Start streaming
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 15:03:01.372606 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:03:01.372714 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:03:01.372829 Upload Dir Request created: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:03:01.380598 Upload Dir Response: message:"Directory Created: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 15:03:01.380893 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 15:03:01.380932 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 15:03:01.380951 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 15:03:01.380969 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 15:03:01.385407 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 15:03:01.386066 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:03:01.386262 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:03:01.386291 Upload Dir Request created: dirName:"test1"  pathName:"./newFileTest/test"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:03:01.390685 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test1"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 15:03:01.390969 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 15:03:01.391045 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 15:03:01.391073 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 15:03:01.391093 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/24 15:03:01.395376 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 15:03:01.395406 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/24 15:03:01.395957 Response received: returnCode:-1  lastByte:1000  message:"Failed to open File: ./newFileTest/test/test1testfile1.txt: open ./newFileTest/test/test1testfile1.txt: no such file or directory"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/24 15:03:01.395984 Response received: returnCode:-1  lastByte:1000  message:"Failed to open File: ./newFileTest/test/test1testfile1.txt: open ./newFileTest/test/test1testfile1.txt: no such file or directory"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 15:03:01.396018 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:03:01.396192 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:03:01.396219 Upload Dir Request created: dirName:"test3"  pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:03:01.400079 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test1/test3"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 15:03:01.400274 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 15:03:01.400349 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 15:03:01.400372 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 15:03:01.400390 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/24 15:03:01.404197 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 15:03:01.404225 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/24 15:03:01.404665 Response received: returnCode:-1  lastByte:1000  message:"Failed to open File: ./newFileTest/test/test1/test3testfile2.txt: open ./newFileTest/test/test1/test3testfile2.txt: no such file or directory"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/24 15:03:01.404704 Response received: returnCode:-1  lastByte:1000  message:"Failed to open File: ./newFileTest/test/test1/test3testfile2.txt: open ./newFileTest/test/test1/test3testfile2.txt: no such file or directory"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 15:03:01.404734 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:03:01.404943 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:03:01.404974 Upload Dir Request created: dirName:"test4"  pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:03:01.408910 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test1/test4"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:03:01.409080 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:03:01.409107 Upload Dir Request created: dirName:"test5"  pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:03:01.413135 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test1/test5"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:03:01.413362 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:03:01.413484 Upload Dir Request created: dirName:"test2"  pathName:"./newFileTest/test"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:03:01.417481 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:03:01.417669 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:03:01.417696 Upload Dir Request created: dirName:"test6"  pathName:"./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:03:01.421528 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test2/test6"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:03:01.421782 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:03:01.421811 Upload Dir Request created: dirName:"test7"  pathName:"./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:03:01.425846 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test2/test7"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 15:03:01.426051 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 15:03:01.426114 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 15:03:01.426135 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 15:03:01.426150 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/24 15:03:01.429820 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 15:03:01.429865 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/24 15:03:01.430357 Response received: returnCode:-1  lastByte:1000  message:"Failed to open File: ./newFileTest/test/test2/test7testfile3.txt: open ./newFileTest/test/test2/test7testfile3.txt: no such file or directory"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/24 15:03:01.430399 Response received: returnCode:-1  lastByte:1000  message:"Failed to open File: ./newFileTest/test/test2/test7testfile3.txt: open ./newFileTest/test/test2/test7testfile3.txt: no such file or directory"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 15:03:01.430433 Streaming finished
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 15:04:33.731789 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:04:33.731951 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:04:33.732070 Upload Dir Request created: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:04:33.738562 Upload Dir Response: message:"Directory Created: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 15:04:33.738837 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 15:04:33.738879 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 15:04:33.738898 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 15:04:33.738913 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 15:04:33.742555 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 15:04:33.742950 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:04:33.743195 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:04:33.743233 Upload Dir Request created: dirName:"test1"  pathName:"./newFileTest/test"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:04:33.747138 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test1"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 15:04:33.747370 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 15:04:33.747471 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 15:04:33.747492 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 15:04:33.747508 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/24 15:04:33.751173 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 15:04:33.751203 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/24 15:04:33.751804 Response received: lastByte:1000  message:"WriteFileChunk success: ./newFileTest/test/test1/testfile1.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 15:04:33.751837 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:04:33.752019 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:04:33.752042 Upload Dir Request created: dirName:"test3"  pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:04:33.755994 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test1/test3"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 15:04:33.756212 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 15:04:33.756283 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 15:04:33.756307 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 15:04:33.756326 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/24 15:04:33.759322 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 15:04:33.759359 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/24 15:04:33.759873 Response received: lastByte:1000  message:"WriteFileChunk success: ./newFileTest/test/test1/test3/testfile2.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 15:04:33.759906 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:04:33.760161 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:04:33.760186 Upload Dir Request created: dirName:"test4"  pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:04:33.763607 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test1/test4"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:04:33.763795 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:04:33.763823 Upload Dir Request created: dirName:"test5"  pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:04:33.767153 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test1/test5"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:04:33.767351 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:04:33.767378 Upload Dir Request created: dirName:"test2"  pathName:"./newFileTest/test"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:04:33.770659 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:04:33.770883 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:04:33.770914 Upload Dir Request created: dirName:"test6"  pathName:"./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:04:33.774499 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test2/test6"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:04:33.774724 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:04:33.774757 Upload Dir Request created: dirName:"test7"  pathName:"./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:04:33.778149 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test2/test7"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 15:04:33.778363 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 15:04:33.778421 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 15:04:33.778446 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 15:04:33.778461 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/24 15:04:33.781225 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 15:04:33.781247 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/24 15:04:33.781670 Response received: lastByte:1000  message:"WriteFileChunk success: ./newFileTest/test/test2/test7/testfile3.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 15:04:33.781712 Streaming finished
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 15:06:01.309446 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:06:01.309568 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:06:01.309695 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:06:01.419349 Upload Dir Response: message:"Directory Created: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 15:06:39.384331 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 15:06:39.384470 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 15:07:04.747837 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 15:07:04.747889 Start streaming
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 15:07:34.670734 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:07:34.670871 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:07:34.671017 Upload Dir Request created: dirName:"test" pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:07:34.683780 Upload Dir Response: returnCode:-1 message:"Directory Already Exists: Directory Already Exists: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 15:07:38.508544 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 15:07:38.508654 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 15:07:45.589794 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 15:07:45.590098 Start streaming
+[pearviewer/client/grpc:UploadDir] | INFO : dir.go:13: 2025/06/24 15:09:30.167505 Upload Dir Tree created
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:09:30.167661 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:09:30.167787 Upload Dir Request created: dirName:"test"  pathName:"./newFileTest/"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:09:30.174274 Upload Dir Response: message:"Directory Created: ./newFileTest/test"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 15:09:30.174517 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:33: 2025/06/24 15:09:30.174554 Empty file.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 15:09:30.174572 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 15:09:30.174586 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/24 15:09:30.178263 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 15:09:30.178289 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/24 15:09:30.178862 Response received: message:"WriteFileChunk success: ./newFileTest/test/testfile.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 15:09:30.178887 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:09:30.179060 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:09:30.179080 Upload Dir Request created: dirName:"test1"  pathName:"./newFileTest/test"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:09:30.182570 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test1"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 15:09:30.182742 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:43: 2025/06/24 15:09:30.182805 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 15:09:30.182824 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 15:09:30.182837 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/24 15:09:30.186190 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 15:09:30.186268 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/24 15:09:30.186616 Response received: lastByte:1000  message:"WriteFileChunk success: ./newFileTest/test/test1/testfile1.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 15:09:30.186668 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:09:30.186889 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:09:30.186922 Upload Dir Request created: dirName:"test3"  pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:09:30.190434 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test1/test3"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 15:09:30.190617 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:43: 2025/06/24 15:09:30.190690 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 15:09:30.190709 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 15:09:30.190723 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/24 15:09:30.193816 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 15:09:30.193845 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/24 15:09:30.194302 Response received: lastByte:1000  message:"WriteFileChunk success: ./newFileTest/test/test1/test3/testfile2.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 15:09:30.194335 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:09:30.194494 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:09:30.194523 Upload Dir Request created: dirName:"test4"  pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:09:30.197951 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test1/test4"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:09:30.198137 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:09:30.198172 Upload Dir Request created: dirName:"test5"  pathName:"./newFileTest/test/test1"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:09:30.201591 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test1/test5"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:09:30.201798 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:09:30.201826 Upload Dir Request created: dirName:"test2"  pathName:"./newFileTest/test"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:09:30.204900 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:09:30.205073 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:09:30.205106 Upload Dir Request created: dirName:"test6"  pathName:"./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:09:30.209219 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test2/test6"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:09:30.209463 Starting Dir client
+[pearviewer/client/grpc:CreateDir] | INFO : dir.go:20: 2025/06/24 15:09:30.209502 Upload Dir Request created: dirName:"test7"  pathName:"./newFileTest/test/test2"
+[pearviewer/client/grpc:createDirReq] | INFO : dir.go:46: 2025/06/24 15:09:30.213552 Upload Dir Response: message:"Directory Created: ./newFileTest/test/test2/test7"
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/24 15:09:30.213735 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:43: 2025/06/24 15:09:30.213793 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/24 15:09:30.213812 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/24 15:09:30.213827 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/24 15:09:30.217223 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/24 15:09:30.217259 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/24 15:09:30.217598 Response received: lastByte:1000  message:"WriteFileChunk success: ./newFileTest/test/test2/test7/testfile3.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/24 15:09:30.217633 Streaming finished
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 15:58:42.228166 Starting Dir client
+[pearviewer/client/grpc:MoveDir] | INFO : dir.go:14: 2025/06/24 15:58:42.228336 Move Dir Request created: dirName:"test"  oldPathName:"./newFileTest/"  newPathName:"./filetest/"
+[pearviewer/client/grpc:moveDirReq] | INFO : dir.go:93: 2025/06/24 15:58:42.234985 Move Dir Response: returnCode:-1  message:"Directory Not Found: ./newFileTest/./newFileTest/: Directory Not Found: ./newFileTest/./newFileTest/"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 16:00:22.336391 Starting Dir client
+[pearviewer/client/grpc:MoveDir] | INFO : dir.go:14: 2025/06/24 16:00:22.336527 Move Dir Request created: dirName:"test"  oldPathName:"./newFileTest/"  newPathName:"./filetest/"
+[pearviewer/client/grpc:moveDirReq] | INFO : dir.go:93: 2025/06/24 16:00:22.343656 Move Dir Response: returnCode:-1  message:"Directory Not Found: ./newFileTest/./newFileTest/: Directory Not Found: ./newFileTest/./newFileTest/"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 16:00:30.495054 Starting Dir client
+[pearviewer/client/grpc:MoveDir] | INFO : dir.go:14: 2025/06/24 16:00:30.495191 Move Dir Request created: dirName:"test"  oldPathName:"./newFileTest/"  newPathName:"./filetest/"
+[pearviewer/client/grpc:moveDirReq] | INFO : dir.go:93: 2025/06/24 16:00:30.506426 Move Dir Response: returnCode:-1  message:"Directory Not Found: ./newFileTest/test/test1/test1: Directory Not Found: ./newFileTest/test/test1/test1"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 16:01:47.552085 Starting Dir client
+[pearviewer/client/grpc:MoveDir] | INFO : dir.go:14: 2025/06/24 16:01:47.552276 Move Dir Request created: dirName:"test"  oldPathName:"./newFileTest/"  newPathName:"./filetest/"
+[pearviewer/client/grpc:moveDirReq] | INFO : dir.go:93: 2025/06/24 16:01:47.559833 Move Dir Response: returnCode:-1  message:"Directory Not Found: ./newFileTest/test/test1/test1: Directory Not Found: ./newFileTest/test/test1/test1"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 16:02:36.557179 Starting Dir client
+[pearviewer/client/grpc:MoveDir] | INFO : dir.go:14: 2025/06/24 16:02:36.557363 Move Dir Request created: dirName:"test"  oldPathName:"./newFileTest/"  newPathName:"./filetest/"
+[pearviewer/client/grpc:moveDirReq] | INFO : dir.go:93: 2025/06/24 16:02:36.565394 Move Dir Response: returnCode:-1  message:"Directory Not Found: ./newFileTest/test/test1/test1: Directory Not Found: ./newFileTest/test/test1/test1"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 16:02:45.207208 Starting Dir client
+[pearviewer/client/grpc:MoveDir] | INFO : dir.go:14: 2025/06/24 16:02:45.207327 Move Dir Request created: dirName:"test"  oldPathName:"./newFileTest/"  newPathName:"./filetest/"
+[pearviewer/client/grpc:moveDirReq] | INFO : dir.go:93: 2025/06/24 16:02:45.215262 Move Dir Response: returnCode:-1  message:"Failed to create directory: ./newFileTest/test: Directory Already Exists: ./filetest/test"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 16:12:44.652628 Starting Dir client
+[pearviewer/client/grpc:MoveDir] | INFO : dir.go:14: 2025/06/24 16:12:44.652742 Move Dir Request created: dirName:"test"  oldPathName:"./newFileTest/"  newPathName:"./filetest/"
+[pearviewer/client/grpc:moveDirReq] | INFO : dir.go:93: 2025/06/24 16:12:44.659466 Move Dir Response: returnCode:-1  message:"Failed to move file: testfile2.txt: File does not exist: testfile2.txt"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 16:13:30.725304 Starting Dir client
+[pearviewer/client/grpc:MoveDir] | INFO : dir.go:14: 2025/06/24 16:13:30.725443 Move Dir Request created: dirName:"test"  oldPathName:"./newFileTest/"  newPathName:"./filetest/"
+[pearviewer/client/grpc:moveDirReq] | INFO : dir.go:93: 2025/06/24 16:13:52.569817 Move Dir Response: returnCode:-1  message:"Failed to move file: testfile2.txt: File does not exist: testfile2.txt"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 16:14:11.815390 Starting Dir client
+[pearviewer/client/grpc:MoveDir] | INFO : dir.go:14: 2025/06/24 16:14:11.815509 Move Dir Request created: dirName:"test"  oldPathName:"./newFileTest/"  newPathName:"./filetest/"
+[pearviewer/client/grpc:moveDirReq] | INFO : dir.go:93: 2025/06/24 16:14:33.609412 Move Dir Response: returnCode:-1  message:"Failed to move file: testfile2.txt: File does not exist: testfile2.txt"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 16:14:44.129120 Starting Dir client
+[pearviewer/client/grpc:MoveDir] | INFO : dir.go:14: 2025/06/24 16:14:44.129290 Move Dir Request created: dirName:"test"  oldPathName:"./newFileTest/"  newPathName:"./filetest/"
+[pearviewer/client/grpc:moveDirReq] | INFO : dir.go:93: 2025/06/24 16:14:48.477034 Move Dir Response: message:"Directory Moved: ./filetest/test/test1/test3"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 16:16:12.699047 Starting Dir client
+[pearviewer/client/grpc:MoveDir] | INFO : dir.go:14: 2025/06/24 16:16:12.699186 Move Dir Request created: dirName:"test"  oldPathName:"./newFileTest/"  newPathName:"./filetest/"
+[pearviewer/client/grpc:moveDirReq] | INFO : dir.go:93: 2025/06/24 16:16:12.712540 Move Dir Response: message:"Directory Moved: ./filetest/test"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 16:17:21.848151 Starting Dir client
+[pearviewer/client/grpc:MoveDir] | INFO : dir.go:14: 2025/06/24 16:17:21.848281 Move Dir Request created: dirName:"test"  oldPathName:"./newFileTest/"  newPathName:"./filetest/"
+[pearviewer/client/grpc:moveDirReq] | INFO : dir.go:93: 2025/06/24 16:17:21.856961 Move Dir Response: message:"Directory Moved: ./filetest/test"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 16:18:33.482921 Starting Dir client
+[pearviewer/client/grpc:MoveDir] | INFO : dir.go:14: 2025/06/24 16:18:33.483112 Move Dir Request created: dirName:"test"  oldPathName:"./newFileTest/"  newPathName:"./filetest/"
+[pearviewer/client/grpc:moveDirReq] | INFO : dir.go:93: 2025/06/24 16:18:33.492099 Move Dir Response: message:"Directory Moved: ./filetest/test"
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/24 16:21:08.301073 Starting Dir client
+[pearviewer/client/grpc:MoveDir] | INFO : dir.go:14: 2025/06/24 16:21:08.301206 Move Dir Request created: dirName:"test"  oldPathName:"./newFileTest/"  newPathName:"./filetest/"
+[pearviewer/client/grpc:moveDirReq] | INFO : dir.go:93: 2025/06/24 16:21:08.311126 Move Dir Response: message:"Directory Moved: ./filetest/test"

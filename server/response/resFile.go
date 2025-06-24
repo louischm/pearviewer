@@ -3,7 +3,7 @@ package response
 import (
 	"github.com/louischm/logger"
 	"io"
-	pb "pearviewer/generated/file"
+	pb "pearviewer/generated"
 )
 
 var log = logger.NewLog()

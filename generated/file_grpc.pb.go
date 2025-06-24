@@ -4,7 +4,7 @@
 // - protoc             v3.12.4
 // source: file.proto
 
-package file
+package generated
 
 import (
 	context "context"

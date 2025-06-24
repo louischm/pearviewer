@@ -9,3 +9,12 @@
 [pearviewer/client/grpc:moveFileReq] | ERROR : file.go:30: 2025/06/17 16:07:22.279146 Move File request error: rpc error: code = Unavailable desc = error reading from server: EOF
 [pearviewer/client/grpc:moveFileReq] | ERROR : file.go:30: 2025/06/17 16:08:26.632795 Move File request error: rpc error: code = Unavailable desc = error reading from server: EOF
 [pearviewer/client/grpc:uploadFileReq] | FATAL : file.go:136: 2025/06/20 14:16:29.932597 Failed to start streamingrpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8080: connect: connection refused"
+[pearviewer/client/dto:CreateUploadFileReq] | ERROR : fileDto.go:20: 2025/06/24 11:09:51.526400 Failed to open fileopen testfile.txt: no such file or directory
+[pearviewer/client/dto:CreateUploadFileReq] | ERROR : fileDto.go:20: 2025/06/24 11:44:14.957643 Failed to open file: open testfile.txt: no such file or directory
+[pearviewer/client/dto:CreateUploadFileReq] | ERROR : fileDto.go:20: 2025/06/24 11:47:41.246270 Failed to open file: open testfile.txt: no such file or directory
+[pearviewer/client/dto:CreateUploadFileReq] | ERROR : fileDto.go:20: 2025/06/24 11:47:47.348387 Failed to open file: open filetest/testfile.txt: no such file or directory
+[pearviewer/client/dto:CreateUploadFileReq] | ERROR : fileDto.go:20: 2025/06/24 11:49:10.889232 Failed to open file: open filetest/testfile.txt: no such file or directory
+[pearviewer/client/dto:CreateUploadFileReq] | ERROR : fileDto.go:20: 2025/06/24 11:54:50.312157 Failed to open file: open ./filetest/testfile.txt: no such file or directory
+[pearviewer/client/grpc:createDirReq] | ERROR : dir.go:44: 2025/06/24 11:57:36.631564 Upload Dir Request error: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8080: connect: connection refused"
+[pearviewer/client/grpc:createDirReq] | ERROR : dir.go:44: 2025/06/24 12:05:33.665149 Upload Dir Request error: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8080: connect: connection refused"
+[pearviewer/client/grpc:createDirReq] | ERROR : dir.go:44: 2025/06/24 14:45:47.048017 Upload Dir Request error: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8080: connect: connection refused"

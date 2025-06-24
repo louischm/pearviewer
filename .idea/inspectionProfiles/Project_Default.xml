@@ -4,6 +4,9 @@
     <inspection_tool class="GoDfaErrorMayBeNotNil" enabled="true" level="WARNING" enabled_by_default="true">
       <functions>
         <function importPath="pearviewer/server/service" name="RenameFile" />
+        <function importPath="pearviewer/server/service" name="DeleteFile" />
+        <function importPath="pearviewer/server/service" name="MoveFile" />
+        <function importPath="pearviewer/server/service" name="RenameDir" />
       </functions>
       <methods>
         <method importPath="pearviewer/client/generated" receiver="FileServiceClient" name="UploadFile" />
@@ -16,8 +19,12 @@
         <method importPath="pearviewer/client/generated/dir" receiver="DirServiceClient" name="UploadDir" />
         <method importPath="pearviewer/client/generated/dir" receiver="DirServiceClient" name="RenameDir" />
         <method importPath="pearviewer/client/generated/dir" receiver="DirServiceClient" name="DeleteDir" />
+        <method importPath="generated/dir" receiver="DirServiceClient" name="CreateDir" />
+        <method importPath="generated/dir" receiver="DirServiceClient" name="RenameDir" />
+        <method importPath="generated/dir" receiver="DirServiceClient" name="DeleteDir" />
       </methods>
     </inspection_tool>
+    <inspection_tool class="GoDfaNilDereference" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="GoUnhandledErrorResult" enabled="true" level="WARNING" enabled_by_default="true">
       <methods>
         <method importPath="hash" receiver="Hash" name="Write" />

@@ -4,37 +4,34 @@ import (
 	"github.com/louischm/logger"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
-	. "pearviewer/client/conf"
-	pdir "pearviewer/generated/dir"
-	pfile "pearviewer/generated/file"
+	"pearviewer/client/conf"
+	pb "pearviewer/generated"
 )
 
 var log = logger.NewLog()
+var confFile = conf.NewConf()
 
 func getConn() *grpc.ClientConn {
-	// Conf setup
-	confData := GetConf()
-	log.Info("Conf loaded")
 	// Client startup
 	var opts []grpc.DialOption
 	opts = append(opts, grpc.WithTransportCredentials(insecure.NewCredentials()))
-	conn, err := grpc.NewClient(confData.GetServerAddress(), opts...)
+	conn, err := grpc.NewClient(confFile.GetServerAddress(), opts...)
 	if err != nil {
 		log.Fatal("Fatal error connecting to server" + err.Error())
 	}
 	return conn
 }
 
-func createFileClient() (*pfile.FileServiceClient, *grpc.ClientConn) {
+func createFileClient() (*pb.FileServiceClient, *grpc.ClientConn) {
 	conn := getConn()
-	client := pfile.NewFileServiceClient(conn)
+	client := pb.NewFileServiceClient(conn)
 	log.Info("Starting File client")
 	return &client, conn
 }
 
-func createDirClient() (*pdir.DirServiceClient, *grpc.ClientConn) {
+func createDirClient() (*pb.DirServiceClient, *grpc.ClientConn) {
 	conn := getConn()
-	client := pdir.NewDirServiceClient(conn)
+	client := pb.NewDirServiceClient(conn)
 	log.Info("Starting Dir client")
 	return &client, conn
 }

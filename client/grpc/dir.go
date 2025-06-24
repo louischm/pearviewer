@@ -3,14 +3,30 @@ package grpc
 import (
 	"context"
 	"pearviewer/client/dto"
-	. "pearviewer/generated/dir"
+	"pearviewer/client/types"
+	"pearviewer/client/utils"
+	pb "pearviewer/generated"
 )
 
-func UploadDir(dirName string, pathname string) {
+func MoveDir(dirName, oldPathName, newPathName string) {
 	client, conn := createDirClient()
-	request := dto.CreateUploadDirReq(dirName, pathname)
+	request := dto.CreateMoveDirReq(dirName, oldPathName, newPathName)
+	log.Info("Move Dir Request created: " + request.String())
+	moveDirReq(*client, request)
+	closeClient(conn)
+}
+
+func UploadDir(dirName, oldPathName, newPathName string) {
+	request := dto.CreateUploadDirTree(dirName, oldPathName, newPathName)
+	log.Info("Upload Dir Tree created")
+	uploadDirReq(request)
+}
+
+func CreateDir(dirName string, pathname string) {
+	client, conn := createDirClient()
+	request := dto.CreateDirReq(dirName, pathname)
 	log.Info("Upload Dir Request created: " + request.String())
-	uploadDirReq(*client, request)
+	createDirReq(*client, request)
 	closeClient(conn)
 }
 
@@ -30,15 +46,15 @@ func DeleteDir(dirName, pathname string) {
 	closeClient(conn)
 }
 
-func uploadDirReq(client DirServiceClient, request *UploadDirReq) {
-	response, err := client.UploadDir(context.Background(), request)
+func createDirReq(client pb.DirServiceClient, request *pb.CreateDirReq) {
+	response, err := client.CreateDir(context.Background(), request)
 	if err != nil {
 		log.Error("Upload Dir Request error: " + err.Error())
 	}
 	log.Info("Upload Dir Response: " + response.String())
 }
 
-func renameDirReq(client DirServiceClient, request *RenameDirReq) {
+func renameDirReq(client pb.DirServiceClient, request *pb.RenameDirReq) {
 	response, err := client.RenameDir(context.Background(), request)
 	if err != nil {
 		log.Error("Rename Dir Request error: " + err.Error())
@@ -46,10 +62,33 @@ func renameDirReq(client DirServiceClient, request *RenameDirReq) {
 	log.Info("Rename Dir Response: " + response.String())
 }
 
-func deleteDirReq(client DirServiceClient, request *DeleteDirReq) {
+func deleteDirReq(client pb.DirServiceClient, request *pb.DeleteDirReq) {
 	response, err := client.DeleteDir(context.Background(), request)
 	if err != nil {
 		log.Error("Delete Dir Request error: " + err.Error())
 	}
 	log.Info("Delete Dir Response: " + response.String())
+}
+
+func uploadDirReq(req *types.Dir) {
+	// MkDir root dir
+	CreateDir(req.Name(), req.NewPathName())
+	// Upload Files
+	for _, file := range req.Files() {
+		oldName := utils.Joins(file.OldPathName(), file.Name())
+		UploadFile(oldName, file.NewPathName())
+	}
+
+	// Upload next dir
+	for _, dir := range req.Children() {
+		uploadDirReq(dir)
+	}
+}
+
+func moveDirReq(client pb.DirServiceClient, request *pb.MoveDirReq) {
+	response, err := client.MoveDir(context.Background(), request)
+	if err != nil {
+		log.Error("Move Dir Request error: " + err.Error())
+	}
+	log.Info("Move Dir Response: " + response.String())
 }

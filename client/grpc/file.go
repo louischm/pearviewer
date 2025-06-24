@@ -5,7 +5,7 @@ import (
 	"io"
 	"pearviewer/client/dto"
 	"pearviewer/client/types"
-	pb "pearviewer/generated/file"
+	pb "pearviewer/generated"
 )
 
 func UploadFile(fileName string, pathName string) {

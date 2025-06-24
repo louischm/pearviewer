@@ -3,7 +3,7 @@ package grpc
 import (
 	"context"
 	"io"
-	pb "pearviewer/generated/file"
+	pb "pearviewer/generated"
 	"pearviewer/server/service"
 	"pearviewer/server/types"
 )
@@ -59,7 +59,7 @@ func (s *fileServer) DeleteFile(ctx context.Context, request *pb.DeleteFileReq) 
 
 func (s *fileServer) MoveFile(ctx context.Context, request *pb.MoveFileReq) (*pb.MoveFileRes, error) {
 	log.Info("Received MoveFileReq: " + request.String())
-	res, err := service.MoveFile(request)
+	res, err := service.MoveFile(request.GetFileName(), request.GetOldPathName(), request.GetNewPathName())
 
 	if err != nil && res.GetReturnCode() == types.ServerError {
 		return nil, err

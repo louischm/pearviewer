@@ -3,90 +3,54 @@ package grpc
 import (
 	"context"
 	"os"
-	pb "pearviewer/generated/dir"
+	pb "pearviewer/generated"
+	"pearviewer/server/service"
+	"pearviewer/server/types"
 	"pearviewer/server/utils"
 )
 
-func (s *dirServer) UploadDir(ctx context.Context, request *pb.UploadDirReq) (*pb.UploadDirRes, error) {
-	var returnCode int32
-	var message string
+func (s *dirServer) CreateDir(ctx context.Context, request *pb.CreateDirReq) (*pb.CreateDirRes, error) {
+	log.Info("Received CreateDirReq: " + request.String())
+	res, err := service.CreateDir(request.GetDirName(), request.GetPathName())
 
-	log.Info("Received UploadDirReq: " + request.String())
-	name := request.GetPathname() + request.GetDir().GetName()
-	if !utils.IsDirExist(name) {
-		if err := os.Mkdir(name, os.ModePerm); err != nil {
-			returnCode = 500
-			message = err.Error()
-		}
-		returnCode = 0
-		message = "Directory Created: " + name
-	} else {
-		returnCode = 1
-		message = "Directory Already Exists"
+	if err != nil && res.GetReturnCode() == types.ServerError {
+		return nil, err
 	}
-
-	response := &pb.UploadDirRes{
-		ReturnCode: returnCode,
-		Message:    message,
-	}
-	return response, nil
+	return res, nil
 }
 
 func (s *dirServer) RenameDir(ctx context.Context, request *pb.RenameDirReq) (*pb.RenameDirRes, error) {
-	var returnCode int32
-	var message string
-
 	log.Info("Received RenameDirReq: " + request.String())
-	oldName := request.GetPathName() + request.GetOldName()
-	newName := request.GetPathName() + request.GetNewName()
-	if utils.IsDirExist(oldName) {
-		err := os.Rename(oldName, newName)
-		if err != nil {
-			returnCode = 500
-			message = err.Error()
-			log.Error(message)
-		}
-		message = "Directory Renamed: " + oldName + " to " + newName
-		log.Info(message)
-		returnCode = 0
-	} else {
-		returnCode = 1
-		message = "Directory: " + oldName + " doesn't exists"
-		log.Info(message)
-	}
+	res, err := service.RenameDir(request)
 
-	response := &pb.RenameDirRes{
-		ReturnCode: returnCode,
-		Message:    message,
+	if err != nil && res.GetReturnCode() == types.ServerError {
+		return nil, err
 	}
-	return response, nil
+	return res, nil
 }
 
 func (s *dirServer) DeleteDir(ctx context.Context, request *pb.DeleteDirReq) (*pb.DeleteDirRes, error) {
-	var returnCode int32
-	var message string
-
 	log.Info("Received DeleteDirReq: " + request.String())
-	name := request.GetPathName() + request.GetDirName()
-	if utils.IsDirExist(name) {
-		err := os.Remove(name)
-		if err != nil {
-			returnCode = 500
-			message = "Dir: " + name + " not deleted: " + err.Error()
-			log.Error(message)
-		}
-		returnCode = 0
-		message = "Directory Deleted: " + name
-		log.Info(message)
-	} else {
-		returnCode = 1
-		message = "Directory Not Found: " + name
-		log.Info(message)
-	}
+	res, err := service.DeleteDir(request.GetDirName(), request.GetPathName())
 
-	response := &pb.DeleteDirRes{
-		ReturnCode: returnCode,
-		Message:    message,
+	if err != nil && res.GetReturnCode() == types.ServerError {
+		return nil, err
 	}
-	return response, nil
+	return res, nil
+}
+
+func (s *dirServer) MoveDir(ctx context.Context, request *pb.MoveDirReq) (*pb.MoveDirRes, error) {
+	log.Info("Received MoveDirReq: " + request.String())
+	res, err := service.MoveDir(request.GetDirName(), request.GetOldPathName(), request.GetNewPathName())
+
+	if err != nil && res.GetReturnCode() == types.ServerError {
+		return nil, err
+	}
+	// Delete oldDir
+	oldName := utils.Joins(request.GetOldPathName(), request.GetDirName())
+	err = os.RemoveAll(oldName)
+	if err != nil {
+		log.Info("DeleteDir failed: " + err.Error())
+	}
+	return res, nil
 }

@@ -5,7 +5,7 @@ import (
 	"github.com/louischm/logger"
 	"io"
 	"os"
-	pb "pearviewer/generated/file"
+	pb "pearviewer/generated"
 	res "pearviewer/server/response"
 	"pearviewer/server/types"
 	"pearviewer/server/utils"
@@ -18,6 +18,7 @@ func UploadFileChunk(stream pb.FileService_UploadFileServer) (*pb.UploadFileRes,
 
 	upload, err := stream.Recv()
 	lastByte = upload.GetEndByte()
+	log.Info("Upload file chunk start for: " + upload.GetPathName())
 	if err == io.EOF {
 		log.Info("File upload EOF")
 		return nil, err
@@ -31,7 +32,7 @@ func UploadFileChunk(stream pb.FileService_UploadFileServer) (*pb.UploadFileRes,
 	if !utils.IsFileInDir(upload.File.GetName(), upload.GetPathName()) {
 		utils.CreateEmptyFile(upload.File.GetName(), upload.GetPathName())
 	}
-	filename := upload.GetPathName() + upload.File.GetName()
+	filename := utils.Joins(upload.GetPathName(), upload.File.GetName())
 	message, errWrite := writeFileChunk(filename, upload)
 	if errWrite != nil {
 		return res.CreateUploadFileRes(types.Fail, message, lastByte, errWrite)
@@ -68,12 +69,12 @@ func DeleteFile(request *pb.DeleteFileReq) (*pb.DeleteFileRes, error) {
 	}
 }
 
-func MoveFile(request *pb.MoveFileReq) (*pb.MoveFileRes, error) {
-	oldName := request.GetOldPathName() + request.GetFileName()
-	newName := request.GetNewPathName() + request.GetFileName()
-	if !utils.IsFileInDir(request.GetFileName(), request.GetOldPathName()) {
+func MoveFile(fileName, oldPathName, newPathName string) (*pb.MoveFileRes, error) {
+	oldName := utils.Joins(oldPathName, fileName)
+	newName := utils.Joins(newPathName, fileName)
+	if !utils.IsFileInDir(fileName, oldPathName) {
 		return res.CreateMoveFileRes(types.Fail, "File does not exist: "+oldName,
-			errors.New("File does not exist: "+request.GetFileName()))
+			errors.New("File does not exist: "+fileName))
 	} else {
 		iFile, err := os.Open(oldName)
 		if err != nil {
@@ -87,15 +88,15 @@ func MoveFile(request *pb.MoveFileReq) (*pb.MoveFileRes, error) {
 		}
 		defer oFile.Close()
 
-		_, errCopy := io.Copy(oFile, iFile)
-		if errCopy != nil {
-			return res.CreateMoveFileRes(types.Fail, "Error while copying file: "+newName, errCopy)
+		_, err = io.Copy(oFile, iFile)
+		if err != nil {
+			return res.CreateMoveFileRes(types.Fail, "Error while copying file: "+newName, err)
 		}
 		iFile.Close()
 
-		errRemove := os.Remove(oldName)
-		if errRemove != nil {
-			return res.CreateMoveFileRes(types.Fail, "Error while removing file: "+oldName, errRemove)
+		err = os.Remove(oldName)
+		if err != nil {
+			return res.CreateMoveFileRes(types.Fail, "Error while removing file: "+oldName, err)
 		}
 		return res.CreateMoveFileRes(types.Success, "File Moved: "+newName, nil)
 	}

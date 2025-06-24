@@ -33,8 +33,26 @@ func IsFileInDir(fileName, dirName string) bool {
 }
 
 func CreateEmptyFile(fileName, dirName string) {
-	_, err := os.OpenFile(dirName+fileName, os.O_RDONLY|os.O_CREATE, 0666)
+	_, err := os.OpenFile(Joins(dirName, fileName), os.O_RDONLY|os.O_CREATE, 0666)
 	if err != nil {
 		log.Error(err.Error())
 	}
+}
+
+func Joins(str1, str2 string) string {
+	if str1 == "" {
+		return str2
+	} else if str2 == "" {
+		return str1
+	}
+
+	if str1[len(str1)-1:] != "/" {
+		str1 += "/"
+	}
+
+	if str1[0:2] != "./" {
+		str1 = "./" + str1
+	}
+
+	return str1 + str2
 }

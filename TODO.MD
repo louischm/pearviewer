@@ -1,10 +1,7 @@
 # TODO LIST
 
-- Refractor RenameDir
-- Refractor DeleteDir
-- Redo UploadDir
-- Do MoveFile
-- Do Create Dir
 - Do ListDir
+- package utils and conf
 - Do Download File
 - Do DownloadDir
+- Add kwargs to logger and color

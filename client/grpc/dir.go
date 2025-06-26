@@ -8,6 +8,14 @@ import (
 	pb "pearviewer/generated"
 )
 
+func ListDir(dirName, pathName string) {
+	client, conn := createDirClient()
+	request := dto.CreateListDirReq(dirName, pathName)
+	log.Info("List Dir Request created: " + request.String())
+	listDirReq(*client, request)
+	closeClient(conn)
+}
+
 func MoveDir(dirName, oldPathName, newPathName string) {
 	client, conn := createDirClient()
 	request := dto.CreateMoveDirReq(dirName, oldPathName, newPathName)
@@ -91,4 +99,12 @@ func moveDirReq(client pb.DirServiceClient, request *pb.MoveDirReq) {
 		log.Error("Move Dir Request error: " + err.Error())
 	}
 	log.Info("Move Dir Response: " + response.String())
+}
+
+func listDirReq(client pb.DirServiceClient, request *pb.ListDirReq) {
+	response, err := client.ListDir(context.Background(), request)
+	if err != nil {
+		log.Error("List Dir Request error: " + err.Error())
+	}
+	log.Info("List Dir Response: " + response.String())
 }

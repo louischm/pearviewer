@@ -47,11 +47,15 @@ func RenameFile(request *pb.RenameFileReq) (*pb.RenameFileRes, error) {
 	if utils.IsFileInDir(request.GetOldName(), request.GetPathName()) {
 		err := os.Rename(oldName, newName)
 		if err != nil {
-			return res.CreateRenameFileRes(types.ServerError, "Error while renaming "+oldName+" to "+newName, err)
+			log.Debug(types.RenameFileError(oldName, newName))
+			return res.CreateRenameFileRes(types.ServerError, types.RenameFileError(oldName, newName), err)
 		}
-		return res.CreateRenameFileRes(types.Success, "File Renamed "+oldName+" to "+newName, nil)
+		log.Info(types.RenameFileSuccess(oldName, newName))
+		return res.CreateRenameFileRes(types.Success, types.RenameFileSuccess(oldName, newName), nil)
 	} else {
-		return res.CreateRenameFileRes(types.Fail, "File does not exist: "+oldName, errors.New("File does not exist: "+newName))
+		log.Debug(types.FileNotFound(oldName))
+		return res.CreateRenameFileRes(types.Fail, types.FileNotFound(oldName),
+			errors.New(types.FileNotFound(oldName)))
 	}
 }
 
@@ -60,12 +64,15 @@ func DeleteFile(request *pb.DeleteFileReq) (*pb.DeleteFileRes, error) {
 	if utils.IsFileInDir(request.GetFileName(), request.GetPathName()) {
 		err := os.Remove(name)
 		if err != nil {
-			return res.CreateDeleteFileRes(types.ServerError, "Error while deleting "+name, err)
+			log.Debug(types.DeleteFileError(name))
+			return res.CreateDeleteFileRes(types.ServerError, types.DeleteFileSuccess(name), err)
 		}
-		return res.CreateDeleteFileRes(types.Success, "File Deleted: "+name, nil)
+		log.Info(types.DeleteFileSuccess(name))
+		return res.CreateDeleteFileRes(types.Success, types.DeleteFileSuccess(name), nil)
 	} else {
-		return res.CreateDeleteFileRes(types.Fail, "File does not exist: "+name,
-			errors.New("File does not exist: "+name))
+		log.Debug(types.FileNotFound(name))
+		return res.CreateDeleteFileRes(types.Fail, types.FileNotFound(name),
+			errors.New(types.FileNotFound(name)))
 	}
 }
 
@@ -73,32 +80,38 @@ func MoveFile(fileName, oldPathName, newPathName string) (*pb.MoveFileRes, error
 	oldName := utils.Joins(oldPathName, fileName)
 	newName := utils.Joins(newPathName, fileName)
 	if !utils.IsFileInDir(fileName, oldPathName) {
-		return res.CreateMoveFileRes(types.Fail, "File does not exist: "+oldName,
-			errors.New("File does not exist: "+fileName))
+		log.Debug(types.FileNotFound(oldName))
+		return res.CreateMoveFileRes(types.Fail, types.FileNotFound(oldName),
+			errors.New(types.FileNotFound(oldName)))
 	} else {
 		iFile, err := os.Open(oldName)
 		if err != nil {
-			return res.CreateMoveFileRes(types.Fail, "Error while opening file: "+oldName, err)
+			log.Debug(types.OpenFileError(oldName))
+			return res.CreateMoveFileRes(types.Fail, types.OpenFileError(oldName), err)
 		}
 		defer iFile.Close()
 
 		oFile, errCreate := os.Create(newName)
 		if errCreate != nil {
-			return res.CreateMoveFileRes(types.Fail, "Error while creating file: "+newName, errCreate)
+			log.Debug(types.CreateFileError(newName))
+			return res.CreateMoveFileRes(types.Fail, types.CreateFileError(newName), errCreate)
 		}
 		defer oFile.Close()
 
 		_, err = io.Copy(oFile, iFile)
 		if err != nil {
-			return res.CreateMoveFileRes(types.Fail, "Error while copying file: "+newName, err)
+			log.Debug(types.CopyFileError(newName))
+			return res.CreateMoveFileRes(types.Fail, types.CopyFileError(newName), err)
 		}
 		iFile.Close()
 
 		err = os.Remove(oldName)
 		if err != nil {
-			return res.CreateMoveFileRes(types.Fail, "Error while removing file: "+oldName, err)
+			log.Debug(types.DeleteFileError(oldName))
+			return res.CreateMoveFileRes(types.Fail, types.DeleteFileError(oldName), err)
 		}
-		return res.CreateMoveFileRes(types.Success, "File Moved: "+newName, nil)
+		log.Info(types.MoveFileSuccess(newName))
+		return res.CreateMoveFileRes(types.Success, types.MoveFileSuccess(newName), nil)
 	}
 }
 
@@ -108,17 +121,21 @@ func writeFileChunk(fileName string, upload *pb.UploadFileReq) (string, error) {
 	// Write file
 	file, errOpen := os.OpenFile(fileName, os.O_WRONLY|os.O_APPEND, 0666)
 	if errOpen != nil {
-		message = "Failed to open File: " + fileName
+		log.Debug(types.OpenFileError(fileName))
+		message = types.OpenFileError(fileName)
 		return message, errOpen
 	}
 	if _, errWrite := file.Write(upload.GetFile().GetData()); errWrite != nil {
-		message = "Failed to write to File: " + fileName
+		log.Debug(types.WriteFileError(fileName))
+		message = types.WriteFileError(fileName)
 		return message, errWrite
 	}
 	errClose := file.Close()
 	if errClose != nil {
-		message = "Failed to close File: " + fileName
+		log.Debug(types.CloseFileError(fileName))
+		message = types.CloseFileError(fileName)
 		return message, errClose
 	}
-	return "WriteFileChunk success: " + fileName, nil
+	log.Info(types.WriteFileChunkSuccess(fileName))
+	return types.WriteFileChunkSuccess(fileName), nil
 }

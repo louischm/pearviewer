@@ -18,3 +18,5 @@
 [pearviewer/client/grpc:createDirReq] | ERROR : dir.go:44: 2025/06/24 11:57:36.631564 Upload Dir Request error: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8080: connect: connection refused"
 [pearviewer/client/grpc:createDirReq] | ERROR : dir.go:44: 2025/06/24 12:05:33.665149 Upload Dir Request error: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8080: connect: connection refused"
 [pearviewer/client/grpc:createDirReq] | ERROR : dir.go:44: 2025/06/24 14:45:47.048017 Upload Dir Request error: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8080: connect: connection refused"
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 11:45:49.151740 List Dir Request error: rpc error: code = Unknown desc = open ./filetest/test1: no such file or directory
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 11:48:52.652561 List Dir Request error: rpc error: code = Unknown desc = open ./filetest/test1: no such file or directory

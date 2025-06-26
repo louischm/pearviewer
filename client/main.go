@@ -19,5 +19,6 @@ func main() {
 	//grpc.MoveFile("test.csv", "./filetest/", "./newFiletest/")
 	//grpc.CreateDir("newDir", "./filetest/")
 	//grpc.UploadDir("test", "./filetest/", "./newFileTest/")
-	grpc.MoveDir("test", "./newFileTest/", "./filetest/")
+	//grpc.MoveDir("test", "./newFileTest/", "./filetest/")
+	grpc.ListDir("test", "./filetest/")
 }

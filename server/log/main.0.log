@@ -1080,3 +1080,42 @@
 [pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:21:08.310139 Directory Moved: ./filetest/test/test2
 [pearviewer/server/response:CreateMoveFileRes] | INFO : resFile.go:60: 2025/06/24 16:21:08.310227 File Moved: ./filetest/test/testfile.txt
 [pearviewer/server/response:CreateMoveDirRes] | INFO : resDir.go:47: 2025/06/24 16:21:08.310245 Directory Moved: ./filetest/test
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/26 11:44:58.437552 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/26 11:44:58.438128 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/26 11:44:58.438239 Conf loaded
+[pearviewer/server/grpc:(*dirServer).ListDir] | INFO : dir.go:59: 2025/06/26 11:45:01.580094 Received ListDirReq: dirName:"test"  pathName:"./filetest/"
+[pearviewer/server/response:CreateListDirRes] | DEBUG : resDir.go:58: 2025/06/26 11:45:01.580169 Directory Not Found: ./test/./filetest/: Directory Not Found: ./test/./filetest/
+[pearviewer/server/grpc:(*dirServer).ListDir] | INFO : dir.go:59: 2025/06/26 11:45:23.957177 Received ListDirReq: dirName:"test"  pathName:"./filetest/"
+[pearviewer/server/response:CreateListDirRes] | DEBUG : resDir.go:58: 2025/06/26 11:45:39.571006 Directory Not Found: ./test/./filetest/: Directory Not Found: ./test/./filetest/
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/26 11:45:44.343512 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/26 11:45:44.343596 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/26 11:45:44.343665 Conf loaded
+[pearviewer/server/grpc:(*dirServer).ListDir] | INFO : dir.go:59: 2025/06/26 11:45:45.867266 Received ListDirReq: dirName:"test"  pathName:"./filetest/"
+[pearviewer/server/response:CreateListDirRes] | DEBUG : resDir.go:58: 2025/06/26 11:45:49.150252 Error while listing dir: : open ./filetest/test1: no such file or directory
+[pearviewer/server/grpc:(*dirServer).ListDir] | INFO : dir.go:59: 2025/06/26 11:47:16.882021 Received ListDirReq: dirName:"test"  pathName:"./filetest/"
+[pearviewer/server/response:CreateListDirRes] | DEBUG : resDir.go:58: 2025/06/26 11:48:52.651086 Error while listing dir: : open ./filetest/test1: no such file or directory
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/26 11:49:03.565711 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/26 11:49:03.565812 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/26 11:49:03.565869 Conf loaded
+[pearviewer/server/grpc:(*dirServer).ListDir] | INFO : dir.go:59: 2025/06/26 11:49:05.356626 Received ListDirReq: dirName:"test" pathName:"./filetest/"
+[pearviewer/server/response:CreateListDirRes] | INFO : resDir.go:60: 2025/06/26 11:51:05.947482 List dir created
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/26 11:51:08.993106 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/26 11:51:08.993301 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/26 11:51:08.993421 Conf loaded
+[pearviewer/server/grpc:(*dirServer).ListDir] | INFO : dir.go:59: 2025/06/26 11:51:10.584587 Received ListDirReq: dirName:"test" pathName:"./filetest/"
+[pearviewer/server/response:CreateListDirRes] | INFO : resDir.go:60: 2025/06/26 11:53:06.588509 List dir created
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/26 11:53:09.622164 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/26 11:53:09.622247 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/26 11:53:09.622337 Conf loaded
+[pearviewer/server/grpc:(*dirServer).ListDir] | INFO : dir.go:59: 2025/06/26 11:53:10.971115 Received ListDirReq: dirName:"test" pathName:"./filetest/"
+[pearviewer/server/response:CreateListDirRes] | INFO : resDir.go:60: 2025/06/26 11:53:53.482445 List dir created
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/26 11:54:14.091499 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/26 11:54:14.091602 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/26 11:54:14.091719 Conf loaded
+[pearviewer/server/grpc:(*dirServer).ListDir] | INFO : dir.go:59: 2025/06/26 11:54:16.671833 Received ListDirReq: dirName:"test"  pathName:"./filetest/"
+[pearviewer/server/response:CreateListDirRes] | INFO : resDir.go:60: 2025/06/26 11:55:17.812500 List dir created
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/26 16:20:09.056687 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/26 16:20:09.056796 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/26 16:20:09.056861 Conf loaded
+[pearviewer/server/grpc:(*dirServer).ListDir] | INFO : dir.go:59: 2025/06/26 16:20:10.612549 Received ListDirReq: dirName:"test"  pathName:"./filetest/"
+[pearviewer/server/service:ListDir] | INFO : dir.go:112: 2025/06/26 16:20:10.612730 List dir created

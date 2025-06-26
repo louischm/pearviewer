@@ -23,6 +23,7 @@ const (
 	DirService_RenameDir_FullMethodName = "/DirService/RenameDir"
 	DirService_DeleteDir_FullMethodName = "/DirService/DeleteDir"
 	DirService_MoveDir_FullMethodName   = "/DirService/MoveDir"
+	DirService_ListDir_FullMethodName   = "/DirService/ListDir"
 )
 
 // DirServiceClient is the client API for DirService service.
@@ -33,6 +34,7 @@ type DirServiceClient interface {
 	RenameDir(ctx context.Context, in *RenameDirReq, opts ...grpc.CallOption) (*RenameDirRes, error)
 	DeleteDir(ctx context.Context, in *DeleteDirReq, opts ...grpc.CallOption) (*DeleteDirRes, error)
 	MoveDir(ctx context.Context, in *MoveDirReq, opts ...grpc.CallOption) (*MoveDirRes, error)
+	ListDir(ctx context.Context, in *ListDirReq, opts ...grpc.CallOption) (*ListDirRes, error)
 }
 
 type dirServiceClient struct {
@@ -83,6 +85,16 @@ func (c *dirServiceClient) MoveDir(ctx context.Context, in *MoveDirReq, opts ...
 	return out, nil
 }
 
+func (c *dirServiceClient) ListDir(ctx context.Context, in *ListDirReq, opts ...grpc.CallOption) (*ListDirRes, error) {
+	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
+	out := new(ListDirRes)
+	err := c.cc.Invoke(ctx, DirService_ListDir_FullMethodName, in, out, cOpts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // DirServiceServer is the server API for DirService service.
 // All implementations must embed UnimplementedDirServiceServer
 // for forward compatibility.
@@ -91,6 +103,7 @@ type DirServiceServer interface {
 	RenameDir(context.Context, *RenameDirReq) (*RenameDirRes, error)
 	DeleteDir(context.Context, *DeleteDirReq) (*DeleteDirRes, error)
 	MoveDir(context.Context, *MoveDirReq) (*MoveDirRes, error)
+	ListDir(context.Context, *ListDirReq) (*ListDirRes, error)
 	mustEmbedUnimplementedDirServiceServer()
 }
 
@@ -112,6 +125,9 @@ func (UnimplementedDirServiceServer) DeleteDir(context.Context, *DeleteDirReq) (
 }
 func (UnimplementedDirServiceServer) MoveDir(context.Context, *MoveDirReq) (*MoveDirRes, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method MoveDir not implemented")
+}
+func (UnimplementedDirServiceServer) ListDir(context.Context, *ListDirReq) (*ListDirRes, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method ListDir not implemented")
 }
 func (UnimplementedDirServiceServer) mustEmbedUnimplementedDirServiceServer() {}
 func (UnimplementedDirServiceServer) testEmbeddedByValue()                    {}
@@ -206,6 +222,24 @@ func _DirService_MoveDir_Handler(srv interface{}, ctx context.Context, dec func(
 	return interceptor(ctx, in, info, handler)
 }
 
+func _DirService_ListDir_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(ListDirReq)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(DirServiceServer).ListDir(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: DirService_ListDir_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(DirServiceServer).ListDir(ctx, req.(*ListDirReq))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // DirService_ServiceDesc is the grpc.ServiceDesc for DirService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -228,6 +262,10 @@ var DirService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "MoveDir",
 			Handler:    _DirService_MoveDir_Handler,
+		},
+		{
+			MethodName: "ListDir",
+			Handler:    _DirService_ListDir_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

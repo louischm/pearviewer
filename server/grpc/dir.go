@@ -54,3 +54,13 @@ func (s *dirServer) MoveDir(ctx context.Context, request *pb.MoveDirReq) (*pb.Mo
 	}
 	return res, nil
 }
+
+func (s *dirServer) ListDir(ctx context.Context, request *pb.ListDirReq) (*pb.ListDirRes, error) {
+	log.Info("Received ListDirReq: " + request.String())
+	res, err := service.ListDir(request)
+
+	if err != nil && res.GetReturnCode() == types.ServerError {
+		return nil, err
+	}
+	return res, nil
+}

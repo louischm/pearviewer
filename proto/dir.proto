@@ -9,6 +9,7 @@ service DirService {
    rpc RenameDir(RenameDirReq) returns (RenameDirRes) {}
    rpc DeleteDir(DeleteDirReq) returns (DeleteDirRes) {}
    rpc MoveDir(MoveDirReq) returns (MoveDirRes) {}
+   rpc ListDir(ListDirReq) returns (ListDirRes) {}
 }
 
 // CreateDir Message
@@ -45,7 +46,7 @@ message DeleteDirRes {
    string message = 2;
 }
 
-//MoveDir Message
+// MoveDir Message
 message MoveDirReq {
    string dirName = 1;
    string oldPathName = 2;
@@ -57,8 +58,22 @@ message MoveDirRes {
    string message = 2;
 }
 
+// ListDir Message
+message ListDirReq {
+   string dirName = 1;
+   string pathName = 2;
+}
+
+message ListDirRes {
+   int32 returnCode = 1;
+   string message = 2;
+   Dir dir = 3;
+}
+
 // Generic Message
 message Dir {
-   string name = 1;
+   string dirName = 1;
+   string pathName = 2;
    repeated File file = 3;
+   repeated Dir dir = 4;
 }

@@ -65,6 +65,7 @@ message MoveFileRes {
 // Generic Message
 message File {
   string name = 1;
-  bytes  data = 2;
+  string pathName = 2;
+  bytes  data = 3;
 }
 

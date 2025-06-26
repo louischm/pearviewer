@@ -45,3 +45,10 @@ func CreateMoveDirReq(dirName, oldPathName, newPathName string) *pb.MoveDirReq {
 		NewPathName: newPathName,
 	}
 }
+
+func CreateListDirReq(dirName, pathName string) *pb.ListDirReq {
+	return &pb.ListDirReq{
+		DirName:  dirName,
+		PathName: pathName,
+	}
+}

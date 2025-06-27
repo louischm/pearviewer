@@ -1525,3 +1525,1001 @@
 [pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/26 16:20:10.605551 Starting Dir client
 [pearviewer/client/grpc:ListDir] | INFO : dir.go:14: 2025/06/26 16:20:10.605709 List Dir Request created: dirName:"test"  pathName:"./filetest/"
 [pearviewer/client/grpc:listDirReq] | INFO : dir.go:109: 2025/06/26 16:20:10.613490 List Dir Response: message:"List dir created"  dir:{dirName:"test"  pathName:"./filetest/"  file:{name:"testfile.txt"  pathName:"./filetest/test"}  dir:{dirName:"test1"  pathName:"./filetest/test"  file:{name:"testfile1.txt"  pathName:"./filetest/test/test1"}  dir:{dirName:"test3"  pathName:"./filetest/test/test1"  file:{name:"testfile2.txt"  pathName:"./filetest/test/test1/test3"}}  dir:{dirName:"test4"  pathName:"./filetest/test/test1"}  dir:{dirName:"test5"  pathName:"./filetest/test/test1"}}  dir:{dirName:"test2"  pathName:"./filetest/test"  dir:{dirName:"test6"  pathName:"./filetest/test/test2"}  dir:{dirName:"test7"  pathName:"./filetest/test/test2"  file:{name:"testfile3.txt"  pathName:"./filetest/test/test2/test7"}}}}
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/26 17:11:51.037226 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:14: 2025/06/26 17:11:51.037377 List Dir Request created: dirName:"test" pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:11:51.046933 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/26 17:12:07.256573 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:14: 2025/06/26 17:12:07.256924 List Dir Request created: dirName:"test" pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:12:07.268313 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/26 17:14:01.650974 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:14: 2025/06/26 17:14:01.651132 List Dir Request created: dirName:"test" pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:14:37.023134 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/26 17:14:40.656545 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:14: 2025/06/26 17:14:40.656706 List Dir Request created: dirName:"test" pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:15:01.685534 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/26 17:15:31.940520 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:14: 2025/06/26 17:15:31.940827 List Dir Request created: dirName:"test" pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:15:52.278013 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/26 17:15:56.446255 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:14: 2025/06/26 17:15:56.446427 List Dir Request created: dirName:"test" pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:16:06.715809 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/26 17:16:24.650891 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:14: 2025/06/26 17:16:24.651015 List Dir Request created: dirName:"test" pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:16:36.327766 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/26 17:16:46.734240 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:14: 2025/06/26 17:16:46.734356 List Dir Request created: dirName:"test" pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:17:09.766763 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/26 17:17:14.491425 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:14: 2025/06/26 17:17:14.491588 List Dir Request created: dirName:"test" pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:18:33.360352 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/26 17:20:01.724714 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:14: 2025/06/26 17:20:01.724857 List Dir Request created: dirName:"test" pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:20:43.947956 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/26 17:21:40.102457 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:14: 2025/06/26 17:21:40.102571 List Dir Request created: dirName:"test" pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:21:52.046609 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/26 17:23:06.693959 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:14: 2025/06/26 17:23:06.694112 List Dir Request created: dirName:"test" pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:23:06.706932 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/26 17:23:24.684111 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:14: 2025/06/26 17:23:24.684226 List Dir Request created: dirName:"test" pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:23:37.266650 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/26 17:24:09.404430 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:14: 2025/06/26 17:24:09.404571 List Dir Request created: dirName:"test" pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:24:22.144368 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/26 17:27:09.176993 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:14: 2025/06/26 17:27:09.177157 List Dir Request created: dirName:"test" pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:27:25.711020 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/26 17:28:00.323211 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:14: 2025/06/26 17:28:00.323336 List Dir Request created: dirName:"test" pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:28:14.966228 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/26 17:29:08.620622 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:14: 2025/06/26 17:29:08.620791 List Dir Request created: dirName:"test" pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | INFO : dir.go:109: 2025/06/26 17:29:08.630597 List Dir Response: message:"List dir created" dir:{dirName:"test" pathName:"./filetest/" file:{name:"testfile.txt" pathName:"./filetest/test"} dir:{dirName:"test1" pathName:"./filetest/test" file:{name:"testfile1.txt" pathName:"./filetest/test/test1"} dir:{dirName:"test3" pathName:"./filetest/test/test1" file:{name:"testfile2.txt" pathName:"./filetest/test/test1/test3"}} dir:{dirName:"test4" pathName:"./filetest/test/test1"} dir:{dirName:"test5" pathName:"./filetest/test/test1"}} dir:{dirName:"test2" pathName:"./filetest/test" dir:{dirName:"test6" pathName:"./filetest/test/test2"} dir:{dirName:"test7" pathName:"./filetest/test/test2" file:{name:"testfile3.txt" pathName:"./filetest/test/test2/test7"}}}}
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/26 17:31:35.312845 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:14: 2025/06/26 17:31:35.312980 List Dir Request created: dirName:"test" pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | INFO : dir.go:109: 2025/06/26 17:31:35.321301 List Dir Response: message:"List dir created" dir:{dirName:"test" pathName:"./filetest/" file:{name:"testfile.txt" pathName:"./filetest/test"} dir:{dirName:"test1" pathName:"./filetest/test" file:{name:"testfile1.txt" pathName:"./filetest/test/test1"} dir:{dirName:"test3" pathName:"./filetest/test/test1" file:{name:"testfile2.txt" pathName:"./filetest/test/test1/test3"}} dir:{dirName:"test4" pathName:"./filetest/test/test1"} dir:{dirName:"test5" pathName:"./filetest/test/test1"}} dir:{dirName:"test2" pathName:"./filetest/test" dir:{dirName:"test6" pathName:"./filetest/test/test2"} dir:{dirName:"test7" pathName:"./filetest/test/test2" file:{name:"testfile3.txt" pathName:"./filetest/test/test2/test7"}}}}
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/26 17:36:37.949514 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:14: 2025/06/26 17:36:37.949644 List Dir Request created: dirName:"test" pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | INFO : dir.go:109: 2025/06/26 17:36:37.957988 List Dir Response: message:"List dir created" dir:{dirName:"test" pathName:"./filetest/" file:{name:"testfile.txt" pathName:"./filetest/test"} dir:{dirName:"test1" pathName:"./filetest/test" file:{name:"testfile1.txt" pathName:"./filetest/test/test1"} dir:{dirName:"test3" pathName:"./filetest/test/test1" file:{name:"testfile2.txt" pathName:"./filetest/test/test1/test3"}} dir:{dirName:"test4" pathName:"./filetest/test/test1"} dir:{dirName:"test5" pathName:"./filetest/test/test1"}} dir:{dirName:"test2" pathName:"./filetest/test" dir:{dirName:"test6" pathName:"./filetest/test/test2"} dir:{dirName:"test7" pathName:"./filetest/test/test2" file:{name:"testfile3.txt" pathName:"./filetest/test/test2/test7"}}}}
+[pearviewer/client/conf:getConf] | INFO : conf.go:27: 2025/06/26 17:44:32.931591 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:35: 2025/06/26 17:44:32.931710 Parsing json conf
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/26 17:44:32.931818 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:14: 2025/06/26 17:44:32.931922 List Dir Request created: dirName:"test" pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | INFO : dir.go:109: 2025/06/26 17:44:32.939850 List Dir Response: message:"List dir created" dir:{dirName:"test" pathName:"./filetest/" file:{name:"testfile.txt" pathName:"./filetest/test"} dir:{dirName:"test1" pathName:"./filetest/test" file:{name:"testfile1.txt" pathName:"./filetest/test/test1"} dir:{dirName:"test3" pathName:"./filetest/test/test1" file:{name:"testfile2.txt" pathName:"./filetest/test/test1/test3"}} dir:{dirName:"test4" pathName:"./filetest/test/test1"} dir:{dirName:"test5" pathName:"./filetest/test/test1"}} dir:{dirName:"test2" pathName:"./filetest/test" dir:{dirName:"test6" pathName:"./filetest/test/test2"} dir:{dirName:"test7" pathName:"./filetest/test/test2" file:{name:"testfile3.txt" pathName:"./filetest/test/test2/test7"}}}}
+[pearviewer/client/conf:getConf] | INFO : conf.go:27: 2025/06/27 11:08:28.642388 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:35: 2025/06/27 11:08:28.642841 Parsing json conf
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/27 11:08:28.642970 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:42: 2025/06/27 11:08:28.710765 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/27 11:08:28.710796 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/27 11:08:28.710809 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | FATAL : file.go:48: 2025/06/27 11:08:28.717501 Failed to start streamingrpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8080: connect: connection refused"
+[pearviewer/client/conf:getConf] | INFO : conf.go:27: 2025/06/27 11:08:34.439648 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:35: 2025/06/27 11:08:34.439739 Parsing json conf
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/27 11:08:34.439838 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:42: 2025/06/27 11:08:34.516417 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/27 11:08:34.516506 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/27 11:08:34.516524 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523098 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523139 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523161 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523181 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523205 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523242 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523264 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523295 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523327 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523351 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523373 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523394 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523418 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523442 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523463 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523491 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523530 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523553 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523581 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523602 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523630 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523653 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523675 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523696 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523722 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523746 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523767 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523794 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523824 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523845 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523870 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523898 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523926 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523954 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523974 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.523995 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524022 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524056 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524078 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524101 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524127 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524156 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524182 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524204 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524202 Response received: lastByte:1000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.524225 Response received: lastByte:1000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524233 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524258 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524285 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524314 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524340 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524366 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524387 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524408 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524433 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524454 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524474 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524494 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524524 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524547 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524568 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524588 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524612 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524633 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524655 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524684 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524722 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524751 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524781 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524782 Response received: lastByte:2000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.524829 Response received: lastByte:2000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.524862 Response received: lastByte:3000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.524891 Response received: lastByte:4000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.524918 Response received: lastByte:5000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:08:34.524807 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/27 11:08:34.525025 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.525051 Response received: lastByte:6000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.525084 Response received: lastByte:7000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.525109 Response received: lastByte:8000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.525141 Response received: lastByte:9000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.525166 Response received: lastByte:10000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.525242 Response received: lastByte:11000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.525371 Response received: lastByte:12000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.525467 Response received: lastByte:13000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.525489 Response received: lastByte:14000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.525760 Response received: lastByte:15000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.525803 Response received: lastByte:16000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.525836 Response received: lastByte:17000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.525866 Response received: lastByte:18000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.525911 Response received: lastByte:19000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.526116 Response received: lastByte:20000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.526187 Response received: lastByte:21000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.526251 Response received: lastByte:22000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.526333 Response received: lastByte:23000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.526435 Response received: lastByte:24000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.526577 Response received: lastByte:25000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.526610 Response received: lastByte:26000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.526650 Response received: lastByte:27000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.526815 Response received: lastByte:28000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.526885 Response received: lastByte:29000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.526952 Response received: lastByte:30000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.527070 Response received: lastByte:31000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.527320 Response received: lastByte:32000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.527411 Response received: lastByte:33000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.527448 Response received: lastByte:34000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.527479 Response received: lastByte:35000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.527511 Response received: lastByte:36000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.527696 Response received: lastByte:37000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.527726 Response received: lastByte:38000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.527768 Response received: lastByte:39000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.528005 Response received: lastByte:40000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.528040 Response received: lastByte:41000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.528075 Response received: lastByte:42000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.528274 Response received: lastByte:43000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.528309 Response received: lastByte:44000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.528332 Response received: lastByte:45000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.528579 Response received: lastByte:46000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.528663 Response received: lastByte:47000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.528700 Response received: lastByte:48000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.528733 Response received: lastByte:49000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.528839 Response received: lastByte:50000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.528924 Response received: lastByte:51000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.529085 Response received: lastByte:52000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.529161 Response received: lastByte:53000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.529264 Response received: lastByte:54000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.529381 Response received: lastByte:55000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.529542 Response received: lastByte:56000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.529584 Response received: lastByte:57000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.529666 Response received: lastByte:58000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.529737 Response received: lastByte:59000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.529936 Response received: lastByte:60000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.529964 Response received: lastByte:61000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.530154 Response received: lastByte:62000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.530185 Response received: lastByte:63000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.530267 Response received: lastByte:64000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.530341 Response received: lastByte:65000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.530415 Response received: lastByte:66000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.530661 Response received: lastByte:67000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:08:34.530699 Response received: lastByte:68000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/27 11:08:34.530732 Streaming finished
+[pearviewer/client/conf:getConf] | INFO : conf.go:27: 2025/06/27 11:10:17.582743 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:35: 2025/06/27 11:10:17.582847 Parsing json conf
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/27 11:10:17.582963 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:42: 2025/06/27 11:10:17.659726 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/27 11:10:17.659769 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/27 11:10:17.659785 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | FATAL : file.go:48: 2025/06/27 11:10:17.665510 Failed to start streamingrpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8080: connect: connection refused"
+[pearviewer/client/conf:getConf] | INFO : conf.go:27: 2025/06/27 11:10:23.555114 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:35: 2025/06/27 11:10:23.555172 Parsing json conf
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/27 11:10:23.555299 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:42: 2025/06/27 11:10:23.637092 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/27 11:10:23.637122 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/27 11:10:23.637135 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | FATAL : file.go:48: 2025/06/27 11:10:23.648681 Failed to start streamingrpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8080: connect: connection refused"
+[pearviewer/client/conf:getConf] | INFO : conf.go:27: 2025/06/27 11:10:43.959102 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:35: 2025/06/27 11:10:43.959146 Parsing json conf
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/27 11:10:43.959232 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:42: 2025/06/27 11:10:44.034569 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/27 11:10:44.034610 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/27 11:10:44.034624 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041042 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041075 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041097 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041118 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041142 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041161 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041182 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041207 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041229 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041246 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041265 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041282 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041299 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041315 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041331 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041353 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041382 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041398 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041423 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041440 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041457 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041473 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041491 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041509 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041527 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041543 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041558 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041586 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041625 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041641 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041654 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041670 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041691 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041705 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041717 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041730 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041744 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041761 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041774 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041786 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041816 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041845 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041872 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041896 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041924 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041949 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.041979 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.042016 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.042042 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.042069 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.042092 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.042120 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.042149 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.042167 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.042182 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.042202 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.042241 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.042266 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.042293 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.042319 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.042347 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.042373 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.042397 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.042423 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.042452 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.042484 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.042501 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:10:44.042519 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/27 11:10:44.042535 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.015946 Response received: lastByte:1000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.015994 Response received: lastByte:2000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.016036 Response received: lastByte:3000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.016067 Response received: lastByte:4000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.016098 Response received: lastByte:5000  message:"File Chunk written: test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.017192 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.017235 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.017264 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.017288 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.017316 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.017341 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.017386 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.017413 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.017441 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.017466 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.017496 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.017518 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.017546 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.017587 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.017615 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.017645 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.017663 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.017678 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.017694 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.017709 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.017726 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.017741 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.017757 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.017772 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.017791 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.017811 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.017828 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.017845 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.017863 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.017882 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.017900 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.017916 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.017933 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.017949 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.017974 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.017990 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018008 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018031 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018049 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018067 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018084 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018100 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018116 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018131 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018152 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018168 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018191 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018207 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018224 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018250 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018270 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018285 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018303 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018322 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018340 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018355 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018374 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018393 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018411 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018431 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018447 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018462 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018485 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018508 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018525 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018541 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018557 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018572 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018588 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018603 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018620 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018635 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018656 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018672 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018689 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018712 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018729 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018744 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018760 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018780 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018797 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018826 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018856 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018881 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018899 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018914 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018930 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018945 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018961 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.018975 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.018991 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019010 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019032 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019047 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019063 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019100 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019115 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019132 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019146 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019159 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019181 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019198 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019218 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019231 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019245 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019258 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019272 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019285 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019300 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019314 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019349 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019369 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019408 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019430 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019454 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019476 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019501 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019522 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019545 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019559 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019583 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019603 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019619 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019635 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019662 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019677 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019696 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019713 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019739 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019758 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019775 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019794 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019812 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019827 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019843 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019858 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019878 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019893 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019913 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019932 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019953 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.019968 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.019992 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.020007 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.020028 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.020050 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.020071 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.020086 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.020111 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.020127 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.020144 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.020163 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.020184 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.020199 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.020216 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.020230 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.020250 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.020266 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.020288 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.020303 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.020322 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.020344 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.020361 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.020376 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.020392 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.020411 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.020431 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.020449 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.020473 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.020490 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.020507 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.020522 Response received: <nil>
+[pearviewer/client/grpc.uploadFileReq:func1] | DEBUG : file.go:65: 2025/06/27 11:11:21.020538 Failure during streaming: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52966->127.0.0.1:8080: read: connection reset by peer
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:21.020558 Response received: <nil>
+[pearviewer/client/conf:getConf] | INFO : conf.go:27: 2025/06/27 11:11:26.254145 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:35: 2025/06/27 11:11:26.254252 Parsing json conf
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/27 11:11:26.254360 Starting File client
+[pearviewer/client/dto:CreateUploadFileReq] | INFO : fileDto.go:42: 2025/06/27 11:11:26.336799 File read.
+[pearviewer/client/grpc:UploadFile] | INFO : file.go:14: 2025/06/27 11:11:26.336828 File Data fetched
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:45: 2025/06/27 11:11:26.336845 Start streaming
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343247 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343277 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343305 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343338 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343369 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343402 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343440 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343467 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343487 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343505 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343526 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343548 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343571 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343590 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343616 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343655 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343696 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343727 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343752 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343775 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343806 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343834 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343872 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343903 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343936 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343966 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.343995 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.344085 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.344119 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.344146 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.344172 Request streaming sended.
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.344237 Response received: lastByte:1000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.344307 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.344343 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.344369 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.344391 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.344307 Response received: lastByte:3000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.344450 Response received: lastByte:3000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.344530 Request streaming sended.
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.344533 Response received: lastByte:5000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.344542 Request streaming sended.
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.344570 Response received: lastByte:6000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.344603 Response received: lastByte:7000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.344633 Response received: lastByte:8000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.344635 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.344654 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.344655 Response received: lastByte:9000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.344701 Request streaming sended.
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.344708 Response received: lastByte:10000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.344732 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.344732 Response received: lastByte:11000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.344760 Response received: lastByte:11000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.344793 Request streaming sended.
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.344821 Response received: lastByte:12000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.344829 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.344858 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.344886 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.344913 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.344930 Request streaming sended.
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.344935 Response received: lastByte:13000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.344943 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.344984 Request streaming sended.
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.344990 Response received: lastByte:14000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.344996 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.345030 Request streaming sended.
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.345058 Request streaming sended.
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.345063 Response received: lastByte:15000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.345097 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.345125 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.345153 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.345180 Request streaming sended.
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.345209 Request streaming sended.
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.345213 Response received: lastByte:16000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.345242 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.345269 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.345295 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.345320 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.345346 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.345422 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.345448 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.345481 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.345510 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:76: 2025/06/27 11:11:26.345534 Request streaming sended.
+[pearviewer/client/grpc:uploadFileReq] | INFO : file.go:78: 2025/06/27 11:11:26.345556 Upload finished
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.345611 Response received: lastByte:19000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.345634 Response received: lastByte:20000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.345710 Response received: lastByte:21000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.345782 Response received: lastByte:22000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.345818 Response received: lastByte:23000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.348654 Response received: lastByte:24000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.348694 Response received: lastByte:25000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.348731 Response received: lastByte:26000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.348752 Response received: lastByte:27000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.348771 Response received: lastByte:28000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.348789 Response received: lastByte:29000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.348807 Response received: lastByte:30000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.348829 Response received: lastByte:31000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.348848 Response received: lastByte:32000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.348866 Response received: lastByte:33000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.348883 Response received: lastByte:34000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.348905 Response received: lastByte:35000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.348923 Response received: lastByte:36000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.348941 Response received: lastByte:37000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.348970 Response received: lastByte:38000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.348989 Response received: lastByte:39000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349016 Response received: lastByte:40000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349036 Response received: lastByte:41000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349059 Response received: lastByte:42000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349077 Response received: lastByte:43000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349099 Response received: lastByte:44000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349117 Response received: lastByte:45000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349135 Response received: lastByte:46000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349157 Response received: lastByte:47000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349181 Response received: lastByte:48000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349202 Response received: lastByte:49000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349220 Response received: lastByte:50000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349237 Response received: lastByte:51000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349255 Response received: lastByte:52000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349273 Response received: lastByte:53000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349295 Response received: lastByte:54000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349313 Response received: lastByte:55000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349333 Response received: lastByte:56000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349365 Response received: lastByte:57000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349383 Response received: lastByte:58000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349401 Response received: lastByte:59000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349421 Response received: lastByte:60000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349439 Response received: lastByte:61000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349456 Response received: lastByte:62000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349481 Response received: lastByte:63000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349504 Response received: lastByte:64000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349534 Response received: lastByte:65000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349558 Response received: lastByte:66000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349576 Response received: lastByte:67000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:67: 2025/06/27 11:11:26.349598 Response received: lastByte:68000  message:"File Chunk written: ./filetest/test.txt"
+[pearviewer/client/grpc.uploadFileReq:func1] | INFO : file.go:57: 2025/06/27 11:11:26.349620 Streaming finished
+[pearviewer/client/conf:getConf] | INFO : conf.go:27: 2025/06/27 12:00:43.853830 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:35: 2025/06/27 12:00:43.853921 Parsing json conf
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/27 12:00:43.854015 Starting File client
+[pearviewer/client/grpc:DownloadFile] | INFO : file.go:17: 2025/06/27 12:00:43.854112 Download File request created: fileName:"test.txt"  pathName:"./filetest/"
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.949084 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.949223 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.949253 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.949300 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.949318 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.949356 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.949374 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.949442 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.949464 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.949508 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.949525 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.949560 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.949577 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.949612 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.949628 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.949662 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.949696 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.949738 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.949755 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.949790 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.949806 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.949840 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.949863 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.949903 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.949928 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.949977 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.949996 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.950042 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.950066 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.950103 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.950119 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.950154 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.950174 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.950224 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.950244 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.950285 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.950301 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.950336 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.950352 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.950387 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.950412 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.950456 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.950477 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.950529 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.950554 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.950605 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.950629 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.950682 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.950715 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.950788 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.950829 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.950883 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.950910 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.950963 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.950997 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.951050 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.951087 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.951144 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.951177 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.951231 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.951256 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.951308 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.951341 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.951396 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.951432 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.951498 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.951548 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.951612 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.951639 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.951690 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.951716 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.951768 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.951798 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.951865 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.951892 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.951974 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.951996 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.952051 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.952069 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.952127 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.952151 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.952194 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.952231 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.952280 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.952301 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.952340 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.952356 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.952393 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.952413 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.952457 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.952475 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.952517 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.952538 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.952573 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.952589 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.952624 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.952643 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.952678 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.952717 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.952766 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.952795 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.952839 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.952861 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.952900 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.952919 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.952954 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.952970 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.953008 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.953024 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.953064 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.953080 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.953114 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.953133 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.953168 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.953184 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.953226 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.953243 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.953282 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.953301 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.953336 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.953356 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.953391 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.953411 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.953457 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.953480 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.953519 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.953542 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.953580 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.953600 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.953636 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.953652 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.953690 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.953711 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.953747 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:00:43.953773 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:00:43.953811 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | ERROR : file.go:131: 2025/06/27 12:00:43.953827 Download File request error: EOF
+[pearviewer/client/conf:getConf] | INFO : conf.go:27: 2025/06/27 12:01:41.771307 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:35: 2025/06/27 12:01:41.771404 Parsing json conf
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/27 12:01:41.771517 Starting File client
+[pearviewer/client/grpc:DownloadFile] | INFO : file.go:17: 2025/06/27 12:01:41.771652 Download File request created: fileName:"test.txt" pathName:"./filetest/"
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.869610 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.869762 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.869792 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.869851 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.869877 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.869931 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.869958 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.870017 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.870046 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.870108 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.870136 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.870191 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.870218 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.870271 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.870305 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.870359 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.870413 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.870475 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.870502 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.870556 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.870590 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.870642 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.870662 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.870701 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.870727 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.870773 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.870793 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.870830 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.870850 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.870887 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.870906 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.870944 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.870967 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.871021 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.871041 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.871079 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.871099 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.871137 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.871157 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.871194 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.871216 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.871269 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.871290 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.871328 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.871347 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.871390 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.871417 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.871458 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.871487 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.871537 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.871583 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.871645 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.871679 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.871730 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.871753 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.871793 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.871815 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.871858 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.871882 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.871921 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.871941 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.871979 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.872010 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.872051 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.872085 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.872136 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.872160 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.872209 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.872228 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.872275 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.872296 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.872343 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.872370 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.872423 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.872445 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.872503 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.872528 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.872579 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.872602 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.872678 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.872729 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.872799 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.872836 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.872920 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.872948 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.873006 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.873032 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.873089 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.873121 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.873176 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.873204 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.873267 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.873295 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.873335 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.873354 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.873392 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.873420 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.873458 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.873477 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.873524 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.873590 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.873638 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.873658 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.873697 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.873718 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.873756 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.873775 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.873817 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.873836 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.873879 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.873904 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.873956 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.873997 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.874055 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.874082 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.874132 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.874156 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.874198 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.874218 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.874255 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.874277 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.874314 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.874333 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.874383 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.874402 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.874444 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.874474 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.874516 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.874538 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.874578 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.874596 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.874642 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.874667 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.874708 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 12:01:41.874738 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 12:01:41.874778 Chunk File write successfully: ./filetest/test.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:126: 2025/06/27 12:01:41.874803 Download File finished
+[pearviewer/client/conf:getConf] | INFO : conf.go:27: 2025/06/27 14:03:56.296622 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:35: 2025/06/27 14:03:56.296718 Parsing json conf
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/27 14:03:56.296821 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:16: 2025/06/27 14:03:56.296916 List Dir Request created: dirName:"test" pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | INFO : dir.go:117: 2025/06/27 14:03:56.305126 List Dir Response: message:"List dir created" dir:{dirName:"test" pathName:"./filetest/" file:{name:"testfile.txt" pathName:"./filetest/test"} dir:{dirName:"test1" pathName:"./filetest/test" file:{name:"testfile1.txt" pathName:"./filetest/test/test1"} dir:{dirName:"test3" pathName:"./filetest/test/test1" file:{name:"testfile2.txt" pathName:"./filetest/test/test1/test3"}} dir:{dirName:"test4" pathName:"./filetest/test/test1"} dir:{dirName:"test5" pathName:"./filetest/test/test1"}} dir:{dirName:"test2" pathName:"./filetest/test" dir:{dirName:"test6" pathName:"./filetest/test/test2"} dir:{dirName:"test7" pathName:"./filetest/test/test2" file:{name:"testfile3.txt" pathName:"./filetest/test/test2/test7"}}}}
+[pearviewer/client/grpc:DownloadDir] | INFO : dir.go:37: 2025/06/27 14:03:56.305393 Download Dir Request created: message:"List dir created" dir:{dirName:"test" pathName:"./filetest/" file:{name:"testfile.txt" pathName:"./filetest/test"} dir:{dirName:"test1" pathName:"./filetest/test" file:{name:"testfile1.txt" pathName:"./filetest/test/test1"} dir:{dirName:"test3" pathName:"./filetest/test/test1" file:{name:"testfile2.txt" pathName:"./filetest/test/test1/test3"}} dir:{dirName:"test4" pathName:"./filetest/test/test1"} dir:{dirName:"test5" pathName:"./filetest/test/test1"}} dir:{dirName:"test2" pathName:"./filetest/test" dir:{dirName:"test6" pathName:"./filetest/test/test2"} dir:{dirName:"test7" pathName:"./filetest/test/test2" file:{name:"testfile3.txt" pathName:"./filetest/test/test2/test7"}}}}
+[pearviewer/client/grpc:createSourceDir] | INFO : dir.go:139: 2025/06/27 14:03:56.305503 Create Dir: ./filetest/test
+[pearviewer/client/grpc:createSourceDir] | INFO : dir.go:139: 2025/06/27 14:03:56.305552 Create Dir: ./filetest/test1
+[pearviewer/client/grpc:createSourceDir] | INFO : dir.go:139: 2025/06/27 14:03:56.305589 Create Dir: ./filetest/test3
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/27 14:03:56.305650 Starting File client
+[pearviewer/client/grpc:DownloadFile] | INFO : file.go:17: 2025/06/27 14:03:56.305687 Download File request created: fileName:"testfile2.txt" pathName:"./filetest/"
+[pearviewer/client/grpc:downloadFileReq] | ERROR : file.go:131: 2025/06/27 14:03:56.314033 Download File request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/conf:getConf] | INFO : conf.go:27: 2025/06/27 14:05:54.214434 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:35: 2025/06/27 14:05:54.214561 Parsing json conf
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/27 14:05:54.214804 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:16: 2025/06/27 14:05:54.215093 List Dir Request created: dirName:"test"  pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | INFO : dir.go:117: 2025/06/27 14:05:54.222869 List Dir Response: message:"List dir created"  dir:{dirName:"test"  pathName:"./filetest/"  file:{name:"testfile.txt"  pathName:"./filetest/test"}  dir:{dirName:"test1"  pathName:"./filetest/test"  file:{name:"testfile1.txt"  pathName:"./filetest/test/test1"}  dir:{dirName:"test3"  pathName:"./filetest/test/test1"  file:{name:"testfile2.txt"  pathName:"./filetest/test/test1/test3"}}  dir:{dirName:"test4"  pathName:"./filetest/test/test1"}  dir:{dirName:"test5"  pathName:"./filetest/test/test1"}}  dir:{dirName:"test2"  pathName:"./filetest/test"  dir:{dirName:"test6"  pathName:"./filetest/test/test2"}  dir:{dirName:"test7"  pathName:"./filetest/test/test2"  file:{name:"testfile3.txt"  pathName:"./filetest/test/test2/test7"}}}}
+[pearviewer/client/grpc:DownloadDir] | INFO : dir.go:37: 2025/06/27 14:05:54.223215 Download Dir Request created: message:"List dir created"  dir:{dirName:"test"  pathName:"./filetest/"  file:{name:"testfile.txt"  pathName:"./filetest/test"}  dir:{dirName:"test1"  pathName:"./filetest/test"  file:{name:"testfile1.txt"  pathName:"./filetest/test/test1"}  dir:{dirName:"test3"  pathName:"./filetest/test/test1"  file:{name:"testfile2.txt"  pathName:"./filetest/test/test1/test3"}}  dir:{dirName:"test4"  pathName:"./filetest/test/test1"}  dir:{dirName:"test5"  pathName:"./filetest/test/test1"}}  dir:{dirName:"test2"  pathName:"./filetest/test"  dir:{dirName:"test6"  pathName:"./filetest/test/test2"}  dir:{dirName:"test7"  pathName:"./filetest/test/test2"  file:{name:"testfile3.txt"  pathName:"./filetest/test/test2/test7"}}}}
+[pearviewer/client/grpc:createSourceDir] | INFO : dir.go:139: 2025/06/27 14:05:54.223299 Create Dir: ./filetest/test
+[pearviewer/client/grpc:createSourceDir] | INFO : dir.go:139: 2025/06/27 14:05:54.223345 Create Dir: ./filetest/test1
+[pearviewer/client/grpc:createSourceDir] | INFO : dir.go:139: 2025/06/27 14:05:54.223388 Create Dir: ./filetest/test3
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/27 14:05:54.223543 Starting File client
+[pearviewer/client/grpc:DownloadFile] | INFO : file.go:17: 2025/06/27 14:05:54.223617 Download File request created: fileName:"testfile2.txt"  pathName:"./filetest/"
+[pearviewer/client/grpc:downloadFileReq] | ERROR : file.go:131: 2025/06/27 14:06:24.093012 Download File request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/conf:getConf] | INFO : conf.go:27: 2025/06/27 14:07:03.176103 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:35: 2025/06/27 14:07:03.176159 Parsing json conf
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/27 14:07:03.176276 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:16: 2025/06/27 14:07:03.176395 List Dir Request created: dirName:"test" pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | INFO : dir.go:117: 2025/06/27 14:07:03.184346 List Dir Response: message:"List dir created" dir:{dirName:"test" pathName:"./filetest/" file:{name:"testfile.txt" pathName:"./filetest/test"} dir:{dirName:"test1" pathName:"./filetest/test" file:{name:"testfile1.txt" pathName:"./filetest/test/test1"} dir:{dirName:"test3" pathName:"./filetest/test/test1" file:{name:"testfile2.txt" pathName:"./filetest/test/test1/test3"}} dir:{dirName:"test4" pathName:"./filetest/test/test1"} dir:{dirName:"test5" pathName:"./filetest/test/test1"}} dir:{dirName:"test2" pathName:"./filetest/test" dir:{dirName:"test6" pathName:"./filetest/test/test2"} dir:{dirName:"test7" pathName:"./filetest/test/test2" file:{name:"testfile3.txt" pathName:"./filetest/test/test2/test7"}}}}
+[pearviewer/client/grpc:DownloadDir] | INFO : dir.go:37: 2025/06/27 14:07:03.184636 Download Dir Request created: message:"List dir created" dir:{dirName:"test" pathName:"./filetest/" file:{name:"testfile.txt" pathName:"./filetest/test"} dir:{dirName:"test1" pathName:"./filetest/test" file:{name:"testfile1.txt" pathName:"./filetest/test/test1"} dir:{dirName:"test3" pathName:"./filetest/test/test1" file:{name:"testfile2.txt" pathName:"./filetest/test/test1/test3"}} dir:{dirName:"test4" pathName:"./filetest/test/test1"} dir:{dirName:"test5" pathName:"./filetest/test/test1"}} dir:{dirName:"test2" pathName:"./filetest/test" dir:{dirName:"test6" pathName:"./filetest/test/test2"} dir:{dirName:"test7" pathName:"./filetest/test/test2" file:{name:"testfile3.txt" pathName:"./filetest/test/test2/test7"}}}}
+[pearviewer/client/grpc:createSourceDir] | INFO : dir.go:139: 2025/06/27 14:07:03.184734 Create Dir: ./filetest/test
+[pearviewer/client/grpc:createSourceDir] | INFO : dir.go:139: 2025/06/27 14:07:03.184796 Create Dir: ./filetest/test1
+[pearviewer/client/grpc:createSourceDir] | INFO : dir.go:139: 2025/06/27 14:07:03.184844 Create Dir: ./filetest/test3
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/27 14:07:03.184907 Starting File client
+[pearviewer/client/grpc:DownloadFile] | INFO : file.go:17: 2025/06/27 14:07:03.184965 Download File request created: fileName:"testfile2.txt" pathName:"./filetest/"
+[pearviewer/client/grpc:downloadFileReq] | ERROR : file.go:131: 2025/06/27 14:07:03.192464 Download File request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/conf:getConf] | INFO : conf.go:27: 2025/06/27 14:07:14.283065 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:35: 2025/06/27 14:07:14.283173 Parsing json conf
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/27 14:07:14.289335 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:16: 2025/06/27 14:07:14.289514 List Dir Request created: dirName:"test"  pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | INFO : dir.go:117: 2025/06/27 14:07:14.298067 List Dir Response: message:"List dir created"  dir:{dirName:"test"  pathName:"./filetest/"  file:{name:"testfile.txt"  pathName:"./filetest/test"}  dir:{dirName:"test1"  pathName:"./filetest/test"  file:{name:"testfile1.txt"  pathName:"./filetest/test/test1"}  dir:{dirName:"test3"  pathName:"./filetest/test/test1"  file:{name:"testfile2.txt"  pathName:"./filetest/test/test1/test3"}}  dir:{dirName:"test4"  pathName:"./filetest/test/test1"}  dir:{dirName:"test5"  pathName:"./filetest/test/test1"}}  dir:{dirName:"test2"  pathName:"./filetest/test"  dir:{dirName:"test6"  pathName:"./filetest/test/test2"}  dir:{dirName:"test7"  pathName:"./filetest/test/test2"  file:{name:"testfile3.txt"  pathName:"./filetest/test/test2/test7"}}}}
+[pearviewer/client/grpc:DownloadDir] | INFO : dir.go:37: 2025/06/27 14:07:14.298550 Download Dir Request created: message:"List dir created"  dir:{dirName:"test"  pathName:"./filetest/"  file:{name:"testfile.txt"  pathName:"./filetest/test"}  dir:{dirName:"test1"  pathName:"./filetest/test"  file:{name:"testfile1.txt"  pathName:"./filetest/test/test1"}  dir:{dirName:"test3"  pathName:"./filetest/test/test1"  file:{name:"testfile2.txt"  pathName:"./filetest/test/test1/test3"}}  dir:{dirName:"test4"  pathName:"./filetest/test/test1"}  dir:{dirName:"test5"  pathName:"./filetest/test/test1"}}  dir:{dirName:"test2"  pathName:"./filetest/test"  dir:{dirName:"test6"  pathName:"./filetest/test/test2"}  dir:{dirName:"test7"  pathName:"./filetest/test/test2"  file:{name:"testfile3.txt"  pathName:"./filetest/test/test2/test7"}}}}
+[pearviewer/client/grpc:createSourceDir] | INFO : dir.go:139: 2025/06/27 14:07:14.298662 Create Dir: ./filetest/test
+[pearviewer/client/grpc:createSourceDir] | INFO : dir.go:139: 2025/06/27 14:07:14.298733 Create Dir: ./filetest/test1
+[pearviewer/client/grpc:createSourceDir] | INFO : dir.go:139: 2025/06/27 14:07:14.298794 Create Dir: ./filetest/test3
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/27 14:07:37.310921 Starting File client
+[pearviewer/client/grpc:DownloadFile] | INFO : file.go:17: 2025/06/27 14:07:37.311108 Download File request created: fileName:"testfile2.txt"  pathName:"./filetest/"
+[pearviewer/client/conf:getConf] | INFO : conf.go:27: 2025/06/27 14:09:06.644391 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:35: 2025/06/27 14:09:06.644536 Parsing json conf
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/27 14:09:06.644718 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:16: 2025/06/27 14:09:06.644901 List Dir Request created: dirName:"test"  pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | INFO : dir.go:117: 2025/06/27 14:09:06.652866 List Dir Response: message:"List dir created"  dir:{dirName:"test"  pathName:"./filetest/"  file:{name:"testfile.txt"  pathName:"./filetest/test"}  dir:{dirName:"test1"  pathName:"./filetest/test"  file:{name:"testfile1.txt"  pathName:"./filetest/test/test1"}  dir:{dirName:"test3"  pathName:"./filetest/test/test1"  file:{name:"testfile2.txt"  pathName:"./filetest/test/test1/test3"}}  dir:{dirName:"test4"  pathName:"./filetest/test/test1"}  dir:{dirName:"test5"  pathName:"./filetest/test/test1"}}  dir:{dirName:"test2"  pathName:"./filetest/test"  dir:{dirName:"test6"  pathName:"./filetest/test/test2"}  dir:{dirName:"test7"  pathName:"./filetest/test/test2"  file:{name:"testfile3.txt"  pathName:"./filetest/test/test2/test7"}}}}
+[pearviewer/client/grpc:DownloadDir] | INFO : dir.go:37: 2025/06/27 14:09:06.653228 Download Dir Request created: message:"List dir created"  dir:{dirName:"test"  pathName:"./filetest/"  file:{name:"testfile.txt"  pathName:"./filetest/test"}  dir:{dirName:"test1"  pathName:"./filetest/test"  file:{name:"testfile1.txt"  pathName:"./filetest/test/test1"}  dir:{dirName:"test3"  pathName:"./filetest/test/test1"  file:{name:"testfile2.txt"  pathName:"./filetest/test/test1/test3"}}  dir:{dirName:"test4"  pathName:"./filetest/test/test1"}  dir:{dirName:"test5"  pathName:"./filetest/test/test1"}}  dir:{dirName:"test2"  pathName:"./filetest/test"  dir:{dirName:"test6"  pathName:"./filetest/test/test2"}  dir:{dirName:"test7"  pathName:"./filetest/test/test2"  file:{name:"testfile3.txt"  pathName:"./filetest/test/test2/test7"}}}}
+[pearviewer/client/grpc:createSourceDir] | DEBUG : dir.go:143: 2025/06/27 14:09:06.653294 Dir already exist: ./filetest/test
+[pearviewer/client/grpc:createSourceDir] | INFO : dir.go:141: 2025/06/27 14:09:06.653407 Create Dir: ./filetest/test/test1
+[pearviewer/client/grpc:createSourceDir] | INFO : dir.go:141: 2025/06/27 14:09:06.653474 Create Dir: ./filetest/test/test1/test3
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/27 14:09:23.421231 Starting File client
+[pearviewer/client/grpc:DownloadFile] | INFO : file.go:17: 2025/06/27 14:09:23.421554 Download File request created: fileName:"testfile2.txt"  pathName:"./filetest/test/test1/test3"
+[pearviewer/client/conf:getConf] | INFO : conf.go:27: 2025/06/27 14:09:31.351072 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:35: 2025/06/27 14:09:31.351151 Parsing json conf
+[pearviewer/client/grpc:createDirClient] | INFO : client.go:35: 2025/06/27 14:09:31.351225 Starting Dir client
+[pearviewer/client/grpc:ListDir] | INFO : dir.go:16: 2025/06/27 14:09:31.351328 List Dir Request created: dirName:"test" pathName:"./filetest/"
+[pearviewer/client/grpc:listDirReq] | INFO : dir.go:117: 2025/06/27 14:09:31.358681 List Dir Response: message:"List dir created" dir:{dirName:"test" pathName:"./filetest/" file:{name:"testfile.txt" pathName:"./filetest/test"} dir:{dirName:"test1" pathName:"./filetest/test" file:{name:"testfile1.txt" pathName:"./filetest/test/test1"} dir:{dirName:"test3" pathName:"./filetest/test/test1" file:{name:"testfile2.txt" pathName:"./filetest/test/test1/test3"}} dir:{dirName:"test4" pathName:"./filetest/test/test1"} dir:{dirName:"test5" pathName:"./filetest/test/test1"}} dir:{dirName:"test2" pathName:"./filetest/test" dir:{dirName:"test6" pathName:"./filetest/test/test2"} dir:{dirName:"test7" pathName:"./filetest/test/test2" file:{name:"testfile3.txt" pathName:"./filetest/test/test2/test7"}}}}
+[pearviewer/client/grpc:DownloadDir] | INFO : dir.go:37: 2025/06/27 14:09:31.358925 Download Dir Request created: message:"List dir created" dir:{dirName:"test" pathName:"./filetest/" file:{name:"testfile.txt" pathName:"./filetest/test"} dir:{dirName:"test1" pathName:"./filetest/test" file:{name:"testfile1.txt" pathName:"./filetest/test/test1"} dir:{dirName:"test3" pathName:"./filetest/test/test1" file:{name:"testfile2.txt" pathName:"./filetest/test/test1/test3"}} dir:{dirName:"test4" pathName:"./filetest/test/test1"} dir:{dirName:"test5" pathName:"./filetest/test/test1"}} dir:{dirName:"test2" pathName:"./filetest/test" dir:{dirName:"test6" pathName:"./filetest/test/test2"} dir:{dirName:"test7" pathName:"./filetest/test/test2" file:{name:"testfile3.txt" pathName:"./filetest/test/test2/test7"}}}}
+[pearviewer/client/grpc:createSourceDir] | INFO : dir.go:141: 2025/06/27 14:09:31.358994 Create Dir: ./filetest/test
+[pearviewer/client/grpc:createSourceDir] | INFO : dir.go:141: 2025/06/27 14:09:31.359037 Create Dir: ./filetest/test/test1
+[pearviewer/client/grpc:createSourceDir] | INFO : dir.go:141: 2025/06/27 14:09:31.359072 Create Dir: ./filetest/test/test1/test3
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/27 14:09:31.359135 Starting File client
+[pearviewer/client/grpc:DownloadFile] | INFO : file.go:17: 2025/06/27 14:09:31.359185 Download File request created: fileName:"testfile2.txt" pathName:"./filetest/test/test1/test3"
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 14:09:31.370409 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 14:09:31.370533 Chunk File write successfully: ./filetest/test/test1/test3/testfile2.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:126: 2025/06/27 14:09:31.370576 Download File finished
+[pearviewer/client/grpc:createSourceDir] | INFO : dir.go:141: 2025/06/27 14:09:31.370926 Create Dir: ./filetest/test/test1/test4
+[pearviewer/client/grpc:createSourceDir] | INFO : dir.go:141: 2025/06/27 14:09:31.370995 Create Dir: ./filetest/test/test1/test5
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/27 14:09:31.371156 Starting File client
+[pearviewer/client/grpc:DownloadFile] | INFO : file.go:17: 2025/06/27 14:09:31.371237 Download File request created: fileName:"testfile1.txt" pathName:"./filetest/test/test1"
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 14:09:31.376903 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 14:09:31.377137 Chunk File write successfully: ./filetest/test/test1/testfile1.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:126: 2025/06/27 14:09:31.377191 Download File finished
+[pearviewer/client/grpc:createSourceDir] | INFO : dir.go:141: 2025/06/27 14:09:31.377524 Create Dir: ./filetest/test/test2
+[pearviewer/client/grpc:createSourceDir] | INFO : dir.go:141: 2025/06/27 14:09:31.377575 Create Dir: ./filetest/test/test2/test6
+[pearviewer/client/grpc:createSourceDir] | INFO : dir.go:141: 2025/06/27 14:09:31.377614 Create Dir: ./filetest/test/test2/test7
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/27 14:09:31.377685 Starting File client
+[pearviewer/client/grpc:DownloadFile] | INFO : file.go:17: 2025/06/27 14:09:31.377717 Download File request created: fileName:"testfile3.txt" pathName:"./filetest/test/test2/test7"
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 14:09:31.382586 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 14:09:31.382688 Chunk File write successfully: ./filetest/test/test2/test7/testfile3.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:126: 2025/06/27 14:09:31.382719 Download File finished
+[pearviewer/client/grpc:createFileClient] | INFO : client.go:28: 2025/06/27 14:09:31.382913 Starting File client
+[pearviewer/client/grpc:DownloadFile] | INFO : file.go:17: 2025/06/27 14:09:31.382942 Download File request created: fileName:"testfile.txt" pathName:"./filetest/test"
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 14:09:31.388358 Response received
+[pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 14:09:31.388759 Chunk File write successfully: ./filetest/test/testfile.txt
+[pearviewer/client/grpc:downloadFileReq] | INFO : file.go:126: 2025/06/27 14:09:31.388842 Download File finished

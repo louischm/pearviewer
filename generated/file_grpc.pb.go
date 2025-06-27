@@ -19,10 +19,11 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	FileService_UploadFile_FullMethodName = "/FileService/UploadFile"
-	FileService_RenameFile_FullMethodName = "/FileService/RenameFile"
-	FileService_DeleteFile_FullMethodName = "/FileService/DeleteFile"
-	FileService_MoveFile_FullMethodName   = "/FileService/MoveFile"
+	FileService_UploadFile_FullMethodName   = "/FileService/UploadFile"
+	FileService_RenameFile_FullMethodName   = "/FileService/RenameFile"
+	FileService_DeleteFile_FullMethodName   = "/FileService/DeleteFile"
+	FileService_MoveFile_FullMethodName     = "/FileService/MoveFile"
+	FileService_DownloadFile_FullMethodName = "/FileService/DownloadFile"
 )
 
 // FileServiceClient is the client API for FileService service.
@@ -34,6 +35,7 @@ type FileServiceClient interface {
 	RenameFile(ctx context.Context, in *RenameFileReq, opts ...grpc.CallOption) (*RenameFileRes, error)
 	DeleteFile(ctx context.Context, in *DeleteFileReq, opts ...grpc.CallOption) (*DeleteFileRes, error)
 	MoveFile(ctx context.Context, in *MoveFileReq, opts ...grpc.CallOption) (*MoveFileRes, error)
+	DownloadFile(ctx context.Context, in *DownloadFileReq, opts ...grpc.CallOption) (grpc.ServerStreamingClient[DownloadFileRes], error)
 }
 
 type fileServiceClient struct {
@@ -87,6 +89,25 @@ func (c *fileServiceClient) MoveFile(ctx context.Context, in *MoveFileReq, opts 
 	return out, nil
 }
 
+func (c *fileServiceClient) DownloadFile(ctx context.Context, in *DownloadFileReq, opts ...grpc.CallOption) (grpc.ServerStreamingClient[DownloadFileRes], error) {
+	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
+	stream, err := c.cc.NewStream(ctx, &FileService_ServiceDesc.Streams[1], FileService_DownloadFile_FullMethodName, cOpts...)
+	if err != nil {
+		return nil, err
+	}
+	x := &grpc.GenericClientStream[DownloadFileReq, DownloadFileRes]{ClientStream: stream}
+	if err := x.ClientStream.SendMsg(in); err != nil {
+		return nil, err
+	}
+	if err := x.ClientStream.CloseSend(); err != nil {
+		return nil, err
+	}
+	return x, nil
+}
+
+// This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
+type FileService_DownloadFileClient = grpc.ServerStreamingClient[DownloadFileRes]
+
 // FileServiceServer is the server API for FileService service.
 // All implementations must embed UnimplementedFileServiceServer
 // for forward compatibility.
@@ -96,6 +117,7 @@ type FileServiceServer interface {
 	RenameFile(context.Context, *RenameFileReq) (*RenameFileRes, error)
 	DeleteFile(context.Context, *DeleteFileReq) (*DeleteFileRes, error)
 	MoveFile(context.Context, *MoveFileReq) (*MoveFileRes, error)
+	DownloadFile(*DownloadFileReq, grpc.ServerStreamingServer[DownloadFileRes]) error
 	mustEmbedUnimplementedFileServiceServer()
 }
 
@@ -117,6 +139,9 @@ func (UnimplementedFileServiceServer) DeleteFile(context.Context, *DeleteFileReq
 }
 func (UnimplementedFileServiceServer) MoveFile(context.Context, *MoveFileReq) (*MoveFileRes, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method MoveFile not implemented")
+}
+func (UnimplementedFileServiceServer) DownloadFile(*DownloadFileReq, grpc.ServerStreamingServer[DownloadFileRes]) error {
+	return status.Errorf(codes.Unimplemented, "method DownloadFile not implemented")
 }
 func (UnimplementedFileServiceServer) mustEmbedUnimplementedFileServiceServer() {}
 func (UnimplementedFileServiceServer) testEmbeddedByValue()                     {}
@@ -200,6 +225,17 @@ func _FileService_MoveFile_Handler(srv interface{}, ctx context.Context, dec fun
 	return interceptor(ctx, in, info, handler)
 }
 
+func _FileService_DownloadFile_Handler(srv interface{}, stream grpc.ServerStream) error {
+	m := new(DownloadFileReq)
+	if err := stream.RecvMsg(m); err != nil {
+		return err
+	}
+	return srv.(FileServiceServer).DownloadFile(m, &grpc.GenericServerStream[DownloadFileReq, DownloadFileRes]{ServerStream: stream})
+}
+
+// This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
+type FileService_DownloadFileServer = grpc.ServerStreamingServer[DownloadFileRes]
+
 // FileService_ServiceDesc is the grpc.ServiceDesc for FileService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -226,6 +262,11 @@ var FileService_ServiceDesc = grpc.ServiceDesc{
 			Handler:       _FileService_UploadFile_Handler,
 			ServerStreams: true,
 			ClientStreams: true,
+		},
+		{
+			StreamName:    "DownloadFile",
+			Handler:       _FileService_DownloadFile_Handler,
+			ServerStreams: true,
 		},
 	},
 	Metadata: "file.proto",

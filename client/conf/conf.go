@@ -2,11 +2,13 @@ package conf
 
 import (
 	"encoding/json"
+	"github.com/louischm/pkg/logger"
 	"os"
 	"strconv"
 )
 
 var confSingleton *Conf = nil
+var log = logger.NewLog()
 
 type Conf struct {
 	ServerPort    int32
@@ -22,7 +24,7 @@ func NewConf() *Conf {
 }
 
 func getConf() *Conf {
-	println("Reading conf")
+	log.Info("Reading conf")
 	conf, err := os.ReadFile("./conf/conf.json")
 
 	if err != nil {
@@ -30,12 +32,11 @@ func getConf() *Conf {
 	}
 
 	var confData Conf
-	println("Parsing json conf")
+	log.Info("Parsing json conf")
 	err = json.Unmarshal(conf, &confData)
 	if err != nil {
 		println("Error on Unmarshal conf: " + err.Error())
 	}
-	println("Conf loaded")
 	return &confData
 }
 

@@ -8,9 +8,7 @@ service FileService {
   rpc RenameFile(RenameFileReq) returns(RenameFileRes) {}
   rpc DeleteFile(DeleteFileReq) returns(DeleteFileRes) {}
   rpc MoveFile(MoveFileReq) returns(MoveFileRes) {}
-
-  // Server request
-//  rpc DownloadFile(FileResponse) returns(File) {}
+  rpc DownloadFile(DownloadFileReq) returns(stream DownloadFileRes) {}
 }
 
 // UploadFile Message
@@ -18,7 +16,6 @@ message UploadFileReq {
   File    file = 1;
   int64   startByte = 2;
   int64   endByte = 3;
-  string  pathName = 4;
 }
 
 message UploadFileRes {
@@ -60,6 +57,20 @@ message MoveFileReq {
 message MoveFileRes {
   int32 returnCode = 1;
   string message = 2;
+}
+
+// DownloadFile Message
+message DownloadFileReq {
+  string fileName = 1;
+  string pathName = 2;
+}
+
+message DownloadFileRes {
+  int32 returnCode = 1;
+  string message = 2;
+  File file = 3;
+  int64 startByte = 4;
+  int64 endByte = 5;
 }
 
 // Generic Message

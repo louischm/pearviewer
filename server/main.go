@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/louischm/logger"
+	"github.com/louischm/pkg/logger"
 	"pearviewer/server/conf"
 	"pearviewer/server/grpc"
 )

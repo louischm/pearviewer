@@ -3,7 +3,7 @@ module pearviewer/client
 go 1.23.4
 
 require (
-	github.com/louischm/logger v0.0.0-20250605130616-8747a73a15d7
+	github.com/louischm/pkg v0.0.0-20250626150458-96bd1eaba933
 	google.golang.org/grpc v1.73.0
 	pearviewer/generated v0.0.0-00010101000000-000000000000
 )

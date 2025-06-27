@@ -2,7 +2,7 @@ package dto
 
 import (
 	"errors"
-	"github.com/louischm/logger"
+	"github.com/louischm/pkg/logger"
 	"os"
 	"path/filepath"
 	pb "pearviewer/generated"
@@ -27,7 +27,7 @@ func CreateUploadFileReq(fileName string, pathName string) []*pb.UploadFileReq {
 	}()
 
 	for {
-		file, errFileChunk := getFileChunk(fi, startByte, startByte+1000)
+		file, errFileChunk := getFileChunk(fi, startByte, startByte+1000, pathName)
 
 		if errFileChunk != nil && file != nil {
 			log.Info("Empty file.")
@@ -35,7 +35,6 @@ func CreateUploadFileReq(fileName string, pathName string) []*pb.UploadFileReq {
 				File:      file,
 				StartByte: startByte,
 				EndByte:   startByte,
-				PathName:  pathName,
 			}
 			uploads = append(uploads, &upload)
 			break
@@ -49,7 +48,6 @@ func CreateUploadFileReq(fileName string, pathName string) []*pb.UploadFileReq {
 			File:      file,
 			StartByte: startByte,
 			EndByte:   endByte,
-			PathName:  pathName,
 		}
 		uploads = append(uploads, &upload)
 		startByte += 1000
@@ -82,7 +80,14 @@ func CreateMoveFileReq(fileName, oldPathName, newPathName string) *pb.MoveFileRe
 	}
 }
 
-func getFileChunk(fi *os.File, startByte, endByte int64) (*pb.File, error) {
+func CreateDownloadFileReq(fileName, pathName string) *pb.DownloadFileReq {
+	return &pb.DownloadFileReq{
+		FileName: fileName,
+		PathName: pathName,
+	}
+}
+
+func getFileChunk(fi *os.File, startByte, endByte int64, pathName string) (*pb.File, error) {
 	// Open file
 
 	buf := make([]byte, 1)
@@ -103,8 +108,9 @@ func getFileChunk(fi *os.File, startByte, endByte int64) (*pb.File, error) {
 		errData := errors.New("File is empty")
 		fname := filepath.Base(fi.Name())
 		file := &pb.File{
-			Name: fname,
-			Data: data,
+			Name:     fname,
+			Data:     data,
+			PathName: pathName,
 		}
 		return file, errData
 	} else if len(data) == 0 {
@@ -114,8 +120,9 @@ func getFileChunk(fi *os.File, startByte, endByte int64) (*pb.File, error) {
 
 	fname := filepath.Base(fi.Name())
 	file := pb.File{
-		Name: fname,
-		Data: data,
+		Name:     fname,
+		Data:     data,
+		PathName: pathName,
 	}
 	return &file, nil
 }

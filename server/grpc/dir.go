@@ -2,11 +2,11 @@ package grpc
 
 import (
 	"context"
+	"github.com/louischm/pkg/utils"
 	"os"
 	pb "pearviewer/generated"
 	"pearviewer/server/service"
 	"pearviewer/server/types"
-	"pearviewer/server/utils"
 )
 
 func (s *dirServer) CreateDir(ctx context.Context, request *pb.CreateDirReq) (*pb.CreateDirRes, error) {

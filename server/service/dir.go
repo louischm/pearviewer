@@ -2,12 +2,15 @@ package service
 
 import (
 	"errors"
+	"github.com/louischm/pkg/logger"
+	"github.com/louischm/pkg/utils"
 	"os"
 	pb "pearviewer/generated"
 	res "pearviewer/server/response"
 	"pearviewer/server/types"
-	"pearviewer/server/utils"
 )
+
+var log = logger.NewLog()
 
 func CreateDir(dirName, pathName string) (*pb.CreateDirRes, error) {
 	name := utils.Joins(pathName, dirName)

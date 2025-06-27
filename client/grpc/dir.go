@@ -2,26 +2,28 @@ package grpc
 
 import (
 	"context"
+	"github.com/louischm/pkg/utils"
+	"os"
 	"pearviewer/client/dto"
 	"pearviewer/client/types"
-	"pearviewer/client/utils"
 	pb "pearviewer/generated"
 )
 
-func ListDir(dirName, pathName string) {
+func ListDir(dirName, pathName string) *pb.ListDirRes {
 	client, conn := createDirClient()
+	defer closeClient(conn)
 	request := dto.CreateListDirReq(dirName, pathName)
 	log.Info("List Dir Request created: " + request.String())
-	listDirReq(*client, request)
-	closeClient(conn)
+	res := listDirReq(*client, request)
+	return res
 }
 
 func MoveDir(dirName, oldPathName, newPathName string) {
 	client, conn := createDirClient()
+	defer closeClient(conn)
 	request := dto.CreateMoveDirReq(dirName, oldPathName, newPathName)
 	log.Info("Move Dir Request created: " + request.String())
 	moveDirReq(*client, request)
-	closeClient(conn)
 }
 
 func UploadDir(dirName, oldPathName, newPathName string) {
@@ -30,28 +32,34 @@ func UploadDir(dirName, oldPathName, newPathName string) {
 	uploadDirReq(request)
 }
 
+func DownloadDir(dirName, sourcePathName, destPathName string) {
+	listDir := ListDir(dirName, sourcePathName)
+	log.Info("Download Dir Request created: " + listDir.String())
+	downloadDirReq(listDir.Dir, sourcePathName, destPathName)
+}
+
 func CreateDir(dirName string, pathname string) {
 	client, conn := createDirClient()
+	defer closeClient(conn)
 	request := dto.CreateDirReq(dirName, pathname)
 	log.Info("Upload Dir Request created: " + request.String())
 	createDirReq(*client, request)
-	closeClient(conn)
 }
 
 func RenameDir(oldName, newName, pathName string) {
 	client, conn := createDirClient()
+	defer closeClient(conn)
 	request := dto.CreateRenameDirReq(oldName, newName, pathName)
 	log.Info("Rename Dir Request created: " + request.String())
 	renameDirReq(*client, request)
-	closeClient(conn)
 }
 
 func DeleteDir(dirName, pathname string) {
 	client, conn := createDirClient()
+	defer closeClient(conn)
 	request := dto.CreateDeleteDirReq(dirName, pathname)
 	log.Info("Delete Dir request created: " + request.String())
 	deleteDirReq(*client, request)
-	closeClient(conn)
 }
 
 func createDirReq(client pb.DirServiceClient, request *pb.CreateDirReq) {
@@ -101,10 +109,37 @@ func moveDirReq(client pb.DirServiceClient, request *pb.MoveDirReq) {
 	log.Info("Move Dir Response: " + response.String())
 }
 
-func listDirReq(client pb.DirServiceClient, request *pb.ListDirReq) {
+func listDirReq(client pb.DirServiceClient, request *pb.ListDirReq) *pb.ListDirRes {
 	response, err := client.ListDir(context.Background(), request)
 	if err != nil {
 		log.Error("List Dir Request error: " + err.Error())
 	}
 	log.Info("List Dir Response: " + response.String())
+	return response
+}
+
+func downloadDirReq(dir *pb.Dir, sourcePathName, destPathName string) {
+	createSourceDir(dir, destPathName)
+	sourceName := utils.Joins(sourcePathName, dir.DirName)
+	destName := utils.Joins(destPathName, dir.DirName)
+	for _, child := range dir.GetDir() {
+		downloadDirReq(child, sourceName, destName)
+	}
+
+	for _, file := range dir.GetFile() {
+		DownloadFile(file.Name, sourceName, destName)
+	}
+}
+
+func createSourceDir(dir *pb.Dir, destPathName string) {
+	name := utils.Joins(destPathName, dir.DirName)
+
+	if !utils.IsDirExist(name) {
+		if err := os.Mkdir(name, os.ModePerm); err != nil {
+			log.Debug("Create Dir error: " + err.Error())
+		}
+		log.Info("Create Dir: " + name)
+	} else {
+		log.Debug("Dir already exist: " + name)
+	}
 }

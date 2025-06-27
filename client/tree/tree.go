@@ -2,10 +2,10 @@ package tree
 
 import (
 	"errors"
-	"github.com/louischm/logger"
+	"github.com/louischm/pkg/logger"
+	"github.com/louischm/pkg/utils"
 	"os"
 	"pearviewer/client/types"
-	"pearviewer/client/utils"
 )
 
 var log = logger.NewLog()

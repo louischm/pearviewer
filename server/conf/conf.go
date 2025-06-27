@@ -2,7 +2,7 @@ package conf
 
 import (
 	"encoding/json"
-	"github.com/louischm/logger"
+	"github.com/louischm/pkg/logger"
 	"os"
 	"strconv"
 )

@@ -2,23 +2,66 @@ package service
 
 import (
 	"errors"
-	"github.com/louischm/logger"
+	"github.com/louischm/pkg/utils"
 	"io"
 	"os"
 	pb "pearviewer/generated"
 	res "pearviewer/server/response"
 	"pearviewer/server/types"
-	"pearviewer/server/utils"
 )
 
-var log = logger.NewLog()
+func DownloadFileStream(request *pb.DownloadFileReq) ([]*pb.DownloadFileRes, error) {
+	// Fetch Data file
+	var downloads []*pb.DownloadFileRes
+	var startByte int64 = 0
+	fileName := utils.Joins(request.PathName, request.FileName)
+
+	fi, err := os.Open(fileName)
+	if err != nil {
+		log.Error("Failed to open file: " + fileName)
+		return nil, err
+	}
+	defer func() {
+		if err = fi.Close(); err != nil {
+			log.Error("Failed to close file: " + fileName)
+		}
+	}()
+
+	for {
+		file, errFileChunk := getFileChunk(fi, startByte, startByte+1000, request.FileName)
+
+		if errFileChunk != nil && file != nil {
+			log.Info("Empty File." + fileName)
+			download := &pb.DownloadFileRes{
+				File:      file,
+				StartByte: startByte,
+				EndByte:   startByte,
+			}
+			downloads = append(downloads, download)
+			break
+		} else if errFileChunk != nil {
+			log.Info("File read.")
+			break
+		}
+
+		endByte := startByte + 1000
+		download := &pb.DownloadFileRes{
+			File:      file,
+			StartByte: startByte,
+			EndByte:   endByte,
+		}
+		downloads = append(downloads, download)
+		startByte += 1000
+	}
+	return downloads, nil
+}
 
 func UploadFileChunk(stream pb.FileService_UploadFileServer) (*pb.UploadFileRes, error) {
 	var lastByte int64
 
 	upload, err := stream.Recv()
 	lastByte = upload.GetEndByte()
-	log.Info("Upload file chunk start for: " + upload.GetPathName())
+	log.Info("Upload file chunk start for: " + upload.GetFile().GetPathName())
 	if err == io.EOF {
 		log.Info("File upload EOF")
 		return nil, err
@@ -29,10 +72,10 @@ func UploadFileChunk(stream pb.FileService_UploadFileServer) (*pb.UploadFileRes,
 	}
 
 	// Create file if necessary
-	if !utils.IsFileInDir(upload.File.GetName(), upload.GetPathName()) {
-		utils.CreateEmptyFile(upload.File.GetName(), upload.GetPathName())
+	if !utils.IsFileInDir(upload.File.GetName(), upload.File.PathName) {
+		utils.CreateEmptyFile(upload.File.GetName(), upload.File.PathName)
 	}
-	filename := utils.Joins(upload.GetPathName(), upload.File.GetName())
+	filename := utils.Joins(upload.File.PathName, upload.File.GetName())
 	message, errWrite := writeFileChunk(filename, upload)
 	if errWrite != nil {
 		return res.CreateUploadFileRes(types.Fail, message, lastByte, errWrite)
@@ -119,23 +162,58 @@ func writeFileChunk(fileName string, upload *pb.UploadFileReq) (string, error) {
 	var message string
 
 	// Write file
-	file, errOpen := os.OpenFile(fileName, os.O_WRONLY|os.O_APPEND, 0666)
-	if errOpen != nil {
+	file, err := os.OpenFile(fileName, os.O_WRONLY|os.O_APPEND, 0666)
+	if err != nil {
 		log.Debug(types.OpenFileError(fileName))
 		message = types.OpenFileError(fileName)
-		return message, errOpen
+		return message, err
 	}
-	if _, errWrite := file.Write(upload.GetFile().GetData()); errWrite != nil {
+	if _, err = file.Write(upload.GetFile().GetData()); err != nil {
 		log.Debug(types.WriteFileError(fileName))
 		message = types.WriteFileError(fileName)
-		return message, errWrite
+		return message, err
 	}
-	errClose := file.Close()
-	if errClose != nil {
+	err = file.Close()
+	if err != nil {
 		log.Debug(types.CloseFileError(fileName))
 		message = types.CloseFileError(fileName)
-		return message, errClose
+		return message, err
 	}
 	log.Info(types.WriteFileChunkSuccess(fileName))
 	return types.WriteFileChunkSuccess(fileName), nil
+}
+
+func getFileChunk(fi *os.File, startByte, endByte int64, fileName string) (*pb.File, error) {
+	buf := make([]byte, 1)
+	var data []byte
+	for {
+		n, err := fi.ReadAt(buf, startByte)
+		if n == 0 || startByte == endByte {
+			break
+		}
+		if err != nil {
+			log.Error("Failed to read file: " + err.Error())
+		}
+
+		data = append(data, buf...)
+		startByte++
+	}
+
+	if len(data) == 0 && startByte == 0 {
+		err := errors.New("File is empty")
+		file := &pb.File{
+			Name: fileName,
+			Data: data,
+		}
+		return file, err
+	} else if len(data) == 0 {
+		err := errors.New("File is read")
+		return nil, err
+	}
+
+	file := &pb.File{
+		Name: fileName,
+		Data: data,
+	}
+	return file, nil
 }

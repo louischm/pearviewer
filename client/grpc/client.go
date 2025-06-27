@@ -1,7 +1,7 @@
 package grpc
 
 import (
-	"github.com/louischm/logger"
+	"github.com/louischm/pkg/logger"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 	"pearviewer/client/conf"
@@ -9,9 +9,9 @@ import (
 )
 
 var log = logger.NewLog()
-var confFile = conf.NewConf()
 
 func getConn() *grpc.ClientConn {
+	var confFile = conf.NewConf()
 	// Client startup
 	var opts []grpc.DialOption
 	opts = append(opts, grpc.WithTransportCredentials(insecure.NewCredentials()))

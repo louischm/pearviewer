@@ -20,3 +20,26 @@
 [pearviewer/client/grpc:createDirReq] | ERROR : dir.go:44: 2025/06/24 14:45:47.048017 Upload Dir Request error: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8080: connect: connection refused"
 [pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 11:45:49.151740 List Dir Request error: rpc error: code = Unknown desc = open ./filetest/test1: no such file or directory
 [pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 11:48:52.652561 List Dir Request error: rpc error: code = Unknown desc = open ./filetest/test1: no such file or directory
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:11:51.046966 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:12:07.268344 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:14:37.023203 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:15:01.685581 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:15:52.278144 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:16:06.715903 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:16:36.327816 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:17:09.766814 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:18:33.360417 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:20:43.948078 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:21:52.046754 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:23:06.707009 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:23:37.266695 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:24:22.144434 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:27:25.711082 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:listDirReq] | ERROR : dir.go:107: 2025/06/26 17:28:14.966286 List Dir Request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:uploadFileReq] | FATAL : file.go:48: 2025/06/27 11:08:28.717573 Failed to start streamingrpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8080: connect: connection refused"
+[pearviewer/client/grpc:uploadFileReq] | FATAL : file.go:48: 2025/06/27 11:10:17.665576 Failed to start streamingrpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8080: connect: connection refused"
+[pearviewer/client/grpc:uploadFileReq] | FATAL : file.go:48: 2025/06/27 11:10:23.648717 Failed to start streamingrpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8080: connect: connection refused"
+[pearviewer/client/grpc:downloadFileReq] | ERROR : file.go:131: 2025/06/27 12:00:43.953835 Download File request error: EOF
+[pearviewer/client/grpc:downloadFileReq] | ERROR : file.go:131: 2025/06/27 14:03:56.314063 Download File request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:downloadFileReq] | ERROR : file.go:131: 2025/06/27 14:06:24.093073 Download File request error: rpc error: code = Unavailable desc = error reading from server: EOF
+[pearviewer/client/grpc:downloadFileReq] | ERROR : file.go:131: 2025/06/27 14:07:03.192498 Download File request error: rpc error: code = Unavailable desc = error reading from server: EOF

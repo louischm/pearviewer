@@ -1,7 +1,7 @@
 package grpc
 
 import (
-	"github.com/louischm/logger"
+	"github.com/louischm/pkg/logger"
 	"google.golang.org/grpc"
 	"net"
 	pdir "pearviewer/generated"

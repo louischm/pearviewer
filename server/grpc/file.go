@@ -2,11 +2,25 @@ package grpc
 
 import (
 	"context"
+	"github.com/louischm/pkg/utils"
 	"io"
 	pb "pearviewer/generated"
 	"pearviewer/server/service"
 	"pearviewer/server/types"
 )
+
+func (s *fileServer) DownloadFile(request *pb.DownloadFileReq, stream pb.FileService_DownloadFileServer) error {
+	name := utils.Joins(request.PathName, request.FileName)
+	log.Info("Start Download File: " + name)
+	uploads, err := service.DownloadFileStream(request)
+
+	for _, upload := range uploads {
+		if err = stream.Send(upload); err != nil {
+			return err
+		}
+	}
+	return nil
+}
 
 func (s *fileServer) UploadFile(stream pb.FileService_UploadFileServer) error {
 	log.Info("New Upload File Streaming started.")

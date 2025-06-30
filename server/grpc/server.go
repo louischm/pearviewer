@@ -22,7 +22,7 @@ type dirServer struct {
 func StartServer(confData *conf.Conf) {
 	lis, err := net.Listen("tcp", confData.GetServerAddress())
 	if err != nil {
-		log.Fatal("Can't start server" + err.Error())
+		log.Fatal("Can't start server: %s", err.Error())
 	}
 	var opts []grpc.ServerOption
 	grpcServer := grpc.NewServer(opts...)
@@ -30,6 +30,6 @@ func StartServer(confData *conf.Conf) {
 	pdir.RegisterDirServiceServer(grpcServer, &dirServer{})
 	errServer := grpcServer.Serve(lis)
 	if errServer != nil {
-		log.Fatal("Can't start server" + errServer.Error())
+		log.Fatal("Can't start server: %s", errServer.Error())
 	}
 }

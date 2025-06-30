@@ -14,7 +14,7 @@ func DownloadFile(fileName, sourcePathName, destPathName string) {
 	client, conn := createFileClient()
 	defer closeClient(conn)
 	request := dto.CreateDownloadFileReq(fileName, sourcePathName)
-	log.Info("Download File request created: " + request.String())
+	log.Info("Download File request created: %s", request.String())
 	downloadFileReq(*client, request, destPathName)
 }
 
@@ -30,7 +30,7 @@ func RenameFile(oldName, newName, pathName string) {
 	client, conn := createFileClient()
 	defer closeClient(conn)
 	request := dto.CreateRenameFileReq(oldName, newName, pathName)
-	log.Info("Rename File request created:" + request.String())
+	log.Info("Rename File request created:%s", request.String())
 	renameFileReq(*client, request)
 }
 
@@ -38,7 +38,7 @@ func DeleteFile(fileName, pathName string) {
 	client, conn := createFileClient()
 	defer closeClient(conn)
 	request := dto.CreateDeleteFileReq(fileName, pathName)
-	log.Info("Delete File request created: " + request.String())
+	log.Info("Delete File request created: %s", request.String())
 	deleteFileReq(*client, request)
 }
 
@@ -46,7 +46,7 @@ func MoveFile(fileName, oldPathName, newPathName string) {
 	client, conn := createFileClient()
 	defer closeClient(conn)
 	request := dto.CreateMoveFileReq(fileName, oldPathName, newPathName)
-	log.Info("Move File Request created: " + request.String())
+	log.Info("Move File Request created: %s", request.String())
 	moveFileReq(*client, request)
 }
 
@@ -55,7 +55,7 @@ func uploadFileReq(client pb.FileServiceClient, request []*pb.UploadFileReq) {
 	log.Info("Start streaming")
 	stream, err := client.UploadFile(context.Background())
 	if err != nil {
-		log.Fatal("Failed to start streaming" + err.Error())
+		log.Fatal("Failed to start streaming: %s", err.Error())
 	}
 	waitc := make(chan struct{})
 
@@ -69,19 +69,19 @@ func uploadFileReq(client pb.FileServiceClient, request []*pb.UploadFileReq) {
 				return
 			}
 			if errRecv != nil && res.GetReturnCode() == types.ServerError {
-				log.Debug("Failed to receive response: " + errRecv.Error())
+				log.Debug("Failed to receive response: %s", errRecv.Error())
 			}
 			if errRecv != nil {
-				log.Debug("Failure during streaming: " + errRecv.Error())
+				log.Debug("Failure during streaming: %s", errRecv.Error())
 			}
-			log.Info("Response received: " + res.String())
+			log.Info("Response received: %s", res.String())
 		}
 	}()
 
 	// Send req
 	for _, upload := range request {
 		if errStream := stream.Send(upload); errStream != nil {
-			log.Debug("Failed to send streaming" + errStream.Error())
+			log.Debug("Failed to send streaming%s", errStream.Error())
 		}
 		log.Info("Request streaming sended.")
 	}
@@ -93,31 +93,31 @@ func uploadFileReq(client pb.FileServiceClient, request []*pb.UploadFileReq) {
 func renameFileReq(client pb.FileServiceClient, request *pb.RenameFileReq) {
 	response, err := client.RenameFile(context.Background(), request)
 	if err != nil {
-		log.Error("Rename File Request error: " + err.Error())
+		log.Error("Rename File Request error: %s", err.Error())
 	}
-	log.Info("Rename File Response: " + response.String())
+	log.Info("Rename File Response: %s", response.String())
 }
 
 func deleteFileReq(client pb.FileServiceClient, request *pb.DeleteFileReq) {
 	response, err := client.DeleteFile(context.Background(), request)
 	if err != nil {
-		log.Error("Delete File Request error: " + err.Error())
+		log.Error("Delete File Request error: %s", err.Error())
 	}
-	log.Info("Delete File response: " + response.String())
+	log.Info("Delete File response: %s", response.String())
 }
 
 func moveFileReq(client pb.FileServiceClient, request *pb.MoveFileReq) {
 	response, err := client.MoveFile(context.Background(), request)
 	if err != nil {
-		log.Error("Move File request error: " + err.Error())
+		log.Error("Move File request error: %s", err.Error())
 	}
-	log.Info("Move File response: " + response.String())
+	log.Info("Move File response: %s", response.String())
 }
 
 func downloadFileReq(client pb.FileServiceClient, request *pb.DownloadFileReq, pathName string) {
 	stream, err := client.DownloadFile(context.Background(), request)
 	if err != nil {
-		log.Error("Download File request error: " + err.Error())
+		log.Error("Download File request error: %s", err.Error())
 	}
 
 	for {
@@ -128,7 +128,7 @@ func downloadFileReq(client pb.FileServiceClient, request *pb.DownloadFileReq, p
 		}
 
 		if errStream != nil {
-			log.Error("Download File request error: " + errStream.Error())
+			log.Error("Download File request error: %s", errStream.Error())
 		}
 		log.Info("Response received")
 		saveFileChunk(res, pathName)
@@ -143,18 +143,18 @@ func saveFileChunk(res *pb.DownloadFileRes, pathName string) {
 	fileName := utils.Joins(pathName, res.File.Name)
 	file, err := os.OpenFile(fileName, os.O_WRONLY|os.O_APPEND, 0666)
 	if err != nil {
-		log.Error("Failed to open file: " + fileName)
+		log.Error("Failed to open file: %s", fileName)
 		return
 	}
 	if _, err = file.Write(res.File.Data); err != nil {
-		log.Error("Failed to write file: " + fileName)
+		log.Error("Failed to write file: %s", fileName)
 		return
 	}
 	err = file.Close()
 	if err != nil {
-		log.Error("Failed to close file: " + fileName)
+		log.Error("Failed to close file: %s", fileName)
 		return
 	}
-	log.Info("Chunk File write successfully: " + fileName)
+	log.Info("Chunk File write successfully: %s", fileName)
 	return
 }

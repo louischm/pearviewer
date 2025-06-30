@@ -11,7 +11,7 @@ import (
 
 func (s *fileServer) DownloadFile(request *pb.DownloadFileReq, stream pb.FileService_DownloadFileServer) error {
 	name := utils.Joins(request.PathName, request.FileName)
-	log.Info("Start Download File: " + name)
+	log.Info("Start Download File: %s", name)
 	uploads, err := service.DownloadFileStream(request)
 
 	for _, upload := range uploads {
@@ -52,7 +52,7 @@ func (s *fileServer) UploadFile(stream pb.FileService_UploadFileServer) error {
 }
 
 func (s *fileServer) RenameFile(ctx context.Context, request *pb.RenameFileReq) (*pb.RenameFileRes, error) {
-	log.Info("Received RenameFileReq: " + request.String())
+	log.Info("Received RenameFileReq: %s", request.String())
 	res, err := service.RenameFile(request)
 
 	if err != nil && res.GetReturnCode() == types.ServerError {
@@ -62,7 +62,7 @@ func (s *fileServer) RenameFile(ctx context.Context, request *pb.RenameFileReq) 
 }
 
 func (s *fileServer) DeleteFile(ctx context.Context, request *pb.DeleteFileReq) (*pb.DeleteFileRes, error) {
-	log.Info("Received DeleteFileReq: " + request.String())
+	log.Info("Received DeleteFileReq: %s", request.String())
 	res, err := service.DeleteFile(request)
 
 	if err != nil && res.GetReturnCode() == types.ServerError {
@@ -72,7 +72,7 @@ func (s *fileServer) DeleteFile(ctx context.Context, request *pb.DeleteFileReq) 
 }
 
 func (s *fileServer) MoveFile(ctx context.Context, request *pb.MoveFileReq) (*pb.MoveFileRes, error) {
-	log.Info("Received MoveFileReq: " + request.String())
+	log.Info("Received MoveFileReq: %s", request.String())
 	res, err := service.MoveFile(request.GetFileName(), request.GetOldPathName(), request.GetNewPathName())
 
 	if err != nil && res.GetReturnCode() == types.ServerError {

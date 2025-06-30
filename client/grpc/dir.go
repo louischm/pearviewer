@@ -13,7 +13,7 @@ func ListDir(dirName, pathName string) *pb.ListDirRes {
 	client, conn := createDirClient()
 	defer closeClient(conn)
 	request := dto.CreateListDirReq(dirName, pathName)
-	log.Info("List Dir Request created: " + request.String())
+	log.Info("List Dir Request created: %s", request.String())
 	res := listDirReq(*client, request)
 	return res
 }
@@ -22,7 +22,7 @@ func MoveDir(dirName, oldPathName, newPathName string) {
 	client, conn := createDirClient()
 	defer closeClient(conn)
 	request := dto.CreateMoveDirReq(dirName, oldPathName, newPathName)
-	log.Info("Move Dir Request created: " + request.String())
+	log.Info("Move Dir Request created: %s", request.String())
 	moveDirReq(*client, request)
 }
 
@@ -34,7 +34,7 @@ func UploadDir(dirName, oldPathName, newPathName string) {
 
 func DownloadDir(dirName, sourcePathName, destPathName string) {
 	listDir := ListDir(dirName, sourcePathName)
-	log.Info("Download Dir Request created: " + listDir.String())
+	log.Info("Download Dir Request created: %s", listDir.String())
 	downloadDirReq(listDir.Dir, sourcePathName, destPathName)
 }
 
@@ -42,7 +42,7 @@ func CreateDir(dirName string, pathname string) {
 	client, conn := createDirClient()
 	defer closeClient(conn)
 	request := dto.CreateDirReq(dirName, pathname)
-	log.Info("Upload Dir Request created: " + request.String())
+	log.Info("Upload Dir Request created: %s", request.String())
 	createDirReq(*client, request)
 }
 
@@ -50,7 +50,7 @@ func RenameDir(oldName, newName, pathName string) {
 	client, conn := createDirClient()
 	defer closeClient(conn)
 	request := dto.CreateRenameDirReq(oldName, newName, pathName)
-	log.Info("Rename Dir Request created: " + request.String())
+	log.Info("Rename Dir Request created: %s", request.String())
 	renameDirReq(*client, request)
 }
 
@@ -58,24 +58,24 @@ func DeleteDir(dirName, pathname string) {
 	client, conn := createDirClient()
 	defer closeClient(conn)
 	request := dto.CreateDeleteDirReq(dirName, pathname)
-	log.Info("Delete Dir request created: " + request.String())
+	log.Info("Delete Dir request created: %s", request.String())
 	deleteDirReq(*client, request)
 }
 
 func createDirReq(client pb.DirServiceClient, request *pb.CreateDirReq) {
 	response, err := client.CreateDir(context.Background(), request)
 	if err != nil {
-		log.Error("Upload Dir Request error: " + err.Error())
+		log.Error("Upload Dir Request error: %s", err.Error())
 	}
-	log.Info("Upload Dir Response: " + response.String())
+	log.Info("Upload Dir Response: %s", response.String())
 }
 
 func renameDirReq(client pb.DirServiceClient, request *pb.RenameDirReq) {
 	response, err := client.RenameDir(context.Background(), request)
 	if err != nil {
-		log.Error("Rename Dir Request error: " + err.Error())
+		log.Error("Rename Dir Request error: %s", err.Error())
 	}
-	log.Info("Rename Dir Response: " + response.String())
+	log.Info("Rename Dir Response: %s", response.String())
 }
 
 func deleteDirReq(client pb.DirServiceClient, request *pb.DeleteDirReq) {
@@ -83,7 +83,7 @@ func deleteDirReq(client pb.DirServiceClient, request *pb.DeleteDirReq) {
 	if err != nil {
 		log.Error("Delete Dir Request error: " + err.Error())
 	}
-	log.Info("Delete Dir Response: " + response.String())
+	log.Info("Delete Dir Response: %s", response.String())
 }
 
 func uploadDirReq(req *types.Dir) {
@@ -104,17 +104,17 @@ func uploadDirReq(req *types.Dir) {
 func moveDirReq(client pb.DirServiceClient, request *pb.MoveDirReq) {
 	response, err := client.MoveDir(context.Background(), request)
 	if err != nil {
-		log.Error("Move Dir Request error: " + err.Error())
+		log.Error("Move Dir Request error: %s", err.Error())
 	}
-	log.Info("Move Dir Response: " + response.String())
+	log.Info("Move Dir Response: %s", response.String())
 }
 
 func listDirReq(client pb.DirServiceClient, request *pb.ListDirReq) *pb.ListDirRes {
 	response, err := client.ListDir(context.Background(), request)
 	if err != nil {
-		log.Error("List Dir Request error: " + err.Error())
+		log.Error("List Dir Request error: %s", err.Error())
 	}
-	log.Info("List Dir Response: " + response.String())
+	log.Info("List Dir Response: %s", response.String())
 	return response
 }
 
@@ -136,10 +136,10 @@ func createSourceDir(dir *pb.Dir, destPathName string) {
 
 	if !utils.IsDirExist(name) {
 		if err := os.Mkdir(name, os.ModePerm); err != nil {
-			log.Debug("Create Dir error: " + err.Error())
+			log.Debug("Create Dir error: %s", err.Error())
 		}
-		log.Info("Create Dir: " + name)
+		log.Info("Create Dir: %s", name)
 	} else {
-		log.Debug("Dir already exist: " + name)
+		log.Debug("Dir already exist: %s", name)
 	}
 }

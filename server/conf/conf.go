@@ -19,14 +19,14 @@ func GetConf() *Conf {
 	conf, err := os.ReadFile("./conf/conf.json")
 
 	if err != nil {
-		log.Fatal("Error on Reading conf file: " + err.Error())
+		log.Fatal("Error on Reading conf file: %s", err.Error())
 	}
 
 	var confData Conf
 	log.Info("Parsing json conf")
 	err = json.Unmarshal(conf, &confData)
 	if err != nil {
-		log.Fatal("Error on Unmarshal conf: " + err.Error())
+		log.Fatal("Error on Unmarshal conf: %s", err.Error())
 	}
 
 	return &confData

@@ -17,6 +17,7 @@ Using gRPC and protobuf. Bidirectional streaming RPC type.
 - Move Dir
 - Create Dir
 - List Dir
+- Login
 
 #### Server request
 - Download File
@@ -35,3 +36,7 @@ Transfer packet of data if needed (File exceeding a certain size).
 ## Client
 
 Connect to a server chosen. Upload/Download one or multiple file at once. 
+
+## GUI
+
+- Search the correct gui go library for web and phone dev.

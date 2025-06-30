@@ -17,12 +17,12 @@ func CreateUploadFileReq(fileName string, pathName string) []*pb.UploadFileReq {
 
 	fi, err := os.Open(fileName)
 	if err != nil {
-		log.Error("Failed to open file: " + err.Error())
+		log.Error("Failed to open file: %s", err.Error())
 	}
 
 	defer func() {
 		if err = fi.Close(); err != nil {
-			log.Error("Failed to close file: " + err.Error())
+			log.Error("Failed to close file: %s", err.Error())
 		}
 	}()
 
@@ -98,7 +98,7 @@ func getFileChunk(fi *os.File, startByte, endByte int64, pathName string) (*pb.F
 			break
 		}
 		if errReadAt != nil {
-			log.Error("Failed to read file" + errReadAt.Error())
+			log.Error("Failed to read file: %s", errReadAt.Error())
 		}
 		data = append(data, buf...)
 		startByte++

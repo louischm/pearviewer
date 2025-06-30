@@ -1,3 +1,3 @@
-# TODO LIST
-
-- Add kwargs to logger and color
+- Login
+- Add local settings (main source dir | multiple localhost)
+- Search GUI library for phone and web

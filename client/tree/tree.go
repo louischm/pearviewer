@@ -16,8 +16,8 @@ func CreateTree(dirName, oldPathName, newPathName string) (*types.Dir, error) {
 	newName := utils.Joins(newPathName, dirName)
 
 	if !utils.IsDirExist(oldName) {
-		log.Debug("Dir " + oldName + " does not exist")
-		return nil, errors.New("Dir " + oldName + " does not exist")
+		log.Debug("Dir %s does not exist", oldName)
+		return nil, errors.New("Dir %s does not exist", oldName)
 	}
 
 	files, err := os.ReadDir(oldName)

@@ -397,3 +397,6 @@
 [pearviewer/server/service:DownloadFileStream] | INFO : file.go:43: 2025/06/27 14:09:31.382444 File read.
 [pearviewer/server/grpc:(*fileServer).DownloadFile] | INFO : file.go:14: 2025/06/27 14:09:31.387763 Start Download File: ./filetest/test/testfile.txt
 [pearviewer/server/service:DownloadFileStream] | INFO : file.go:34: 2025/06/27 14:09:31.387936 Empty File../filetest/test/testfile.txt
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/30 10:59:37.359497 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/30 10:59:37.359875 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 10:59:37.359933 Conf loaded

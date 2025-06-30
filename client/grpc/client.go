@@ -17,7 +17,7 @@ func getConn() *grpc.ClientConn {
 	opts = append(opts, grpc.WithTransportCredentials(insecure.NewCredentials()))
 	conn, err := grpc.NewClient(confFile.GetServerAddress(), opts...)
 	if err != nil {
-		log.Fatal("Fatal error connecting to server" + err.Error())
+		log.Fatal("Fatal error connecting to server: %s", err.Error())
 	}
 	return conn
 }
@@ -38,6 +38,6 @@ func createDirClient() (*pb.DirServiceClient, *grpc.ClientConn) {
 
 func closeClient(conn *grpc.ClientConn) {
 	if errClose := conn.Close(); errClose != nil {
-		log.Fatal("Failed to close connection" + errClose.Error())
+		log.Fatal("Failed to close connection: %s", errClose.Error())
 	}
 }

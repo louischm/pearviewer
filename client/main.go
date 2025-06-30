@@ -1,8 +1,8 @@
 package main
 
 import (
+	"cogentcore.org/core/core"
 	"github.com/louischm/pkg/logger"
-	"pearviewer/client/grpc"
 )
 
 var log = logger.NewLog()
@@ -22,5 +22,10 @@ func main() {
 	//grpc.MoveDir("test", "./newFileTest/", "./filetest/")
 	//grpc.ListDir("test", "./filetest/")
 	//grpc.DownloadFile("test.txt", "./filetest/", "./filetest/")
-	grpc.DownloadDir("test", "./filetest/", "./filetest/")
+	//grpc.DownloadDir("test", "./filetest/", "./filetest/")
+
+	// Run main window
+	b := core.NewBody()
+	core.NewButton(b).SetText("Hello World")
+	b.RunMainWindow()
 }

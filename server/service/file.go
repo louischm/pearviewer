@@ -18,12 +18,12 @@ func DownloadFileStream(request *pb.DownloadFileReq) ([]*pb.DownloadFileRes, err
 
 	fi, err := os.Open(fileName)
 	if err != nil {
-		log.Error("Failed to open file: " + fileName)
+		log.Error("Failed to open file: %s", fileName)
 		return nil, err
 	}
 	defer func() {
 		if err = fi.Close(); err != nil {
-			log.Error("Failed to close file: " + fileName)
+			log.Error("Failed to close file: %s", fileName)
 		}
 	}()
 
@@ -31,9 +31,12 @@ func DownloadFileStream(request *pb.DownloadFileReq) ([]*pb.DownloadFileRes, err
 		file, errFileChunk := getFileChunk(fi, startByte, startByte+1000, request.FileName)
 
 		if errFileChunk != nil && file != nil {
-			log.Info("Empty File." + fileName)
+			log.Info("Empty File: %s", fileName)
+			// A refractor
 			download := &pb.DownloadFileRes{
-				File:      file,
+/*				ReturnCode: returnCode,
+				Message: message,
+*/				File:      file,
 				StartByte: startByte,
 				EndByte:   startByte,
 			}
@@ -61,7 +64,7 @@ func UploadFileChunk(stream pb.FileService_UploadFileServer) (*pb.UploadFileRes,
 
 	upload, err := stream.Recv()
 	lastByte = upload.GetEndByte()
-	log.Info("Upload file chunk start for: " + upload.GetFile().GetPathName())
+	log.Info("Upload file chunk start for: %s", upload.GetFile().GetPathName())
 	if err == io.EOF {
 		log.Info("File upload EOF")
 		return nil, err
@@ -192,7 +195,7 @@ func getFileChunk(fi *os.File, startByte, endByte int64, fileName string) (*pb.F
 			break
 		}
 		if err != nil {
-			log.Error("Failed to read file: " + err.Error())
+			log.Error("Failed to read file: %s", err.Error())
 		}
 
 		data = append(data, buf...)

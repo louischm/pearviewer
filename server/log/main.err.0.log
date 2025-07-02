@@ -1,5 +1,0 @@
-[pearviewer/server/service:DownloadFileStream] | ERROR : file.go:21: 2025/06/27 14:03:56.310826 Failed to open file: ./filetest/testfile2.txt
-[pearviewer/server/service:DownloadFileStream] | ERROR : file.go:21: 2025/06/27 14:05:54.227546 Failed to open file: ./filetest/testfile2.txt
-[pearviewer/server/service:DownloadFileStream] | ERROR : file.go:21: 2025/06/27 14:07:03.189098 Failed to open file: ./filetest/testfile2.txt
-[pearviewer/server/grpc:StartServer] | FATAL : server.go:58: 2025/06/30 15:18:11.608610 Can't start server: listen tcp: lookup test.example.com on 127.0.0.53:53: no such host
-[pearviewer/server/grpc:StartServer] | FATAL : server.go:58: 2025/06/30 15:18:16.779951 Can't start server: listen tcp: lookup test.example.com on 127.0.0.53:53: no such host

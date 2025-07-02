@@ -5,11 +5,13 @@ go 1.23.4
 require (
 	cogentcore.org/core v0.3.11
 	github.com/louischm/pkg v0.1.0
+	golang.org/x/oauth2 v0.28.0
 	google.golang.org/grpc v1.73.0
 	pearviewer/generated v0.0.0-00010101000000-000000000000
 )
 
 require (
+	cloud.google.com/go/compute/metadata v0.6.0 // indirect
 	github.com/Bios-Marcel/wastebasket/v2 v2.0.3 // indirect
 	github.com/Masterminds/vcs v1.13.3 // indirect
 	github.com/alecthomas/chroma/v2 v2.13.0 // indirect

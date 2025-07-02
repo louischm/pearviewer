@@ -32,17 +32,22 @@ go.work.sum
 # .vscode/
 
 # Proto/gRPC generated files
-./client/generated
-./server/generated
-./client/generated/*
-./server/generated/*
+/generated/
 
 # Project file
-./server/filetest
-./client/filetest
-./server/filetest/*
-./client/filetest/*
-./server/log
-./client/log
-./server/log/*
-./client/log/*
+/client/filetest/
+/client/log/
+/server/filetest/
+/server/log/
+
+# Cert TLS/SSL
+/cert/ca-cert.pem
+/cert/ca-key.pem
+/cert/client-cert.pem
+/cert/client-key.pem
+/cert/client-req.pem
+/cert/server-cert.pem
+/cert/server-key.pem
+/cert/server-req.pem
+/client/cert/
+/server/cert/

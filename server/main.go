@@ -15,7 +15,7 @@ func main() {
 	log.SetMaxSize(1e+9)
 
 	// Conf setup
-	confData := conf.GetConf()
+	confData := conf.NewConf()
 	log.Info("Conf loaded")
 	grpc.StartServer(confData)
 }

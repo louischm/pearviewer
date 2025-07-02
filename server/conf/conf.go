@@ -7,14 +7,26 @@ import (
 	"strconv"
 )
 
+var confSingleton *Conf = nil
 var log = logger.NewLog()
 
 type Conf struct {
 	ServerPort    int32
 	ServerAddress string
+	ServerCert    string
+	ServerKey     string
+	CaCertPath    string
 }
 
-func GetConf() *Conf {
+func NewConf() *Conf {
+	if confSingleton != nil {
+		return confSingleton
+	}
+	confSingleton = getConf()
+	return confSingleton
+}
+
+func getConf() *Conf {
 	log.Info("Reading conf")
 	conf, err := os.ReadFile("./conf/conf.json")
 
@@ -35,3 +47,7 @@ func GetConf() *Conf {
 func (c *Conf) GetServerAddress() string {
 	return c.ServerAddress + ":" + strconv.Itoa(int(c.ServerPort))
 }
+
+func (c *Conf) GetServerCert() string { return c.ServerCert }
+
+func (c *Conf) GetServerKey() string { return c.ServerKey }

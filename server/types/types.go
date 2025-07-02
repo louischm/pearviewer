@@ -28,6 +28,9 @@ const (
 	CreateFileErrorConst   = "Failed to create file: "
 	FileNotFoundErrorConst = "File not found: "
 	RenameFileErrorConst   = "Failed to rename file: "
+
+	// User
+	SignInErrorConst = "Failed to sign in: "
 )
 
 // Success message
@@ -44,6 +47,9 @@ const (
 	MoveFileSuccessConst       = "File moved: "
 	DeleteFileSuccessConst     = "File deleted: "
 	RenameFileSuccessConst     = "File renamed: "
+
+	// User
+	SignInSuccess = "Sign In successful"
 )
 
 func DirNotFound(dirName string) string {
@@ -136,4 +142,8 @@ func RenameFileSuccess(oldName, newName string) string {
 
 func RenameFileError(oldName, newName string) string {
 	return RenameFileErrorConst + oldName + " to " + newName
+}
+
+func SignInError(userName string) string {
+	return SignInErrorConst + userName
 }

@@ -400,3 +400,159 @@
 [pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/30 10:59:37.359497 Reading conf
 [pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/30 10:59:37.359875 Parsing json conf
 [main:main] | INFO : main.go:19: 2025/06/30 10:59:37.359933 Conf loaded
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/30 13:23:23.990051 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/30 13:23:23.990153 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 13:23:23.990203 Conf loaded
+[pearviewer/server/conf:GetConf] | INFO : conf.go:18: 2025/06/30 13:24:46.021455 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:26: 2025/06/30 13:24:46.021524 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 13:24:46.021567 Conf loaded
+[pearviewer/server/grpc:(*userServer).SignIn] | INFO : user.go:11: 2025/06/30 13:24:58.024308 Received SignIn request: user:{userName:"trest"  password:"qweqw"}
+[pearviewer/server/grpc:(*userServer).SignIn] | INFO : user.go:11: 2025/06/30 13:25:39.968615 Received SignIn request: user:{userName:"qw"  password:"qweeqw"}
+[pearviewer/server/grpc:(*userServer).SignIn] | INFO : user.go:11: 2025/06/30 13:28:00.193936 Received SignIn request: user:{userName:"wqeeqw"  password:"qwqew"}
+[pearviewer/server/grpc:(*userServer).SignIn] | INFO : user.go:11: 2025/06/30 13:28:28.163620 Received SignIn request: user:{userName:"qweqwe"  password:"qwqwe"}
+[pearviewer/server/grpc:(*userServer).SignIn] | INFO : user.go:11: 2025/06/30 13:28:32.996803 Received SignIn request: user:{userName:"test"  password:"test"}
+[pearviewer/server/conf:GetConf] | INFO : conf.go:20: 2025/06/30 14:14:52.211162 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:28: 2025/06/30 14:14:52.211275 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 14:14:52.211327 Conf loaded
+[pearviewer/server/conf:GetConf] | INFO : conf.go:20: 2025/06/30 14:14:52.211761 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:28: 2025/06/30 14:14:52.211802 Parsing json conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:20: 2025/06/30 14:14:52.211838 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:28: 2025/06/30 14:14:52.211878 Parsing json conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:20: 2025/06/30 14:22:46.866989 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:28: 2025/06/30 14:22:46.867052 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 14:22:46.867113 Conf loaded
+[pearviewer/server/conf:GetConf] | INFO : conf.go:20: 2025/06/30 14:22:46.867572 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:28: 2025/06/30 14:22:46.867622 Parsing json conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:20: 2025/06/30 14:22:46.867656 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:28: 2025/06/30 14:22:46.867696 Parsing json conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:20: 2025/06/30 14:25:01.074482 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:28: 2025/06/30 14:25:01.074547 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 14:25:01.074606 Conf loaded
+[pearviewer/server/conf:GetConf] | INFO : conf.go:20: 2025/06/30 14:25:01.075073 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:28: 2025/06/30 14:25:01.075114 Parsing json conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:20: 2025/06/30 14:25:01.075154 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:28: 2025/06/30 14:25:01.075191 Parsing json conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:20: 2025/06/30 14:28:25.125308 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:28: 2025/06/30 14:28:25.125357 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 14:28:25.125405 Conf loaded
+[pearviewer/server/conf:GetConf] | INFO : conf.go:20: 2025/06/30 14:28:25.125795 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:28: 2025/06/30 14:28:25.125831 Parsing json conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:20: 2025/06/30 14:28:25.125862 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:28: 2025/06/30 14:28:25.125891 Parsing json conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:20: 2025/06/30 14:29:12.276406 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:28: 2025/06/30 14:29:12.276452 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 14:29:12.276511 Conf loaded
+[pearviewer/server/conf:GetConf] | INFO : conf.go:20: 2025/06/30 14:29:12.276867 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:28: 2025/06/30 14:29:12.276899 Parsing json conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:20: 2025/06/30 14:29:12.276925 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:28: 2025/06/30 14:29:12.276968 Parsing json conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:20: 2025/06/30 14:29:20.168191 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:28: 2025/06/30 14:29:20.168233 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 14:29:20.168270 Conf loaded
+[pearviewer/server/conf:GetConf] | INFO : conf.go:20: 2025/06/30 14:29:20.168616 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:28: 2025/06/30 14:29:20.168643 Parsing json conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:20: 2025/06/30 14:29:20.168668 Reading conf
+[pearviewer/server/conf:GetConf] | INFO : conf.go:28: 2025/06/30 14:29:20.168694 Parsing json conf
+[pearviewer/server/grpc:(*userServer).SignIn] | INFO : user.go:11: 2025/06/30 14:29:23.876554 Received SignIn request: user:{userName:"aweeaweaw"  password:"aweaweaw"}
+[pearviewer/server/grpc:(*userServer).SignIn] | INFO : user.go:11: 2025/06/30 14:29:29.298481 Received SignIn request: user:{userName:"test"  password:"test"}
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 14:44:11.528523 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 14:44:11.528620 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 14:44:11.528669 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 14:46:13.453576 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 14:46:13.453617 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 14:46:13.453656 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 14:47:39.540579 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 14:47:39.540626 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 14:47:39.540674 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 14:53:06.233307 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 14:53:06.233369 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 14:53:06.233415 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 14:55:07.795529 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 14:55:07.795628 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 14:55:07.795707 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 14:55:27.013421 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 14:55:27.013495 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 14:55:27.013555 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:00:59.447804 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:00:59.447850 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 15:00:59.447901 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:11:42.386094 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:11:42.386146 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 15:11:42.386204 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:13:31.920189 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:13:31.920249 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 15:13:31.920307 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:16:30.858622 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:16:30.858673 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 15:16:30.858727 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:18:11.439378 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:18:11.439435 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 15:18:11.439476 Conf loaded
+[pearviewer/server/grpc:StartServer] | FATAL : server.go:58: 2025/06/30 15:18:11.608514 Can't start server: listen tcp: lookup test.example.com on 127.0.0.53:53: no such host
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:18:16.772947 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:18:16.772991 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 15:18:16.773037 Conf loaded
+[pearviewer/server/grpc:StartServer] | FATAL : server.go:58: 2025/06/30 15:18:16.779923 Can't start server: listen tcp: lookup test.example.com on 127.0.0.53:53: no such host
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:19:38.410863 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:19:38.410953 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 15:19:38.411005 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:20:11.831579 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:20:11.831623 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 15:20:11.831677 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:21:23.224812 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:21:23.224882 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 15:21:23.224943 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:23:43.611974 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:23:43.612025 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 15:23:43.612081 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:26:23.727085 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:26:23.727148 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 15:26:23.727205 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:27:49.058800 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:27:49.058848 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 15:27:49.058899 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:28:48.487442 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:28:48.487494 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 15:28:48.487549 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:29:19.860130 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:29:19.860190 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 15:29:19.860248 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:34:53.297345 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:34:53.297392 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 15:34:53.297460 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:36:54.172371 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:36:54.172427 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 15:36:54.172482 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:38:18.931866 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:38:18.931912 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 15:38:18.931962 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:38:51.045028 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:38:51.045077 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 15:38:51.045124 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:43:16.572073 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:43:16.572119 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 15:43:16.572168 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:44:25.502579 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:44:25.502679 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 15:44:25.502727 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:49:20.248091 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:49:20.248209 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 15:49:20.248272 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:49:55.138313 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:49:55.138372 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 15:49:55.138428 Conf loaded
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:54:50.283530 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:54:50.283572 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 15:54:50.283616 Conf loaded
+[pearviewer/server/grpc:(*userServer).SignIn] | INFO : user.go:11: 2025/06/30 15:54:54.092196 Received SignIn request: user:{userName:"qweqqwe"  password:"qweqeweqw"}
+[pearviewer/server/grpc:(*userServer).SignIn] | INFO : user.go:11: 2025/06/30 15:55:13.069599 Received SignIn request: user:{userName:"test"  password:"test"}
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 16:15:04.935977 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 16:15:04.936085 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 16:15:04.936142 Conf loaded
+[pearviewer/server/grpc:(*userServer).SignIn] | INFO : user.go:11: 2025/06/30 16:15:13.908890 Received SignIn request: user:{userName:"qweqwe" password:"qweeqw"}
+[pearviewer/server/grpc:(*userServer).SignIn] | INFO : user.go:11: 2025/06/30 16:15:18.907567 Received SignIn request: user:{userName:"test" password:"test"}
+[pearviewer/server/conf:getConf] | INFO : conf.go:30: 2025/06/30 16:18:53.976882 Reading conf
+[pearviewer/server/conf:getConf] | INFO : conf.go:38: 2025/06/30 16:18:53.977002 Parsing json conf
+[main:main] | INFO : main.go:19: 2025/06/30 16:18:53.977063 Conf loaded
+[pearviewer/server/grpc:(*userServer).SignIn] | INFO : user.go:11: 2025/06/30 16:19:00.931183 Received SignIn request: user:{userName:"qwe"  password:"qwe"}
+[pearviewer/server/grpc:(*userServer).SignIn] | INFO : user.go:11: 2025/06/30 16:19:05.206053 Received SignIn request: user:{userName:"test"  password:"test"}

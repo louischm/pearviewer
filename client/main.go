@@ -1,8 +1,8 @@
 package main
 
 import (
-	"cogentcore.org/core/core"
 	"github.com/louischm/pkg/logger"
+	"pearviewer/client/ui"
 )
 
 var log = logger.NewLog()
@@ -25,7 +25,5 @@ func main() {
 	//grpc.DownloadDir("test", "./filetest/", "./filetest/")
 
 	// Run main window
-	b := core.NewBody()
-	core.NewButton(b).SetText("Hello World")
-	b.RunMainWindow()
+	ui.CreateBody()
 }

@@ -1,3 +1,2 @@
 - Login
 - Add local settings (main source dir | multiple localhost)
-- Search GUI library for phone and web

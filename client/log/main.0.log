@@ -2523,3 +2523,228 @@
 [pearviewer/client/grpc:downloadFileReq] | INFO : file.go:133: 2025/06/27 14:09:31.388358 Response received
 [pearviewer/client/grpc:saveFileChunk] | INFO : file.go:158: 2025/06/27 14:09:31.388759 Chunk File write successfully: ./filetest/test/testfile.txt
 [pearviewer/client/grpc:downloadFileReq] | INFO : file.go:126: 2025/06/27 14:09:31.388842 Download File finished
+[pearviewer/client/conf:getConf] | INFO : conf.go:27: 2025/06/30 13:24:58.004504 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:35: 2025/06/30 13:24:58.011141 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:42: 2025/06/30 13:24:58.011535 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 13:24:58.011906 SignIn Request created: user:{userName:"trest" password:"qweqw"}
+[pearviewer/client/grpc:signInReq] | INFO : user.go:23: 2025/06/30 13:24:58.025522 SignIn Response: returnCode:-1 message:"Failed to sign in: trest"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:24: 2025/06/30 13:24:58.026154 Failed to sign in: Failed to sign in: trest
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | INFO : signin.go:27: 2025/06/30 13:24:58.031174 Signed in
+[pearviewer/client/conf:getConf] | INFO : conf.go:27: 2025/06/30 13:25:39.956566 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:35: 2025/06/30 13:25:39.956820 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:42: 2025/06/30 13:25:39.957273 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 13:25:39.957987 SignIn Request created: user:{userName:"qw" password:"qweeqw"}
+[pearviewer/client/grpc:signInReq] | INFO : user.go:23: 2025/06/30 13:25:39.969603 SignIn Response: returnCode:-1 message:"Failed to sign in: qw"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:24: 2025/06/30 13:25:39.970446 Failed to sign in: qw
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | INFO : signin.go:27: 2025/06/30 13:25:39.976256 Signed in
+[pearviewer/client/conf:getConf] | INFO : conf.go:27: 2025/06/30 13:28:00.182830 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:35: 2025/06/30 13:28:00.183099 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:42: 2025/06/30 13:28:00.183577 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 13:28:00.183951 SignIn Request created: user:{userName:"wqeeqw" password:"qwqew"}
+[pearviewer/client/grpc:signInReq] | INFO : user.go:23: 2025/06/30 13:28:00.194886 SignIn Response: returnCode:-1 message:"Failed to sign in: wqeeqw"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:24: 2025/06/30 13:28:00.195914 Failed to sign in: wqeeqw
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | INFO : signin.go:27: 2025/06/30 13:28:00.202251 Signed in
+[pearviewer/client/conf:getConf] | INFO : conf.go:27: 2025/06/30 13:28:28.150779 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:35: 2025/06/30 13:28:28.151261 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:42: 2025/06/30 13:28:28.151760 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 13:28:28.152181 SignIn Request created: user:{userName:"qweqwe"  password:"qwqwe"}
+[pearviewer/client/grpc:signInReq] | INFO : user.go:23: 2025/06/30 13:28:28.164497 SignIn Response: returnCode:-1  message:"Failed to sign in: qweqwe"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:24: 2025/06/30 13:28:28.165085 Failed to sign in: qweqwe
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:42: 2025/06/30 13:28:32.987944 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 13:28:32.988135 SignIn Request created: user:{userName:"test"  password:"test"}
+[pearviewer/client/grpc:signInReq] | INFO : user.go:23: 2025/06/30 13:28:32.997462 SignIn Response: message:"Sign In successful"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | INFO : signin.go:28: 2025/06/30 13:28:32.998152 Signed in
+[pearviewer/client/conf:getConf] | INFO : conf.go:28: 2025/06/30 14:23:02.009655 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:36: 2025/06/30 14:23:02.009865 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 14:23:02.010707 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 14:23:02.011217 SignIn Request created: user:{userName:"qqeq"  password:"qweqewqwe"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 14:23:02.052243 rpc error: code = Unavailable desc = connection error: desc = "transport: authentication handshake failed: tls: failed to verify certificate: x509: certificate relies on legacy Common Name field, use SANs instead"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 14:23:02.052515 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "transport: authentication handshake failed: tls: failed to verify certificate: x509: certificate relies on legacy Common Name field, use SANs instead"
+[pearviewer/client/conf:getConf] | INFO : conf.go:28: 2025/06/30 14:25:15.756257 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:36: 2025/06/30 14:25:15.756488 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 14:25:15.757390 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 14:25:15.757805 SignIn Request created: user:{userName:"wweqqwe"  password:"qweeqweqw"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 14:25:15.804854 rpc error: code = Unavailable desc = connection error: desc = "transport: authentication handshake failed: tls: failed to verify certificate: x509: certificate relies on legacy Common Name field, use SANs instead"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 14:25:15.805079 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "transport: authentication handshake failed: tls: failed to verify certificate: x509: certificate relies on legacy Common Name field, use SANs instead"
+[pearviewer/client/conf:getConf] | INFO : conf.go:28: 2025/06/30 14:28:33.179425 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:36: 2025/06/30 14:28:33.179697 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 14:28:33.180752 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 14:28:33.181249 SignIn Request created: user:{userName:"wdweqqweqweqew"  password:"qweqeeqw"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 14:28:33.224577 rpc error: code = Unavailable desc = connection error: desc = "transport: authentication handshake failed: tls: failed to verify certificate: x509: certificate is valid for example.com, *, not localhost"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 14:28:33.224756 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "transport: authentication handshake failed: tls: failed to verify certificate: x509: certificate is valid for example.com, *, not localhost"
+[pearviewer/client/conf:getConf] | INFO : conf.go:28: 2025/06/30 14:29:23.828061 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:36: 2025/06/30 14:29:23.828271 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 14:29:23.829152 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 14:29:23.829605 SignIn Request created: user:{userName:"aweeaweaw"  password:"aweaweaw"}
+[pearviewer/client/grpc:signInReq] | INFO : user.go:23: 2025/06/30 14:29:23.877045 SignIn Response: returnCode:-1  message:"Failed to sign in: aweeaweaw"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:24: 2025/06/30 14:29:23.877312 Failed to sign in: aweeaweaw
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 14:29:29.253621 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 14:29:29.253821 SignIn Request created: user:{userName:"test"  password:"test"}
+[pearviewer/client/grpc:signInReq] | INFO : user.go:23: 2025/06/30 14:29:29.298754 SignIn Response: message:"Sign In successful"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | INFO : signin.go:28: 2025/06/30 14:29:29.299036 Signed in
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 14:44:24.254104 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 14:44:24.254375 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 14:44:24.257263 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 14:44:24.257728 SignIn Request created: user:{userName:"qweeqwq" password:"qweqqwe"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 14:44:24.348539 rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 14:44:24.348702 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 14:46:18.893150 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 14:46:18.893398 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 14:46:18.895826 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 14:46:18.896162 SignIn Request created: user:{userName:"asdad" password:"asd"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 14:46:18.964508 rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 14:46:18.964584 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 14:47:44.591824 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 14:47:44.592056 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 14:47:44.594955 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 14:47:44.595429 SignIn Request created: user:{userName:"erwerwe" password:"qqewqew"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 14:47:44.684801 rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 14:47:44.684975 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 14:53:11.099981 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 14:53:11.100217 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 14:53:11.102606 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 14:53:11.102980 SignIn Request created: user:{userName:"qweqwe" password:"qweqeweq"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 14:53:11.146992 rpc error: code = Unavailable desc = connection error: desc = "transport: authentication handshake failed: tls: failed to verify certificate: x509: certificate is valid for *, not localhost"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 14:53:11.147177 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "transport: authentication handshake failed: tls: failed to verify certificate: x509: certificate is valid for *, not localhost"
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 14:55:12.238694 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 14:55:12.238924 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 14:55:12.241124 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 14:55:12.241547 SignIn Request created: user:{userName:"QAWEqawe" password:"qqwe"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 14:55:12.339882 rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 14:55:12.340157 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 14:56:00.873695 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 14:56:00.874042 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 14:56:39.990022 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 14:56:39.990324 SignIn Request created: user:{userName:"qqeqew" password:"qweqeweqw"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 14:56:40.044491 rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/ui/pages.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 14:56:40.044616 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:01:06.862597 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:01:06.862909 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 15:04:08.840337 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 15:04:08.840820 SignIn Request created: user:{userName:"qwqw" password:"qwqwe"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 15:04:08.903589 rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/ui/pages.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 15:04:08.903673 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 15:05:02.437835 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 15:05:02.438077 SignIn Request created: user:{userName:"qwqw" password:"qwqwe"}
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:11:51.152292 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:11:51.152715 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 15:11:51.155028 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 15:11:51.155398 SignIn Request created: user:{userName:"qew"  password:"qwe"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 15:11:51.228107 rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 15:11:51.228208 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:13:42.475684 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:13:42.476123 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 15:13:47.954945 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 15:13:47.955212 SignIn Request created: user:{userName:"asd"  password:"aedwsdq"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 15:13:48.018118 rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/ui/pages.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 15:13:48.018251 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:16:40.105739 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:16:40.105978 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 15:16:40.108344 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 15:16:40.108764 SignIn Request created: user:{userName:"qeqw" password:"qweqe"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 15:16:40.192278 rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 15:16:40.192371 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:19:42.889691 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:19:42.889936 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 15:19:42.892218 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 15:19:42.892605 SignIn Request created: user:{userName:"qweqwq" password:"qwqew"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 15:19:42.936379 rpc error: code = Unavailable desc = connection error: desc = "transport: authentication handshake failed: tls: failed to verify certificate: x509: certificate is valid for test.example.com, not localhost"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 15:19:42.936579 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "transport: authentication handshake failed: tls: failed to verify certificate: x509: certificate is valid for test.example.com, not localhost"
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:20:16.543134 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:20:16.543330 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 15:20:16.545645 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 15:20:16.546003 SignIn Request created: user:{userName:"qweeqw" password:"qweeqwqe"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 15:20:16.590329 rpc error: code = Unavailable desc = connection error: desc = "transport: authentication handshake failed: tls: failed to verify certificate: x509: certificate is valid for *, not localhost"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 15:20:16.590648 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "transport: authentication handshake failed: tls: failed to verify certificate: x509: certificate is valid for *, not localhost"
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:21:27.590996 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:21:27.591186 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 15:21:27.593426 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 15:21:27.593836 SignIn Request created: user:{userName:"weqw" password:"qeweqwqwe"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 15:21:27.681165 rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 15:21:27.681412 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:23:48.712764 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:23:48.712965 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 15:23:48.715251 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 15:23:48.715762 SignIn Request created: user:{userName:"qweeqweq" password:"qweqewqeweqw"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 15:23:48.802379 rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 15:23:48.802562 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:26:31.707748 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:26:31.707932 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:49: 2025/06/30 15:26:31.709851 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 15:26:31.710188 SignIn Request created: user:{userName:"qweqw"  password:"qweeqweqw"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 15:26:31.753455 rpc error: code = Unavailable desc = connection error: desc = "transport: authentication handshake failed: tls: failed to verify certificate: x509: certificate signed by unknown authority"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 15:26:31.753664 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "transport: authentication handshake failed: tls: failed to verify certificate: x509: certificate signed by unknown authority"
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:27:57.233071 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:27:57.233630 Parsing json conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:28:56.933259 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:28:56.933571 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 15:28:56.935975 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 15:28:56.936363 SignIn Request created: user:{userName:"qweqew" password:"qweeqwqew"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 15:28:57.017027 rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 15:28:57.017225 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:29:28.223282 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:29:28.223687 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 15:29:28.226005 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 15:29:28.226384 SignIn Request created: user:{userName:"wqeqwqew" password:"qweqewqew"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 15:29:28.307063 rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 15:29:28.307230 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:34:57.279826 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:34:57.280073 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 15:34:57.282410 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 15:34:57.282746 SignIn Request created: user:{userName:"qweeqw" password:"qweeqweqw"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 15:34:57.366608 rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 15:34:57.366820 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:37:14.271145 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:37:14.271438 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 15:37:14.273919 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 15:37:14.274299 SignIn Request created: user:{userName:"qweqw" password:"qweeqw"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 15:37:14.339929 rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 15:37:14.340031 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:38:22.321152 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:38:22.321345 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 15:38:22.323793 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 15:38:22.324178 SignIn Request created: user:{userName:"qweeqw" password:"qeeqw"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 15:38:22.399623 rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 15:38:22.399695 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:38:54.347485 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:38:54.347663 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 15:38:54.349568 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 15:38:54.349937 SignIn Request created: user:{userName:"qweqew" password:"qweqeweqw"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 15:38:54.442887 rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 15:38:54.443001 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:43:25.610444 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:43:25.610637 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 15:43:25.612922 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 15:43:25.613280 SignIn Request created: user:{userName:"qweeqqew" password:"qwqewqew"}
+[pearviewer/client/grpc:signInReq] | DEBUG : user.go:20: 2025/06/30 15:43:25.710945 rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:19: 2025/06/30 15:43:25.711163 Failed to sign in: rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: remote error: tls: unknown certificate authority"
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 15:54:54.032361 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 15:54:54.032611 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 15:54:54.035207 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 15:54:54.035648 SignIn Request created: user:{userName:"qweqqwe" password:"qweqeweqw"}
+[pearviewer/client/grpc:signInReq] | INFO : user.go:23: 2025/06/30 15:54:54.092488 SignIn Response: returnCode:-1 message:"Failed to sign in: qweqqwe"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:24: 2025/06/30 15:54:54.092649 Failed to sign in: qweqqwe
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 15:55:13.006394 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 15:55:13.006550 SignIn Request created: user:{userName:"test" password:"test"}
+[pearviewer/client/grpc:signInReq] | INFO : user.go:23: 2025/06/30 15:55:13.069843 SignIn Response: message:"Sign In successful"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | INFO : signin.go:28: 2025/06/30 15:55:13.070168 Signed in
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 16:15:13.840315 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 16:15:13.840751 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:56: 2025/06/30 16:15:13.843114 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 16:15:13.843474 SignIn Request created: user:{userName:"qweqwe"  password:"qweeqw"}
+[pearviewer/client/grpc:signInReq] | INFO : user.go:23: 2025/06/30 16:15:13.909385 SignIn Response: returnCode:-1  message:"Failed to sign in: qweqwe"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:24: 2025/06/30 16:15:13.909851 Failed to sign in: qweqwe
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:56: 2025/06/30 16:15:18.848358 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 16:15:18.848859 SignIn Request created: user:{userName:"test"  password:"test"}
+[pearviewer/client/grpc:signInReq] | INFO : user.go:23: 2025/06/30 16:15:18.907720 SignIn Response: message:"Sign In successful"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | INFO : signin.go:28: 2025/06/30 16:15:18.907887 Signed in
+[pearviewer/client/conf:getConf] | INFO : conf.go:30: 2025/06/30 16:19:00.867729 Reading conf
+[pearviewer/client/conf:getConf] | INFO : conf.go:38: 2025/06/30 16:19:00.867949 Parsing json conf
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 16:19:00.870023 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 16:19:00.870327 SignIn Request created: user:{userName:"qwe" password:"qwe"}
+[pearviewer/client/grpc:signInReq] | INFO : user.go:23: 2025/06/30 16:19:00.931617 SignIn Response: returnCode:-1 message:"Failed to sign in: qwe"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | DEBUG : signin.go:24: 2025/06/30 16:19:00.931957 Failed to sign in: qwe
+[pearviewer/client/grpc:createUserClient] | INFO : client.go:51: 2025/06/30 16:19:05.140002 Starting User client
+[pearviewer/client/grpc:SignIn] | INFO : user.go:13: 2025/06/30 16:19:05.140168 SignIn Request created: user:{userName:"test" password:"test"}
+[pearviewer/client/grpc:signInReq] | INFO : user.go:23: 2025/06/30 16:19:05.206324 SignIn Response: message:"Sign In successful"
+[pearviewer/client/ui.CreateBody.AddSignInPage.func1:1] | INFO : signin.go:28: 2025/06/30 16:19:05.206636 Signed in

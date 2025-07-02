@@ -13,6 +13,9 @@ var log = logger.NewLog()
 type Conf struct {
 	ServerPort    int32
 	ServerAddress string
+	CaCertPath    string
+	ClientCert    string
+	ClientKey     string
 }
 
 func NewConf() *Conf {
@@ -43,3 +46,9 @@ func getConf() *Conf {
 func (c *Conf) GetServerAddress() string {
 	return c.ServerAddress + ":" + strconv.Itoa(int(c.ServerPort))
 }
+
+func (c *Conf) GetCaCertPath() string { return c.CaCertPath }
+
+func (c *Conf) GetClientCert() string { return c.ClientCert }
+
+func (c *Conf) GetClientKey() string { return c.ClientKey }

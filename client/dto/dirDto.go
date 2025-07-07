@@ -52,3 +52,9 @@ func CreateListDirReq(dirName, pathName string) *pb.ListDirReq {
 		PathName: pathName,
 	}
 }
+
+func CreateGetRootPathReq(username string) *pb.GetRootPathReq {
+	return &pb.GetRootPathReq{
+		UserName: username,
+	}
+}

@@ -64,3 +64,13 @@ func (s *dirServer) ListDir(ctx context.Context, request *pb.ListDirReq) (*pb.Li
 	}
 	return res, nil
 }
+
+func (s *dirServer) GetRootPath(ctx context.Context, request *pb.GetRootPathReq) (*pb.GetRootPathRes, error) {
+	log.Info("Received GetRootPathReq: %s", request.String())
+	res, err := service.GetRootPath(request.UserName)
+
+	if err != nil && res.GetReturnCode() == types.ServerError {
+		return nil, err
+	}
+	return res, nil
+}

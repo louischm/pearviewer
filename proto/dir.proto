@@ -10,6 +10,7 @@ service DirService {
    rpc DeleteDir(DeleteDirReq) returns (DeleteDirRes) {}
    rpc MoveDir(MoveDirReq) returns (MoveDirRes) {}
    rpc ListDir(ListDirReq) returns (ListDirRes) {}
+   rpc GetRootPath(GetRootPathReq) returns (GetRootPathRes) {}
 }
 
 // CreateDir Message
@@ -62,6 +63,7 @@ message MoveDirRes {
 message ListDirReq {
    string dirName = 1;
    string pathName = 2;
+   string userName = 3;
 }
 
 message ListDirRes {
@@ -70,10 +72,23 @@ message ListDirRes {
    Dir dir = 3;
 }
 
+// GetRootPath Message
+message GetRootPathReq {
+   string userName = 1;
+}
+
+message GetRootPathRes {
+   int32 returnCode = 1;
+   string message = 2;
+   string pathName = 3;
+}
+
 // Generic Message
 message Dir {
    string dirName = 1;
    string pathName = 2;
    repeated File file = 3;
    repeated Dir dir = 4;
+   Type  type = 5;
+   string fullName = 6;
 }

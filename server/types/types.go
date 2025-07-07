@@ -30,17 +30,22 @@ const (
 	RenameFileErrorConst   = "Failed to rename file: "
 
 	// User
-	SignInErrorConst = "Failed to sign in: "
+	SignInErrorConst       = "Failed to sign in: "
+	UserAlreadyExistsConst = "User already exists: "
+
+	// DB
+	DBConnectError = "Failed to connect to database"
 )
 
 // Success message
 const (
 	// Dir
-	ListDirSuccess        = "List dir created"
-	DirMoveSuccessConst   = "Directory moved: "
-	DeleteDirSuccessConst = "Directory deleted: "
-	RenameDirSuccessConst = "Directory renamed: "
-	CreateDirSuccessConst = "Directory created: "
+	ListDirSuccess          = "List dir created"
+	DirMoveSuccessConst     = "Directory moved: "
+	DeleteDirSuccessConst   = "Directory deleted: "
+	RenameDirSuccessConst   = "Directory renamed: "
+	CreateDirSuccessConst   = "Directory created: "
+	GetRootPathSuccessConst = "Get root path: "
 
 	// File
 	WriteFileChunkSuccessConst = "File Chunk written: "
@@ -49,7 +54,8 @@ const (
 	RenameFileSuccessConst     = "File renamed: "
 
 	// User
-	SignInSuccess = "Sign In successful"
+	SignInSuccess    = "Sign In successful"
+	UserCreatedConst = "User created: "
 )
 
 func DirNotFound(dirName string) string {
@@ -146,4 +152,16 @@ func RenameFileError(oldName, newName string) string {
 
 func SignInError(userName string) string {
 	return SignInErrorConst + userName
+}
+
+func UserAlreadyExists(userName string) string {
+	return UserAlreadyExistsConst + userName
+}
+
+func UserCreated(userName string) string {
+	return UserCreatedConst + userName
+}
+
+func GetRootPathSuccess(dirName string) string {
+	return GetRootPathSuccessConst + dirName
 }

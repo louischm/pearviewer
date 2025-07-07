@@ -10,3 +10,12 @@ func CreateSignInReq(userName, password string) *pb.SignInReq {
 		},
 	}
 }
+
+func CreateUserReq(userName, password string) *pb.CreateUserReq {
+	return &pb.CreateUserReq{
+		User: &pb.User{
+			UserName: userName,
+			Password: password,
+		},
+	}
+}

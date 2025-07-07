@@ -78,5 +78,12 @@ message File {
   string name = 1;
   string pathName = 2;
   bytes  data = 3;
+  Type type = 4;
+  string fullName = 5;
+}
+
+enum Type {
+  DirType = 0;
+  FileType = 1;
 }
 

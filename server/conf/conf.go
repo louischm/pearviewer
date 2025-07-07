@@ -16,6 +16,8 @@ type Conf struct {
 	ServerCert    string
 	ServerKey     string
 	CaCertPath    string
+	LogPath       string
+	DataPath      string
 }
 
 func NewConf() *Conf {
@@ -27,18 +29,16 @@ func NewConf() *Conf {
 }
 
 func getConf() *Conf {
-	log.Info("Reading conf")
 	conf, err := os.ReadFile("./conf/conf.json")
 
 	if err != nil {
-		log.Fatal("Error on Reading conf file: %s", err.Error())
+		panic(err)
 	}
 
 	var confData Conf
-	log.Info("Parsing json conf")
 	err = json.Unmarshal(conf, &confData)
 	if err != nil {
-		log.Fatal("Error on Unmarshal conf: %s", err.Error())
+		panic(err)
 	}
 
 	return &confData

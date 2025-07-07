@@ -9,3 +9,11 @@ func CreateSignInRes(returnCode int32, message string, err error) (*pb.SignInRes
 	}
 	return res, err
 }
+
+func CreateUserRes(returnCode int32, message string, err error) (*pb.CreateUserRes, error) {
+	res := &pb.CreateUserRes{
+		ReturnCode: returnCode,
+		Message:    message,
+	}
+	return res, err
+}

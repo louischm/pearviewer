@@ -1,2 +1,5 @@
-- Login
-- Add local settings (main source dir | multiple localhost)
+- Make upper button disabled if input error
+- Add snackmessage on error/ success
+- Delete button
+- dockerize the server and maybe the client ?
+- install on raspberry

@@ -36,3 +36,7 @@ func CreateListDirRes(returnCode int32, message string, dir *pb.Dir, err error) 
 		Dir:        dir,
 	}, err
 }
+
+func CreateGetRootPathRes(returnCode int32, message string, pathName string, err error) (*pb.GetRootPathRes, error) {
+	return &pb.GetRootPathRes{ReturnCode: returnCode, Message: message, PathName: pathName}, err
+}

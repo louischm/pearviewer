@@ -3,6 +3,7 @@ syntax = "proto3";
 option go_package = "generated/";
 
 service UserService {
+  rpc CreateUser(CreateUserReq) returns(CreateUserRes) {}
   rpc SignIn(SignInReq) returns(SignInRes) {}
 }
 
@@ -14,6 +15,16 @@ message SignInReq {
 message SignInRes {
   int32 returnCode = 1;
   string  message = 2;
+}
+
+// CreateUser Message
+message CreateUserReq {
+  User  user = 1;
+}
+
+message CreateUserRes {
+  int32 returnCode = 1;
+  string message = 2;
 }
 
 // Generic message

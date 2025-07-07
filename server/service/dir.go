@@ -6,8 +6,10 @@ import (
 	"github.com/louischm/pkg/utils"
 	"os"
 	pb "pearviewer/generated"
+	"pearviewer/server/conf"
 	res "pearviewer/server/response"
 	"pearviewer/server/types"
+	"strings"
 )
 
 var log = logger.NewLog()
@@ -121,10 +123,36 @@ func ListDir(request *pb.ListDirReq) (*pb.ListDirRes, error) {
 	}
 }
 
+func GetRootPath(username string) (*pb.GetRootPathRes, error) {
+	confData := conf.NewConf()
+	pathName := utils.Joins(confData.DataPath, username)
+
+	if !utils.IsDirExist(pathName) {
+		log.Info(types.DirNotFound(pathName))
+		if err := os.Mkdir(pathName, os.ModePerm); err != nil {
+			log.Info(types.CreateDirError(pathName))
+			return res.CreateGetRootPathRes(types.Fail, types.CreateDirError(pathName), pathName, err)
+		}
+	}
+	return res.CreateGetRootPathRes(types.Success, types.GetRootPathSuccess(username), pathName, nil)
+}
+
+func createFullName(name, fileName string) string {
+	confData := conf.NewConf()
+	rootName := utils.Joins(confData.DataPath, fileName)
+
+	if strings.HasPrefix(name, rootName) {
+		return strings.Replace(name, rootName, "", 1)
+	}
+	return name
+}
+
 func createListDir(name, dirName, pathName string) (*pb.Dir, error) {
 	dir := &pb.Dir{
 		DirName:  dirName,
 		PathName: pathName,
+		Type:     pb.Type_DirType,
+		FullName: createFullName(name, dirName),
 	}
 
 	files, err := os.ReadDir(name)
@@ -144,6 +172,8 @@ func createListDir(name, dirName, pathName string) (*pb.Dir, error) {
 			newFile := &pb.File{
 				Name:     file.Name(),
 				PathName: name,
+				Type:     pb.Type_FileType,
+				FullName: createFullName(utils.Joins(name, file.Name()), file.Name()),
 			}
 			dir.File = append(dir.GetFile(), newFile)
 		}

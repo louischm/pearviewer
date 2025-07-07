@@ -51,3 +51,4 @@ go.work.sum
 /cert/server-req.pem
 /client/cert/
 /server/cert/
+/server/data/

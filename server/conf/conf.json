@@ -3,5 +3,8 @@
   "serverAddress": "localhost",
   "serverCert": "cert/server-cert.pem",
   "serverKey": "cert/server-key.pem",
-  "caCertPath": "cert/ca-cert.pem"
+  "caCertPath": "cert/ca-cert.pem",
+
+  "logPath": "log/",
+  "dataPath": "data/"
 }

@@ -39,4 +39,6 @@ Connect to a server chosen. Upload/Download one or multiple file at once.
 
 ## GUI
 
-- Search the correct gui go library for web and phone dev.
+- Search bar at top to search files/dir
+- Filter by name/size/date
+- ListDirWith scroll bar

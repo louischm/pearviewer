@@ -9,6 +9,15 @@ import (
 	pb "pearviewer/generated"
 )
 
+func GetRootPath(userName string) *pb.GetRootPathRes {
+	client, coon := createDirClient()
+	defer closeClient(coon)
+	request := dto.CreateGetRootPathReq(userName)
+	log.Info("GetRootPath request: %s", request.String())
+	res := getRootPathReq(*client, request)
+	return res
+}
+
 func ListDir(dirName, pathName string) *pb.ListDirRes {
 	client, conn := createDirClient()
 	defer closeClient(conn)
@@ -142,4 +151,13 @@ func createSourceDir(dir *pb.Dir, destPathName string) {
 	} else {
 		log.Debug("Dir already exist: %s", name)
 	}
+}
+
+func getRootPathReq(client pb.DirServiceClient, request *pb.GetRootPathReq) *pb.GetRootPathRes {
+	response, err := client.GetRootPath(context.Background(), request)
+	if err != nil {
+		log.Error("Get Root Path Request error: %s", err.Error())
+	}
+	log.Info("Get Root Path Response: %s", response.String())
+	return response
 }

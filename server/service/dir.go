@@ -31,8 +31,8 @@ func CreateDir(dirName, pathName string) (*pb.CreateDirRes, error) {
 }
 
 func RenameDir(request *pb.RenameDirReq) (*pb.RenameDirRes, error) {
-	oldName := request.GetPathName() + request.GetOldName()
-	newName := request.GetPathName() + request.GetNewName()
+	oldName := utils.Joins(request.GetPathName(), request.GetOldName())
+	newName := utils.Joins(request.GetPathName(), request.GetNewName())
 
 	if utils.IsDirExist(oldName) {
 		err := os.Rename(oldName, newName)
@@ -135,6 +135,119 @@ func GetRootPath(username string) (*pb.GetRootPathRes, error) {
 		}
 	}
 	return res.CreateGetRootPathRes(types.Success, types.GetRootPathSuccess(username), pathName, nil)
+}
+
+func GetFileNumber(request *pb.GetFileNumberReq) (*pb.GetFileNumberRes, error) {
+	fullName := utils.Joins(request.PathName, request.DirName)
+
+	if !utils.IsDirExist(fullName) {
+		log.Info(types.DirNotFound(fullName))
+		return res.CreateGetFileNumberRes(types.ServerError, types.DirNotFound(fullName),
+			-1, errors.New(types.DirNotFound(fullName)))
+	}
+
+	number, err := getFileNumberFromDir(fullName, 0)
+
+	if err != nil {
+		return res.CreateGetFileNumberRes(types.Fail, types.GetFileNumberError(fullName), -1, err)
+	}
+	return res.CreateGetFileNumberRes(types.Success, types.GetFileNumberSuccess(fullName, number), number, nil)
+}
+
+func SearchFile(request *pb.SearchFileReq) (*pb.ListDirRes, error) {
+	name := utils.Joins(request.GetPathName(), request.GetDirName())
+
+	if !utils.IsDirExist(name) {
+		log.Debug(types.DirNotFound(name))
+		return res.CreateSearchFileRes(types.ServerError, types.DirNotFound(name), nil, errors.New(types.DirNotFound(name)))
+	}
+	dir, err := createRootDirForSearch(request.Search, name, request.DirName, request.PathName)
+	if err != nil {
+		log.Debug("%v", err)
+		return nil, err
+	}
+	deleteEmptyBranch(dir)
+	return res.CreateSearchFileRes(types.Success, types.SearchSuccess(request.Search), dir, nil)
+}
+
+func deleteEmptyBranch(dir *pb.Dir) {
+	for _, child := range dir.Dir {
+		deleteEmptyBranch(child)
+		if child.File == nil && (child.Dir == nil || len(child.Dir) == 0) {
+			dir.Dir = remove(dir.Dir, foundIndex(dir.Dir, child))
+		}
+
+	}
+}
+
+func foundIndex(s []*pb.Dir, child *pb.Dir) int {
+	for i, e := range s {
+		if e == child {
+			return i
+		}
+	}
+	return -1
+}
+
+func remove(s []*pb.Dir, i int) []*pb.Dir {
+	s[i] = s[len(s)-1]
+	return s[:len(s)-1]
+}
+
+func createRootDirForSearch(search, name, dirName, pathName string) (*pb.Dir, error) {
+	dir := &pb.Dir{
+		DirName:  pathName,
+		PathName: dirName,
+		Type:     pb.Type_DirType,
+		FullName: name,
+	}
+
+	files, err := os.ReadDir(name)
+	if err != nil {
+		return nil, err
+	}
+
+	for _, file := range files {
+		if !file.IsDir() && strings.Contains(file.Name(), search) {
+			newFile := &pb.File{
+				Name:     file.Name(),
+				PathName: name,
+				Type:     pb.Type_FileType,
+				FullName: utils.Joins(name, file.Name()),
+			}
+			dir.File = append(dir.File, newFile)
+		} else if file.IsDir() {
+			newName := utils.Joins(name, file.Name())
+			newDir, errCreate := createRootDirForSearch(search, newName, file.Name(), name)
+			if errCreate != nil {
+				return nil, err
+			}
+			dir.Dir = append(dir.Dir, newDir)
+		}
+	}
+	return dir, nil
+}
+
+func getFileNumberFromDir(fullName string, currNum int64) (int64, error) {
+	entries, err := os.ReadDir(fullName)
+	if err != nil {
+		log.Debug(types.ReadDirError(fullName))
+		return currNum, err
+	}
+
+	for _, entry := range entries {
+		if entry.IsDir() {
+			newFullName := utils.Joins(fullName, entry.Name())
+			addNum, newErr := getFileNumberFromDir(newFullName, currNum)
+			if newErr != nil {
+				return currNum, newErr
+			}
+			currNum = addNum
+		} else {
+			currNum++
+		}
+	}
+	return currNum, nil
 }
 
 func createFullName(name, fileName string) string {

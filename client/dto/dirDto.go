@@ -58,3 +58,18 @@ func CreateGetRootPathReq(username string) *pb.GetRootPathReq {
 		UserName: username,
 	}
 }
+
+func CreateGetFileNumberReq(dirname, pathname string) *pb.GetFileNumberReq {
+	return &pb.GetFileNumberReq{
+		DirName:  dirname,
+		PathName: pathname,
+	}
+}
+
+func CreateFileSearchReq(search, pathName, dirName string) *pb.SearchFileReq {
+	return &pb.SearchFileReq{
+		Search:   search,
+		PathName: pathName,
+		DirName:  dirName,
+	}
+}

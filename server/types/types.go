@@ -1,5 +1,7 @@
 package types
 
+import "strconv"
+
 // ReturnCode enum
 const (
 	Success     int32 = 0
@@ -10,14 +12,15 @@ const (
 // Error message
 const (
 	// Dir
-	ListDirError          = "Error while listing dir"
-	DirNotFoundConst      = "Directory not found: "
-	FileMoveErrorConst    = "Failed to move file: "
-	CreateDirErrorConst   = "Failed to create dir: "
-	ReadDirErrorConst     = "Failed to read directory: "
-	DeleteDirErrorConst   = "Failed to delete directory: "
-	RenameDirErrorConst   = "Failed to rename directory: "
-	DirAlreadyExistsConst = "Directory already exists: "
+	ListDirError            = "Error while listing dir"
+	DirNotFoundConst        = "Directory not found: "
+	FileMoveErrorConst      = "Failed to move file: "
+	CreateDirErrorConst     = "Failed to create dir: "
+	ReadDirErrorConst       = "Failed to read directory: "
+	DeleteDirErrorConst     = "Failed to delete directory: "
+	RenameDirErrorConst     = "Failed to rename directory: "
+	DirAlreadyExistsConst   = "Directory already exists: "
+	GetFileNumberErrorConst = "Failed to get file number for directory: "
 
 	// File
 	CloseFileErrorConst    = "Failed to close file: "
@@ -40,18 +43,21 @@ const (
 // Success message
 const (
 	// Dir
-	ListDirSuccess          = "List dir created"
-	DirMoveSuccessConst     = "Directory moved: "
-	DeleteDirSuccessConst   = "Directory deleted: "
-	RenameDirSuccessConst   = "Directory renamed: "
-	CreateDirSuccessConst   = "Directory created: "
-	GetRootPathSuccessConst = "Get root path: "
+	ListDirSuccess            = "List dir created"
+	DirMoveSuccessConst       = "Directory moved: "
+	DeleteDirSuccessConst     = "Directory deleted: "
+	RenameDirSuccessConst     = "Directory renamed: "
+	CreateDirSuccessConst     = "Directory created: "
+	GetRootPathSuccessConst   = "Get root path: "
+	GetFileNumberSuccessConst = "Number of file in directory: "
+	SearchSuccessConst = "Search success: "
 
 	// File
 	WriteFileChunkSuccessConst = "File Chunk written: "
 	MoveFileSuccessConst       = "File moved: "
 	DeleteFileSuccessConst     = "File deleted: "
 	RenameFileSuccessConst     = "File renamed: "
+	FileSizeSuccessConst       = "File size retrieved for: "
 
 	// User
 	SignInSuccess    = "Sign In successful"
@@ -164,4 +170,20 @@ func UserCreated(userName string) string {
 
 func GetRootPathSuccess(dirName string) string {
 	return GetRootPathSuccessConst + dirName
+}
+
+func FileSizeSuccess(dirName string) string {
+	return FileSizeSuccessConst + dirName
+}
+
+func GetFileNumberSuccess(dirName string, number int64) string {
+	return GetFileNumberSuccessConst + dirName + " (" + strconv.FormatInt(number, 10) + ")"
+}
+
+func GetFileNumberError(dirName string) string {
+	return GetFileNumberErrorConst + dirName
+}
+
+func SearchSuccess(search string) string {
+	return SearchSuccessConst + search
 }

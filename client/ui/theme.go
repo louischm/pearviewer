@@ -20,7 +20,16 @@ func (t Theme) Color(name fyne.ThemeColorName, variant fyne.ThemeVariant) color.
 			B: 63,
 			A: 100,
 		}
-
+	case theme.ColorNameScrollBarBackground:
+		return color.White
+	case theme.ColorNameButton:
+		return color.White
+	case theme.ColorNameDisabledButton:
+		return color.NRGBA{R: 211, G: 211, B: 211, A: 255}
+	case theme.ColorNameDisabled:
+		return color.Black
+	case theme.ColorNameSuccess:
+		return color.White
 	}
 	return theme.DefaultTheme().Color(name, variant)
 }

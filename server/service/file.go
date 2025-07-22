@@ -34,9 +34,9 @@ func DownloadFileStream(request *pb.DownloadFileReq) ([]*pb.DownloadFileRes, err
 			log.Info("Empty File: %s", fileName)
 			// A refractor
 			download := &pb.DownloadFileRes{
-/*				ReturnCode: returnCode,
-				Message: message,
-*/				File:      file,
+				/*				ReturnCode: returnCode,
+								Message: message,
+				*/File:    file,
 				StartByte: startByte,
 				EndByte:   startByte,
 			}
@@ -87,8 +87,8 @@ func UploadFileChunk(stream pb.FileService_UploadFileServer) (*pb.UploadFileRes,
 }
 
 func RenameFile(request *pb.RenameFileReq) (*pb.RenameFileRes, error) {
-	oldName := request.GetPathName() + request.GetOldName()
-	newName := request.GetPathName() + request.GetNewName()
+	oldName := utils.Joins(request.GetPathName(), request.GetOldName())
+	newName := utils.Joins(request.GetPathName(), request.GetNewName())
 
 	if utils.IsFileInDir(request.GetOldName(), request.GetPathName()) {
 		err := os.Rename(oldName, newName)
@@ -106,7 +106,7 @@ func RenameFile(request *pb.RenameFileReq) (*pb.RenameFileRes, error) {
 }
 
 func DeleteFile(request *pb.DeleteFileReq) (*pb.DeleteFileRes, error) {
-	name := request.GetPathName() + request.GetFileName()
+	name := utils.Joins(request.GetPathName(), request.GetFileName())
 	if utils.IsFileInDir(request.GetFileName(), request.GetPathName()) {
 		err := os.Remove(name)
 		if err != nil {
@@ -159,6 +159,22 @@ func MoveFile(fileName, oldPathName, newPathName string) (*pb.MoveFileRes, error
 		log.Info(types.MoveFileSuccess(newName))
 		return res.CreateMoveFileRes(types.Success, types.MoveFileSuccess(newName), nil)
 	}
+}
+
+func GetFileSize(pathName, fileName string) (*pb.GetFileSizeRes, error) {
+	name := utils.Joins(pathName, fileName)
+
+	if !utils.IsFileInDir(fileName, pathName) {
+		log.Debug(types.FileNotFound(pathName))
+		return res.CreateGetFileSizeRes(types.Fail, types.FileNotFound(name), -1, nil)
+	}
+	fi, err := os.Stat(name)
+	if err != nil {
+		log.Debug("Error getting file size: %v", err)
+		return res.CreateGetFileSizeRes(types.ServerError, "Stat() error", -1, err)
+	}
+	size := fi.Size()
+	return res.CreateGetFileSizeRes(types.Success, types.FileSizeSuccess(name), size, nil)
 }
 
 func writeFileChunk(fileName string, upload *pb.UploadFileReq) (string, error) {

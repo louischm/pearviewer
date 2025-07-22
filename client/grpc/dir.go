@@ -41,11 +41,13 @@ func UploadDir(dirName, oldPathName, newPathName string) {
 	uploadDirReq(request)
 }
 
-func DownloadDir(dirName, sourcePathName, destPathName string) {
+/*
+func DownloadDir(dirName, sourcePathName, destPathName string, done chan bool, fileDwnld chan float64) {
 	listDir := ListDir(dirName, sourcePathName)
 	log.Info("Download Dir Request created: %s", listDir.String())
-	downloadDirReq(listDir.Dir, sourcePathName, destPathName)
-}
+	downloadDirReq(listDir.Dir, sourcePathName, destPathName, fileDwnld, 0)
+	done <- true
+}*/
 
 func CreateDir(dirName string, pathname string) {
 	client, conn := createDirClient()
@@ -69,6 +71,22 @@ func DeleteDir(dirName, pathname string) {
 	request := dto.CreateDeleteDirReq(dirName, pathname)
 	log.Info("Delete Dir request created: %s", request.String())
 	deleteDirReq(*client, request)
+}
+
+func GetFileNumber(dirName, pathName string) (*pb.GetFileNumberRes, error) {
+	client, conn := createDirClient()
+	defer closeClient(conn)
+	request := dto.CreateGetFileNumberReq(dirName, pathName)
+	log.Info("GetFileNUmber request created: %s", request.String())
+	return getFileNumberReq(*client, request), nil
+}
+
+func SearchFile(search, pathName, dirName string) *pb.ListDirRes {
+	client, conn := createDirClient()
+	defer closeClient(conn)
+	request := dto.CreateFileSearchReq(search, pathName, dirName)
+	log.Info("Search request created: %s", request.String())
+	return searchFileReq(*client, request)
 }
 
 func createDirReq(client pb.DirServiceClient, request *pb.CreateDirReq) {
@@ -127,20 +145,7 @@ func listDirReq(client pb.DirServiceClient, request *pb.ListDirReq) *pb.ListDirR
 	return response
 }
 
-func downloadDirReq(dir *pb.Dir, sourcePathName, destPathName string) {
-	createSourceDir(dir, destPathName)
-	sourceName := utils.Joins(sourcePathName, dir.DirName)
-	destName := utils.Joins(destPathName, dir.DirName)
-	for _, child := range dir.GetDir() {
-		downloadDirReq(child, sourceName, destName)
-	}
-
-	for _, file := range dir.GetFile() {
-		DownloadFile(file.Name, sourceName, destName)
-	}
-}
-
-func createSourceDir(dir *pb.Dir, destPathName string) {
+func CreateSourceDir(dir *pb.Dir, destPathName string) {
 	name := utils.Joins(destPathName, dir.DirName)
 
 	if !utils.IsDirExist(name) {
@@ -156,8 +161,29 @@ func createSourceDir(dir *pb.Dir, destPathName string) {
 func getRootPathReq(client pb.DirServiceClient, request *pb.GetRootPathReq) *pb.GetRootPathRes {
 	response, err := client.GetRootPath(context.Background(), request)
 	if err != nil {
-		log.Error("Get Root Path Request error: %s", err.Error())
+		log.Debug("Get Root Path Request error: %s", err.Error())
+		return nil
 	}
 	log.Info("Get Root Path Response: %s", response.String())
+	return response
+}
+
+func getFileNumberReq(client pb.DirServiceClient, request *pb.GetFileNumberReq) *pb.GetFileNumberRes {
+	response, err := client.GetFileNumber(context.Background(), request)
+	if err != nil {
+		log.Debug("Get File Number Request error: %s", err.Error())
+		return nil
+	}
+	log.Info("Get File Number Response: %s", response.String())
+	return response
+}
+
+func searchFileReq(client pb.DirServiceClient, request *pb.SearchFileReq) *pb.ListDirRes {
+	response, err := client.SearchFile(context.Background(), request)
+	if err != nil {
+		log.Debug("Search File Request error: %s", err.Error())
+		return nil
+	}
+	log.Info("Search File Response: %s", response.String())
 	return response
 }

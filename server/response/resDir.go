@@ -40,3 +40,19 @@ func CreateListDirRes(returnCode int32, message string, dir *pb.Dir, err error) 
 func CreateGetRootPathRes(returnCode int32, message string, pathName string, err error) (*pb.GetRootPathRes, error) {
 	return &pb.GetRootPathRes{ReturnCode: returnCode, Message: message, PathName: pathName}, err
 }
+
+func CreateGetFileNumberRes(returnCode int32, message string, number int64, err error) (*pb.GetFileNumberRes, error) {
+	return &pb.GetFileNumberRes{
+		ReturnCode: returnCode,
+		Message:    message,
+		Number:     number,
+	}, err
+}
+
+func CreateSearchFileRes(returnCode int32, message string, dir *pb.Dir, err error) (*pb.ListDirRes, error) {
+	return &pb.ListDirRes{
+		ReturnCode: returnCode,
+		Message:    message,
+		Dir:        dir,
+	}, err
+}

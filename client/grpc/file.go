@@ -2,6 +2,7 @@ package grpc
 
 import (
 	"context"
+	"errors"
 	"github.com/louischm/pkg/utils"
 	"io"
 	"os"
@@ -10,12 +11,13 @@ import (
 	pb "pearviewer/generated"
 )
 
-func DownloadFile(fileName, sourcePathName, destPathName string) {
+func DownloadFile(fileName, sourcePathName, destPathName string, done chan bool, size chan float64) {
 	client, conn := createFileClient()
 	defer closeClient(conn)
 	request := dto.CreateDownloadFileReq(fileName, sourcePathName)
 	log.Info("Download File request created: %s", request.String())
-	downloadFileReq(*client, request, destPathName)
+	downloadFileReq(*client, request, destPathName, size)
+	done <- true
 }
 
 func UploadFile(fileName, pathName string) {
@@ -48,6 +50,14 @@ func MoveFile(fileName, oldPathName, newPathName string) {
 	request := dto.CreateMoveFileReq(fileName, oldPathName, newPathName)
 	log.Info("Move File Request created: %s", request.String())
 	moveFileReq(*client, request)
+}
+
+func GetFileSize(fileName, pathName string) (int64, error) {
+	client, conn := createFileClient()
+	defer closeClient(conn)
+	request := dto.CreateGetFileSizeReq(fileName, pathName)
+	log.Info("Get File Size request created: %s", request.String())
+	return getFileSizeReq(*client, request)
 }
 
 func uploadFileReq(client pb.FileServiceClient, request []*pb.UploadFileReq) {
@@ -114,7 +124,7 @@ func moveFileReq(client pb.FileServiceClient, request *pb.MoveFileReq) {
 	log.Info("Move File response: %s", response.String())
 }
 
-func downloadFileReq(client pb.FileServiceClient, request *pb.DownloadFileReq, pathName string) {
+func downloadFileReq(client pb.FileServiceClient, request *pb.DownloadFileReq, pathName string, size chan float64) {
 	stream, err := client.DownloadFile(context.Background(), request)
 	if err != nil {
 		log.Error("Download File request error: %s", err.Error())
@@ -131,11 +141,24 @@ func downloadFileReq(client pb.FileServiceClient, request *pb.DownloadFileReq, p
 			log.Error("Download File request error: %s", errStream.Error())
 		}
 		log.Info("Response received")
-		saveFileChunk(res, pathName)
+		saveFileChunk(res, pathName, size)
 	}
 }
 
-func saveFileChunk(res *pb.DownloadFileRes, pathName string) {
+func getFileSizeReq(client pb.FileServiceClient, request *pb.GetFileSizeReq) (int64, error) {
+	response, err := client.GetFileSize(context.Background(), request)
+	if err != nil {
+		log.Error("Get File Size request error: %s", err.Error())
+		return -1, err
+	} else if response.ReturnCode == types.Fail {
+		log.Debug("Get File Size failed: %s", response.Message)
+		return -1, errors.New(response.Message)
+	}
+	log.Info("Get File Size response: %s", response.String())
+	return response.MaxSize, nil
+}
+
+func saveFileChunk(res *pb.DownloadFileRes, pathName string, size chan float64) {
 	// Create file if necessary
 	if !utils.IsFileInDir(res.File.Name, pathName) {
 		utils.CreateEmptyFile(res.File.Name, pathName)
@@ -155,6 +178,7 @@ func saveFileChunk(res *pb.DownloadFileRes, pathName string) {
 		log.Error("Failed to close file: %s", fileName)
 		return
 	}
+	size <- float64(res.EndByte)
 	log.Info("Chunk File write successfully: %s", fileName)
 	return
 }

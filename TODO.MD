@@ -1,5 +1,3 @@
-- Make upper button disabled if input error
-- Add snackmessage on error/ success
-- Delete button
-- dockerize the server and maybe the client ?
-- install on raspberry
+- Loader bar
+- message on loader
+- pop up on upload for select dest dir

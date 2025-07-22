@@ -87,6 +87,13 @@ func CreateDownloadFileReq(fileName, pathName string) *pb.DownloadFileReq {
 	}
 }
 
+func CreateGetFileSizeReq(fileName, pathName string) *pb.GetFileSizeReq {
+	return &pb.GetFileSizeReq{
+		FileName: fileName,
+		PathName: pathName,
+	}
+}
+
 func getFileChunk(fi *os.File, startByte, endByte int64, pathName string) (*pb.File, error) {
 	// Open file
 

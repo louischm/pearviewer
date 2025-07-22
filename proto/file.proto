@@ -9,6 +9,7 @@ service FileService {
   rpc DeleteFile(DeleteFileReq) returns(DeleteFileRes) {}
   rpc MoveFile(MoveFileReq) returns(MoveFileRes) {}
   rpc DownloadFile(DownloadFileReq) returns(stream DownloadFileRes) {}
+  rpc GetFileSize(GetFileSizeReq) returns(GetFileSizeRes) {}
 }
 
 // UploadFile Message
@@ -71,6 +72,18 @@ message DownloadFileRes {
   File file = 3;
   int64 startByte = 4;
   int64 endByte = 5;
+}
+
+// GetFileSize Message
+message GetFileSizeReq {
+  string fileName = 1;
+  string pathName = 2;
+}
+
+message GetFileSizeRes {
+  int32 returnCode = 1;
+  string message = 2;
+  int64 maxSize = 3;
 }
 
 // Generic Message

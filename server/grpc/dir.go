@@ -74,3 +74,23 @@ func (s *dirServer) GetRootPath(ctx context.Context, request *pb.GetRootPathReq)
 	}
 	return res, nil
 }
+
+func (s *dirServer) GetFileNumber(ctx context.Context, request *pb.GetFileNumberReq) (*pb.GetFileNumberRes, error) {
+	log.Info("Received GetFileNumberReq: %s", request.String())
+	res, err := service.GetFileNumber(request)
+
+	if err != nil {
+		return nil, err
+	}
+	return res, nil
+}
+
+func (s *dirServer) SearchFile(ctx context.Context, request *pb.SearchFileReq) (*pb.ListDirRes, error) {
+	log.Info("Received SearchFileReq: %s", request.String())
+	res, err := service.SearchFile(request)
+
+	if err != nil {
+		return nil, err
+	}
+	return res, nil
+}

@@ -80,3 +80,12 @@ func (s *fileServer) MoveFile(ctx context.Context, request *pb.MoveFileReq) (*pb
 	}
 	return res, nil
 }
+
+func (s *fileServer) GetFileSize(ctx context.Context, request *pb.GetFileSizeReq) (*pb.GetFileSizeRes, error) {
+	log.Info("Received GetFileSizeReq: %s", request.String())
+	res, err := service.GetFileSize(request.GetPathName(), request.GetFileName())
+	if err != nil && res.GetReturnCode() == types.ServerError {
+		return nil, err
+	}
+	return res, nil
+}

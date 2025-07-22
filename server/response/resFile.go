@@ -36,3 +36,12 @@ func CreateMoveFileRes(returnCode int32, message string, err error) (*pb.MoveFil
 	}
 	return res, err
 }
+
+func CreateGetFileSizeRes(returnCode int32, message string, maxSize int64, err error) (*pb.GetFileSizeRes, error) {
+	res := &pb.GetFileSizeRes{
+		Message:    message,
+		ReturnCode: returnCode,
+		MaxSize:    maxSize,
+	}
+	return res, err
+}

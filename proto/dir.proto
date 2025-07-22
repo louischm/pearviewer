@@ -11,6 +11,8 @@ service DirService {
    rpc MoveDir(MoveDirReq) returns (MoveDirRes) {}
    rpc ListDir(ListDirReq) returns (ListDirRes) {}
    rpc GetRootPath(GetRootPathReq) returns (GetRootPathRes) {}
+   rpc GetFileNumber(GetFileNumberReq) returns (GetFileNumberRes) {}
+   rpc SearchFile(SearchFileReq) returns(ListDirRes) {}
 }
 
 // CreateDir Message
@@ -81,6 +83,32 @@ message GetRootPathRes {
    int32 returnCode = 1;
    string message = 2;
    string pathName = 3;
+}
+
+// GetFileNumber Message
+message GetFileNumberReq {
+   string dirName = 1;
+   string pathName = 2;
+}
+
+message GetFileNumberRes {
+   int32 returnCode = 1;
+   string message = 2;
+   int64 number = 3;
+}
+
+
+// SearchFile Message
+message SearchFileReq {
+   string search = 1;
+   string pathName = 2;
+   string dirName = 3;
+}
+
+message SearchFileRes {
+   int32 returnCode = 1;
+   string message = 2;
+   Dir rootDir = 3;
 }
 
 // Generic Message
